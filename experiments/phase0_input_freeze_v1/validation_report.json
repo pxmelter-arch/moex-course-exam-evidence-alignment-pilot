@@ -1,0 +1,24 @@
+{
+  "report_version": "phase0-validation-v1",
+  "generated_at_utc": "2026-10-03T13:23:13.245328+00:00",
+  "status": "pass",
+  "claims": {
+    "input_freeze": "pass",
+    "github_only_scope": "pass",
+    "formal_record_count": 176,
+    "qdrant_124_records_included": false,
+    "uploaded_excel_included": false,
+    "qmd_used": false,
+    "staged_included": false,
+    "quarantine_included": false,
+    "blocked_included": false,
+    "human_adjudication_available": false,
+    "machine_outputs_are_truth": false,
+    "promotion_status": "blocked"
+  },
+  "known_limitations": [
+    "This freezes a bounded GitHub corpus, not a national population.",
+    "No human adjudication or validated exam alignment labels are present.",
+    "The source dataset is evidence/provenance input, not alignment truth."
+  ]
+}

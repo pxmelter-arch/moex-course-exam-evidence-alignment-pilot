@@ -1,0 +1,31 @@
+{
+  "manifest_version": "phase0-input-freeze-v1",
+  "generated_at_utc": "2026-10-03T13:23:13.245328+00:00",
+  "source": {
+    "repository": "caperspeert-blip/moex-course-exam-alignment",
+    "remote": "git@github-ml-expert:caperspeert-blip/moex-course-exam-alignment.git",
+    "pinned_commit": "5accc1e300d4a6d94c7d1475e44c352b6bf5e54b",
+    "local_clone": "/tmp/moex-course-exam-alignment-inspect",
+    "dataset_relative_path": "output/dataset/round26_formal_dataset_2026-10-02.json",
+    "dataset_sha256": "98ebd092fb7efb53dfab97e33cfffc0864b1812f3ef620ef02b37a6c3944c4f0",
+    "dataset_version": "moex-round26-bounded-2026-10-02",
+    "scope": "26 fixed schools; bounded subject/program acquisition, not whole-school crawl"
+  },
+  "input_contract": {
+    "formal_record_count": 176,
+    "formal_gate_distribution": {
+      "passed": 176
+    },
+    "raw_sha256_count": 176,
+    "raw_artifact_path_count": 176,
+    "sampling": "none",
+    "random_seed": null,
+    "random_seed_status": "not_applicable_no_sampling"
+  },
+  "integrity": {
+    "git_head_matches_pinned_commit": true,
+    "remote_matches_expected_repository": true,
+    "qdrant_ingest_performed": false,
+    "validated_exam_subject_ids_generated": false
+  }
+}

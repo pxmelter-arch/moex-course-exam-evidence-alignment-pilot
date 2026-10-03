@@ -1,0 +1,49 @@
+{
+  "manifest_version": "phase0-exclusion-v1",
+  "generated_at_utc": "2026-10-03T13:23:13.245328+00:00",
+  "policy": "Only the pinned GitHub formal corpus is an experiment input.",
+  "excluded_inputs": [
+    {
+      "name": "qdrant_existing_124_records",
+      "count": 124,
+      "condition": "existing local Qdrant points are not read as experiment input",
+      "status": "excluded"
+    },
+    {
+      "name": "uploaded_excel_course_corpus",
+      "count": null,
+      "condition": "uploaded Excel files are outside GitHub-only scope",
+      "status": "excluded"
+    },
+    {
+      "name": "qmd",
+      "count": null,
+      "condition": "qmd is not used for collection, retrieval, or evaluation",
+      "status": "excluded"
+    },
+    {
+      "name": "staged_records",
+      "count": 13,
+      "condition": "staged school IDs are not formal records",
+      "status": "excluded"
+    },
+    {
+      "name": "quarantine_records",
+      "count": 2,
+      "condition": "quarantine school IDs are not formal records",
+      "status": "excluded"
+    },
+    {
+      "name": "blocked_records",
+      "count": 5,
+      "condition": "blocked school IDs are not formal records",
+      "status": "excluded"
+    }
+  ],
+  "included_input": {
+    "name": "github_formal_dataset",
+    "count": 176,
+    "dataset_sha256": "98ebd092fb7efb53dfab97e33cfffc0864b1812f3ef620ef02b37a6c3944c4f0",
+    "status": "included"
+  }
+}

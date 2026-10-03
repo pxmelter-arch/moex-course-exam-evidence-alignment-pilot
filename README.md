@@ -57,11 +57,30 @@ uv pip install --python .venv/bin/python -r requirements-dev.txt
 uv pip install --python .venv/bin/python -r requirements.txt
 ```
 
+## 執行 Phase 0 input freeze
+
+Pinned GitHub clone 必須是唯讀且 checkout 到固定 commit：
+
+```bash
+/home/aelix/.hermes/profiles/ml-expert/workspace/ml-expert-workspace/.venv/bin/python \
+  scripts/run_phase0_freeze.py \
+  --source-repo /tmp/moex-course-exam-alignment-inspect \
+  --output-dir experiments/phase0_input_freeze_v1
+```
+
+產出：
+
+```text
+experiments/phase0_input_freeze_v1/input_manifest.json
+experiments/phase0_input_freeze_v1/exclusion_manifest.json
+experiments/phase0_input_freeze_v1/validation_report.json
+```
+
 ## 執行驗證
 
 ```bash
-.venv/bin/python scripts/validate_project.py
-.venv/bin/python -m pytest -q
+/home/aelix/.hermes/profiles/ml-expert/workspace/ml-expert-workspace/.venv/bin/python scripts/validate_project.py
+/home/aelix/.hermes/profiles/ml-expert/workspace/ml-expert-workspace/.venv/bin/python -m pytest -q
 ```
 
 ## 資料與安全規則
