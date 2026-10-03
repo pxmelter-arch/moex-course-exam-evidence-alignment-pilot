@@ -1,0 +1,35 @@
+{
+  "project_name": "moex-course-exam-evidence-alignment-pilot",
+  "language": "zh-TW",
+  "data_policy": {
+    "allowed_source": "GitHub repository only",
+    "repository": "caperspeert-blip/moex-course-exam-alignment",
+    "pinned_commit": "5accc1e300d4a6d94c7d1475e44c352b6bf5e54b",
+    "formal_record_count": 176,
+    "academic_year": "114",
+    "qdrant_124_records_included": false,
+    "uploaded_excel_included": false,
+    "qmd_used": false,
+    "staged_included": false,
+    "quarantine_included": false,
+    "blocked_included": false
+  },
+  "label_policy": {
+    "validated_exam_subject_ids_available": false,
+    "human_adjudication_available": false,
+    "machine_outputs_are_truth": false,
+    "promotion_status": "blocked"
+  },
+  "methods": [
+    "nlp_normalization",
+    "text_representation_ablation",
+    "section_based_chunking",
+    "paragraph_based_chunking",
+    "exact_alias",
+    "tfidf",
+    "bm25",
+    "embedding_diagnostic",
+    "hybrid_retrieval_diagnostic",
+    "optional_reranking"
+  ]
+}
