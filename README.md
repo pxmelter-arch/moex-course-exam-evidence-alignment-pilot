@@ -76,6 +76,32 @@ experiments/phase0_input_freeze_v1/exclusion_manifest.json
 experiments/phase0_input_freeze_v1/validation_report.json
 ```
 
+## 執行 Phase 1 audit
+
+使用 Phase 0 pinned source 執行 schema、NLP normalization candidate、identity 與 provenance audit：
+
+```bash
+/home/aelix/.hermes/profiles/ml-expert/workspace/ml-expert-workspace/.venv/bin/python \
+  scripts/run_phase1_audit.py \
+  --source-repo /tmp/moex-course-exam-alignment-inspect \
+  --output-dir experiments/phase1_audit_v1
+```
+
+產出：
+
+```text
+experiments/phase1_audit_v1/PHASE1_REPORT.md
+experiments/phase1_audit_v1/phase1_schema_profile.json
+experiments/phase1_audit_v1/phase1_identity_audit.json
+experiments/phase1_audit_v1/phase1_identity_collisions.jsonl
+experiments/phase1_audit_v1/phase1_provenance_completeness.json
+experiments/phase1_audit_v1/phase1_title_normalization_candidates.jsonl
+experiments/phase1_audit_v1/phase1_schema_normalized_records.jsonl
+experiments/phase1_audit_v1/phase1_input_freeze_receipt.json
+```
+
+Phase 1 不會覆蓋 source raw fields，也不會將 machine normalization 或 identity inference 當成人工 truth。
+
 ## 執行驗證
 
 ```bash

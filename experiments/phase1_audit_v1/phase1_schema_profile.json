@@ -1,0 +1,451 @@
+{
+  "field_count": 48,
+  "fields": {
+    "academic_year": {
+      "blank_string_count": 0,
+      "distinct_count": 1,
+      "non_null_count": 176,
+      "null_count": 0,
+      "type_counts": {
+        "str": 176
+      }
+    },
+    "admission_relevance": {
+      "blank_string_count": 0,
+      "distinct_count": 2,
+      "non_null_count": 124,
+      "null_count": 52,
+      "type_counts": {
+        "str": 124
+      }
+    },
+    "bytes": {
+      "blank_string_count": 0,
+      "distinct_count": 2,
+      "non_null_count": 2,
+      "null_count": 174,
+      "type_counts": {
+        "int": 2
+      }
+    },
+    "candidate_basis": {
+      "blank_string_count": 0,
+      "distinct_count": 1,
+      "non_null_count": 120,
+      "null_count": 56,
+      "type_counts": {
+        "str": 120
+      }
+    },
+    "candidate_id": {
+      "blank_string_count": 0,
+      "distinct_count": 124,
+      "non_null_count": 124,
+      "null_count": 52,
+      "type_counts": {
+        "str": 124
+      }
+    },
+    "candidate_match": {
+      "blank_string_count": 0,
+      "distinct_count": 2,
+      "non_null_count": 176,
+      "null_count": 0,
+      "type_counts": {
+        "bool": 56,
+        "str": 120
+      }
+    },
+    "class": {
+      "blank_string_count": 0,
+      "distinct_count": 8,
+      "non_null_count": 10,
+      "null_count": 166,
+      "type_counts": {
+        "str": 10
+      }
+    },
+    "class_code": {
+      "blank_string_count": 0,
+      "distinct_count": 34,
+      "non_null_count": 34,
+      "null_count": 142,
+      "type_counts": {
+        "str": 34
+      }
+    },
+    "class_label": {
+      "blank_string_count": 105,
+      "distinct_count": 3,
+      "non_null_count": 120,
+      "null_count": 56,
+      "type_counts": {
+        "str": 120
+      }
+    },
+    "content_bearing": {
+      "blank_string_count": 0,
+      "distinct_count": 1,
+      "non_null_count": 2,
+      "null_count": 174,
+      "type_counts": {
+        "bool": 2
+      }
+    },
+    "content_sections": {
+      "blank_string_count": 0,
+      "distinct_count": 1,
+      "non_null_count": 1,
+      "null_count": 175,
+      "type_counts": {
+        "list": 1
+      }
+    },
+    "content_signal_count": {
+      "blank_string_count": 0,
+      "distinct_count": 1,
+      "non_null_count": 2,
+      "null_count": 174,
+      "type_counts": {
+        "int": 2
+      }
+    },
+    "course_code": {
+      "blank_string_count": 0,
+      "distinct_count": 141,
+      "non_null_count": 149,
+      "null_count": 27,
+      "type_counts": {
+        "str": 149
+      }
+    },
+    "course_title": {
+      "blank_string_count": 0,
+      "distinct_count": 118,
+      "non_null_count": 176,
+      "null_count": 0,
+      "type_counts": {
+        "str": 176
+      }
+    },
+    "degree_level": {
+      "blank_string_count": 0,
+      "distinct_count": 3,
+      "non_null_count": 176,
+      "null_count": 0,
+      "type_counts": {
+        "str": 176
+      }
+    },
+    "department": {
+      "blank_string_count": 0,
+      "distinct_count": 1,
+      "non_null_count": 1,
+      "null_count": 175,
+      "type_counts": {
+        "str": 1
+      }
+    },
+    "department_name": {
+      "blank_string_count": 0,
+      "distinct_count": 14,
+      "non_null_count": 175,
+      "null_count": 1,
+      "type_counts": {
+        "str": 175
+      }
+    },
+    "detail_routes": {
+      "blank_string_count": 0,
+      "distinct_count": 1,
+      "non_null_count": 1,
+      "null_count": 175,
+      "type_counts": {
+        "list": 1
+      }
+    },
+    "english_url": {
+      "blank_string_count": 0,
+      "distinct_count": 2,
+      "non_null_count": 2,
+      "null_count": 174,
+      "type_counts": {
+        "str": 2
+      }
+    },
+    "formal_gate": {
+      "blank_string_count": 0,
+      "distinct_count": 1,
+      "non_null_count": 176,
+      "null_count": 0,
+      "type_counts": {
+        "str": 176
+      }
+    },
+    "grade": {
+      "blank_string_count": 0,
+      "distinct_count": 1,
+      "non_null_count": 2,
+      "null_count": 174,
+      "type_counts": {
+        "str": 2
+      }
+    },
+    "http_status": {
+      "blank_string_count": 0,
+      "distinct_count": 1,
+      "non_null_count": 54,
+      "null_count": 122,
+      "type_counts": {
+        "int": 54
+      }
+    },
+    "identity_join_artifact": {
+      "blank_string_count": 0,
+      "distinct_count": 3,
+      "non_null_count": 52,
+      "null_count": 124,
+      "type_counts": {
+        "str": 52
+      }
+    },
+    "independent_candidate_evidence": {
+      "blank_string_count": 0,
+      "distinct_count": 2,
+      "non_null_count": 176,
+      "null_count": 0,
+      "type_counts": {
+        "bool": 56,
+        "str": 120
+      }
+    },
+    "independent_provenance_alias": {
+      "blank_string_count": 0,
+      "distinct_count": 3,
+      "non_null_count": 3,
+      "null_count": 173,
+      "type_counts": {
+        "dict": 2,
+        "str": 1
+      }
+    },
+    "independent_provenance_alias_policy": {
+      "blank_string_count": 0,
+      "distinct_count": 1,
+      "non_null_count": 1,
+      "null_count": 175,
+      "type_counts": {
+        "str": 1
+      }
+    },
+    "independent_provenance_basis": {
+      "blank_string_count": 0,
+      "distinct_count": 4,
+      "non_null_count": 124,
+      "null_count": 52,
+      "type_counts": {
+        "str": 124
+      }
+    },
+    "independent_provenance_match_count": {
+      "blank_string_count": 0,
+      "distinct_count": 20,
+      "non_null_count": 120,
+      "null_count": 56,
+      "type_counts": {
+        "int": 120
+      }
+    },
+    "independent_provenance_path": {
+      "blank_string_count": 0,
+      "distinct_count": 1,
+      "non_null_count": 120,
+      "null_count": 56,
+      "type_counts": {
+        "str": 120
+      }
+    },
+    "independent_provenance_record": {
+      "blank_string_count": 0,
+      "distinct_count": 2,
+      "non_null_count": 2,
+      "null_count": 174,
+      "type_counts": {
+        "dict": 2
+      }
+    },
+    "independent_provenance_row": {
+      "blank_string_count": 0,
+      "distinct_count": 104,
+      "non_null_count": 119,
+      "null_count": 57,
+      "type_counts": {
+        "dict": 119
+      }
+    },
+    "independent_provenance_source": {
+      "blank_string_count": 0,
+      "distinct_count": 1,
+      "non_null_count": 120,
+      "null_count": 56,
+      "type_counts": {
+        "str": 120
+      }
+    },
+    "independent_provenance_status": {
+      "blank_string_count": 0,
+      "distinct_count": 3,
+      "non_null_count": 176,
+      "null_count": 0,
+      "type_counts": {
+        "str": 176
+      }
+    },
+    "match_type": {
+      "blank_string_count": 0,
+      "distinct_count": 1,
+      "non_null_count": 120,
+      "null_count": 56,
+      "type_counts": {
+        "str": 120
+      }
+    },
+    "official_url": {
+      "blank_string_count": 0,
+      "distinct_count": 168,
+      "non_null_count": 176,
+      "null_count": 0,
+      "type_counts": {
+        "str": 176
+      }
+    },
+    "program": {
+      "blank_string_count": 0,
+      "distinct_count": 1,
+      "non_null_count": 2,
+      "null_count": 174,
+      "type_counts": {
+        "str": 2
+      }
+    },
+    "promotion_status": {
+      "blank_string_count": 0,
+      "distinct_count": 1,
+      "non_null_count": 176,
+      "null_count": 0,
+      "type_counts": {
+        "str": 176
+      }
+    },
+    "raw_artifact_path": {
+      "blank_string_count": 0,
+      "distinct_count": 169,
+      "non_null_count": 176,
+      "null_count": 0,
+      "type_counts": {
+        "str": 176
+      }
+    },
+    "raw_sha256": {
+      "blank_string_count": 0,
+      "distinct_count": 168,
+      "non_null_count": 176,
+      "null_count": 0,
+      "type_counts": {
+        "str": 176
+      }
+    },
+    "school_id": {
+      "blank_string_count": 0,
+      "distinct_count": 9,
+      "non_null_count": 176,
+      "null_count": 0,
+      "type_counts": {
+        "str": 176
+      }
+    },
+    "school_name": {
+      "blank_string_count": 0,
+      "distinct_count": 6,
+      "non_null_count": 124,
+      "null_count": 52,
+      "type_counts": {
+        "str": 124
+      }
+    },
+    "section": {
+      "blank_string_count": 0,
+      "distinct_count": 1,
+      "non_null_count": 2,
+      "null_count": 174,
+      "type_counts": {
+        "str": 2
+      }
+    },
+    "semester": {
+      "blank_string_count": 0,
+      "distinct_count": 3,
+      "non_null_count": 176,
+      "null_count": 0,
+      "type_counts": {
+        "str": 176
+      }
+    },
+    "source_mode": {
+      "blank_string_count": 0,
+      "distinct_count": 3,
+      "non_null_count": 54,
+      "null_count": 122,
+      "type_counts": {
+        "str": 54
+      }
+    },
+    "syllabus_content_bearing": {
+      "blank_string_count": 0,
+      "distinct_count": 1,
+      "non_null_count": 122,
+      "null_count": 54,
+      "type_counts": {
+        "bool": 122
+      }
+    },
+    "syllabus_http_status": {
+      "blank_string_count": 0,
+      "distinct_count": 1,
+      "non_null_count": 122,
+      "null_count": 54,
+      "type_counts": {
+        "int": 122
+      }
+    },
+    "target_program": {
+      "blank_string_count": 0,
+      "distinct_count": 21,
+      "non_null_count": 52,
+      "null_count": 124,
+      "type_counts": {
+        "str": 52
+      }
+    },
+    "teacher": {
+      "blank_string_count": 3,
+      "distinct_count": 66,
+      "non_null_count": 124,
+      "null_count": 52,
+      "type_counts": {
+        "str": 124
+      }
+    }
+  },
+  "generated_at_utc": "2026-10-03T13:38:39.469322+00:00",
+  "record_count": 176,
+  "report_version": "phase1-schema-profile-v1",
+  "schema_drift": {
+    "additional_properties_allowed_by_source_schema": true,
+    "type_inconsistency_fields": [
+      "candidate_match",
+      "independent_candidate_evidence",
+      "independent_provenance_alias"
+    ]
+  }
+}

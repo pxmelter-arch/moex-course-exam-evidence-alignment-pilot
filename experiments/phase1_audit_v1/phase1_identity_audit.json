@@ -1,0 +1,77 @@
+{
+  "exact_json_duplicate_count": 0,
+  "generated_at_utc": "2026-10-03T13:38:39.469322+00:00",
+  "identity_policy": {
+    "course_instance_key": [
+      "school_id",
+      "academic_year",
+      "canonical_semester",
+      "canonical_department",
+      "canonical_course_code",
+      "canonical_section_or_class_code",
+      "canonical_course_title"
+    ],
+    "machine_inference_is_not_truth": true,
+    "missing_code_status": "ambiguous_missing_code",
+    "source_instance_fallback": [
+      "school_id",
+      "academic_year",
+      "canonical_semester",
+      "official_url",
+      "raw_sha256"
+    ]
+  },
+  "key_summaries": {
+    "school_year_semester_code_title": {
+      "duplicate_groups": 11,
+      "duplicate_records": 35,
+      "key_fields": [
+        "school_id",
+        "academic_year",
+        "semester",
+        "course_code",
+        "course_title"
+      ],
+      "unique_groups": 152
+    },
+    "school_year_semester_department_code": {
+      "duplicate_groups": 12,
+      "duplicate_records": 38,
+      "key_fields": [
+        "school_id",
+        "academic_year",
+        "semester",
+        "department_name",
+        "course_code"
+      ],
+      "unique_groups": 150
+    },
+    "school_year_semester_department_code_title": {
+      "duplicate_groups": 11,
+      "duplicate_records": 34,
+      "key_fields": [
+        "school_id",
+        "academic_year",
+        "semester",
+        "department_name",
+        "course_code",
+        "course_title"
+      ],
+      "unique_groups": 153
+    },
+    "school_year_semester_department_title": {
+      "duplicate_groups": 22,
+      "duplicate_records": 67,
+      "key_fields": [
+        "school_id",
+        "academic_year",
+        "semester",
+        "department_name",
+        "course_title"
+      ],
+      "unique_groups": 131
+    }
+  },
+  "record_count": 176,
+  "report_version": "phase1-identity-audit-v1"
+}

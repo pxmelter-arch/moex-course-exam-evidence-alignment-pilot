@@ -59,3 +59,30 @@ def test_phase0_freeze_artifacts() -> None:
     assert report["status"] == "pass"
     assert report["claims"]["qdrant_124_records_included"] is False
     assert report["claims"]["promotion_status"] == "blocked"
+
+
+def test_phase1_audit_artifacts() -> None:
+    """Validate Phase 1 audit outputs / 驗證 Phase 1 審計輸出。"""
+    artifact_dir = ROOT / "experiments/phase1_audit_v1"
+    schema = json.loads(
+        (artifact_dir / "phase1_schema_profile.json").read_text(encoding="utf-8")
+    )
+    identity = json.loads(
+        (artifact_dir / "phase1_identity_audit.json").read_text(encoding="utf-8")
+    )
+    provenance = json.loads(
+        (artifact_dir / "phase1_provenance_completeness.json").read_text(encoding="utf-8")
+    )
+    receipt = json.loads(
+        (artifact_dir / "phase1_input_freeze_receipt.json").read_text(encoding="utf-8")
+    )
+    assert schema["record_count"] == 176
+    assert schema["field_count"] == 48
+    assert identity["record_count"] == 176
+    assert identity["exact_json_duplicate_count"] == 0
+    assert identity["key_summaries"]["school_year_semester_department_title"]["duplicate_groups"] == 22
+    assert provenance["record_count"] == 176
+    assert provenance["declared_provenance"]["local_artifact"]["artifact_missing_count"] == 175
+    assert receipt["pinned_commit"] == "5accc1e300d4a6d94c7d1475e44c352b6bf5e54b"
+    assert receipt["scope"]["qdrant_124_records_included"] is False
+    assert receipt["promotion_status"] == "blocked"

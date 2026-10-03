@@ -1,0 +1,20 @@
+{
+  "dataset_relative_path": "output/dataset/round26_formal_dataset_2026-10-02.json",
+  "dataset_sha256": "98ebd092fb7efb53dfab97e33cfffc0864b1812f3ef620ef02b37a6c3944c4f0",
+  "generated_at_utc": "2026-10-03T13:38:39.469322+00:00",
+  "human_adjudication_available": false,
+  "pinned_commit": "5accc1e300d4a6d94c7d1475e44c352b6bf5e54b",
+  "promotion_status": "blocked",
+  "read_only_source_confirmation": true,
+  "receipt_version": "phase1-input-freeze-receipt-v1",
+  "record_count": 176,
+  "repository": "caperspeert-blip/moex-course-exam-alignment",
+  "scope": {
+    "blocked_included": false,
+    "qdrant_124_records_included": false,
+    "qmd_used": false,
+    "quarantine_included": false,
+    "staged_included": false,
+    "uploaded_excel_included": false
+  }
+}
