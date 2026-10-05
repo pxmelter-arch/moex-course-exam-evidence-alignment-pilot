@@ -1,0 +1,36 @@
+{
+  "candidate_only": true,
+  "content_commit": "1f2a2e635d61e01b5788a3c8c5b66adeb5c7e9db",
+  "content_path": "output/unified_dataset/round26_20261004/structured_content_600.json",
+  "content_total_count": 600,
+  "experiment": "phase2_3a_primary_content_outline_retrieval_v1",
+  "formal_alignment": "not_started",
+  "methods": {
+    "bm25": {
+      "nonempty_top10": 520,
+      "queries": 520,
+      "top10_exact_subject": 20,
+      "top1_exact_subject": 17
+    },
+    "exact_title": {
+      "nonempty_top10": 35,
+      "queries": 520,
+      "top10_exact_subject": 35,
+      "top1_exact_subject": 35
+    },
+    "tfidf": {
+      "nonempty_top10": 520,
+      "queries": 520,
+      "top10_exact_subject": 21,
+      "top1_exact_subject": 16
+    }
+  },
+  "outline_commit": "4cb1b5a7155a052450354cdff2e7e00a66728b89",
+  "outline_path": "data/raw/exam_outlines/exam_outline_catalog/output/exam_outline_catalog.json",
+  "outline_record_count": 542,
+  "primary_content_bearing_count": 520,
+  "priority5_373_lane": "blocked_pending_materialized_pinned_artifact",
+  "promotion_status": "blocked",
+  "status": "pass",
+  "top_k": 10
+}
