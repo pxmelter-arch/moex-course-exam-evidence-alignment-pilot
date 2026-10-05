@@ -97,6 +97,22 @@ def test_candidate_text_chunk_pilot() -> None:
     assert report["promotion_status"] == "blocked"
 
 
+def test_school_specific_schema_profile() -> None:
+    """Validate structural missingness policy / 驗證 source schema 缺失政策。"""
+    artifact_dir = ROOT / "experiments/phase1_1_school_schema_v1"
+    summary = json.loads((artifact_dir / "school_schema_profile_summary.json").read_text(encoding="utf-8"))
+    profile = json.loads((artifact_dir / "school_schema_profile.json").read_text(encoding="utf-8"))
+
+    assert summary["record_count"] == 600
+    assert summary["school_count"] == 7
+    assert summary["fields_profiled"] == 29
+    assert summary["schema_absence_candidates"] == 11
+    assert summary["imputation_performed"] is False
+    assert summary["model_feature_missingness"] is False
+    assert profile["missingness_policy"]["school_schema_difference_is_not_a_different_data_type"] is True
+    assert profile["missingness_policy"]["school_quality_ranking_performed"] is False
+
+
 def test_phase1_audit_artifacts() -> None:
     """Validate Phase 1 audit outputs / 驗證 Phase 1 審計輸出。"""
     artifact_dir = ROOT / "experiments/phase1_audit_v1"

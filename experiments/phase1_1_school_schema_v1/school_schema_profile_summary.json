@@ -1,0 +1,10 @@
+{
+  "experiment": "phase1_1_school_specific_schema_profile",
+  "fields_profiled": 29,
+  "imputation_performed": false,
+  "model_feature_missingness": false,
+  "record_count": 600,
+  "schema_absence_candidates": 11,
+  "school_count": 7,
+  "status": "pass"
+}

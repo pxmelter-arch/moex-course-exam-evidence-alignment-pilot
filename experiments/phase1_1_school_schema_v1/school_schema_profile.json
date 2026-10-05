@@ -1,0 +1,2140 @@
+{
+  "availability_matrix": {
+    "SCH002": {
+      "academic_year": "source_consistently_present",
+      "assessment": "source_consistently_present",
+      "content_chars": "source_consistently_present",
+      "content_sections": "source_consistently_present",
+      "content_status": "source_consistently_present",
+      "content_text": "source_consistently_present",
+      "course_code": "source_consistently_present",
+      "course_description": "source_heterogeneous_or_record_missing",
+      "course_title": "source_consistently_present",
+      "degree_level": "source_consistently_present",
+      "department": "source_consistently_present",
+      "hash_status": "source_consistently_present",
+      "objectives": "source_consistently_present",
+      "official_url": "schema_absence_candidate",
+      "outline": "source_consistently_present",
+      "prerequisite": "source_consistently_present",
+      "provenance_status": "source_consistently_present",
+      "raw_artifact_path": "source_consistently_present",
+      "raw_sha256": "source_consistently_present",
+      "reference": "source_consistently_present",
+      "school_id": "source_consistently_present",
+      "school_name": "source_consistently_present",
+      "semester": "source_consistently_present",
+      "source_record_status": "source_consistently_present",
+      "structured_id": "source_consistently_present",
+      "syllabus_fields": "source_consistently_present",
+      "target_program": "schema_absence_candidate",
+      "teacher": "schema_absence_candidate",
+      "textbook": "source_consistently_present"
+    },
+    "SCH004": {
+      "academic_year": "source_consistently_present",
+      "assessment": "source_consistently_present",
+      "content_chars": "source_consistently_present",
+      "content_sections": "source_consistently_present",
+      "content_status": "source_consistently_present",
+      "content_text": "source_consistently_present",
+      "course_code": "schema_absence_candidate",
+      "course_description": "source_consistently_present",
+      "course_title": "source_consistently_present",
+      "degree_level": "source_consistently_present",
+      "department": "schema_absence_candidate",
+      "hash_status": "source_consistently_present",
+      "objectives": "source_consistently_present",
+      "official_url": "source_consistently_present",
+      "outline": "source_consistently_present",
+      "prerequisite": "schema_absence_candidate",
+      "provenance_status": "schema_absence_candidate",
+      "raw_artifact_path": "source_consistently_present",
+      "raw_sha256": "source_consistently_present",
+      "reference": "source_consistently_present",
+      "school_id": "source_consistently_present",
+      "school_name": "source_consistently_present",
+      "semester": "source_consistently_present",
+      "source_record_status": "source_consistently_present",
+      "structured_id": "source_consistently_present",
+      "syllabus_fields": "source_consistently_present",
+      "target_program": "source_consistently_present",
+      "teacher": "source_consistently_present",
+      "textbook": "source_consistently_present"
+    },
+    "SCH012": {
+      "academic_year": "source_consistently_present",
+      "assessment": "source_heterogeneous_or_record_missing",
+      "content_chars": "source_consistently_present",
+      "content_sections": "source_consistently_present",
+      "content_status": "source_consistently_present",
+      "content_text": "source_consistently_present",
+      "course_code": "source_consistently_present",
+      "course_description": "source_consistently_present",
+      "course_title": "source_consistently_present",
+      "degree_level": "source_consistently_present",
+      "department": "schema_absence_candidate",
+      "hash_status": "source_consistently_present",
+      "objectives": "schema_absence_candidate",
+      "official_url": "source_consistently_present",
+      "outline": "source_consistently_present",
+      "prerequisite": "source_heterogeneous_or_record_missing",
+      "provenance_status": "schema_absence_candidate",
+      "raw_artifact_path": "source_consistently_present",
+      "raw_sha256": "source_consistently_present",
+      "reference": "source_heterogeneous_or_record_missing",
+      "school_id": "source_consistently_present",
+      "school_name": "source_consistently_present",
+      "semester": "source_consistently_present",
+      "source_record_status": "source_consistently_present",
+      "structured_id": "source_consistently_present",
+      "syllabus_fields": "source_consistently_present",
+      "target_program": "schema_absence_candidate",
+      "teacher": "source_consistently_present",
+      "textbook": "source_heterogeneous_or_record_missing"
+    },
+    "SCH014": {
+      "academic_year": "source_consistently_present",
+      "assessment": "source_heterogeneous_or_record_missing",
+      "content_chars": "source_consistently_present",
+      "content_sections": "source_consistently_present",
+      "content_status": "source_consistently_present",
+      "content_text": "source_consistently_present",
+      "course_code": "source_consistently_present",
+      "course_description": "source_consistently_present",
+      "course_title": "source_consistently_present",
+      "degree_level": "source_consistently_present",
+      "department": "source_consistently_present",
+      "hash_status": "source_consistently_present",
+      "objectives": "source_heterogeneous_or_record_missing",
+      "official_url": "source_consistently_present",
+      "outline": "source_consistently_present",
+      "prerequisite": "source_heterogeneous_or_record_missing",
+      "provenance_status": "schema_absence_candidate",
+      "raw_artifact_path": "source_consistently_present",
+      "raw_sha256": "source_consistently_present",
+      "reference": "source_heterogeneous_or_record_missing",
+      "school_id": "source_consistently_present",
+      "school_name": "source_consistently_present",
+      "semester": "source_consistently_present",
+      "source_record_status": "source_consistently_present",
+      "structured_id": "source_consistently_present",
+      "syllabus_fields": "source_consistently_present",
+      "target_program": "schema_absence_candidate",
+      "teacher": "source_consistently_present",
+      "textbook": "source_heterogeneous_or_record_missing"
+    },
+    "SCH019": {
+      "academic_year": "source_consistently_present",
+      "assessment": "schema_absence_candidate",
+      "content_chars": "source_consistently_present",
+      "content_sections": "source_consistently_present",
+      "content_status": "source_consistently_present",
+      "content_text": "source_consistently_present",
+      "course_code": "source_consistently_present",
+      "course_description": "source_heterogeneous_or_record_missing",
+      "course_title": "source_consistently_present",
+      "degree_level": "source_consistently_present",
+      "department": "source_consistently_present",
+      "hash_status": "source_consistently_present",
+      "objectives": "source_consistently_present",
+      "official_url": "source_consistently_present",
+      "outline": "source_consistently_present",
+      "prerequisite": "schema_absence_candidate",
+      "provenance_status": "schema_absence_candidate",
+      "raw_artifact_path": "source_consistently_present",
+      "raw_sha256": "source_consistently_present",
+      "reference": "source_heterogeneous_or_record_missing",
+      "school_id": "source_consistently_present",
+      "school_name": "schema_absence_candidate",
+      "semester": "source_consistently_present",
+      "source_record_status": "source_consistently_present",
+      "structured_id": "source_consistently_present",
+      "syllabus_fields": "source_consistently_present",
+      "target_program": "source_consistently_present",
+      "teacher": "source_consistently_present",
+      "textbook": "schema_absence_candidate"
+    },
+    "SCH024": {
+      "academic_year": "source_consistently_present",
+      "assessment": "source_heterogeneous_or_record_missing",
+      "content_chars": "source_consistently_present",
+      "content_sections": "source_consistently_present",
+      "content_status": "source_consistently_present",
+      "content_text": "source_consistently_present",
+      "course_code": "source_consistently_present",
+      "course_description": "source_heterogeneous_or_record_missing",
+      "course_title": "source_consistently_present",
+      "degree_level": "source_consistently_present",
+      "department": "source_consistently_present",
+      "hash_status": "source_consistently_present",
+      "objectives": "source_consistently_present",
+      "official_url": "source_consistently_present",
+      "outline": "source_consistently_present",
+      "prerequisite": "source_consistently_present",
+      "provenance_status": "schema_absence_candidate",
+      "raw_artifact_path": "source_consistently_present",
+      "raw_sha256": "source_consistently_present",
+      "reference": "source_consistently_present",
+      "school_id": "source_consistently_present",
+      "school_name": "source_consistently_present",
+      "semester": "source_consistently_present",
+      "source_record_status": "source_consistently_present",
+      "structured_id": "source_consistently_present",
+      "syllabus_fields": "source_consistently_present",
+      "target_program": "schema_absence_candidate",
+      "teacher": "source_consistently_present",
+      "textbook": "source_consistently_present"
+    },
+    "SCH026": {
+      "academic_year": "source_consistently_present",
+      "assessment": "schema_absence_candidate",
+      "content_chars": "source_consistently_present",
+      "content_sections": "source_consistently_present",
+      "content_status": "source_consistently_present",
+      "content_text": "source_consistently_present",
+      "course_code": "source_consistently_present",
+      "course_description": "source_heterogeneous_or_record_missing",
+      "course_title": "source_consistently_present",
+      "degree_level": "source_consistently_present",
+      "department": "schema_absence_candidate",
+      "hash_status": "source_consistently_present",
+      "objectives": "source_heterogeneous_or_record_missing",
+      "official_url": "source_consistently_present",
+      "outline": "source_heterogeneous_or_record_missing",
+      "prerequisite": "schema_absence_candidate",
+      "provenance_status": "schema_absence_candidate",
+      "raw_artifact_path": "source_consistently_present",
+      "raw_sha256": "source_consistently_present",
+      "reference": "source_consistently_present",
+      "school_id": "source_consistently_present",
+      "school_name": "source_consistently_present",
+      "semester": "source_consistently_present",
+      "source_record_status": "source_consistently_present",
+      "structured_id": "source_consistently_present",
+      "syllabus_fields": "source_consistently_present",
+      "target_program": "schema_absence_candidate",
+      "teacher": "source_consistently_present",
+      "textbook": "source_consistently_present"
+    }
+  },
+  "experiment": "phase1_1_school_specific_schema_profile",
+  "field_semantic_classes": {
+    "academic_year": "identity_critical",
+    "assessment": "descriptive",
+    "content_sections": "content_critical",
+    "content_status": "content_critical",
+    "content_text": "content_critical",
+    "course_code": "identity_critical",
+    "course_title": "identity_critical",
+    "department": "conditional_identity",
+    "official_url": "provenance_critical",
+    "prerequisite": "conditional",
+    "raw_artifact_path": "provenance_critical",
+    "raw_sha256": "provenance_critical",
+    "reference": "descriptive",
+    "school_id": "identity_critical",
+    "school_name": "identity_critical",
+    "semester": "identity_critical",
+    "target_program": "conditional",
+    "teacher": "descriptive",
+    "textbook": "descriptive"
+  },
+  "missingness_policy": {
+    "canonical_nulls_preserved": true,
+    "imputation_performed": false,
+    "missingness_added_as_model_feature": false,
+    "schema_absence_is_not_a_negative_label": true,
+    "school_quality_ranking_performed": false,
+    "school_schema_difference_is_not_a_different_data_type": true,
+    "source_native_fields_preserved": true
+  },
+  "record_count": 600,
+  "school_count": 7,
+  "school_profiles": {
+    "SCH002": {
+      "field_profile": {
+        "academic_year": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 32,
+          "record_count": 32,
+          "semantic_class": "identity_critical"
+        },
+        "assessment": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 32,
+          "record_count": 32,
+          "semantic_class": "descriptive"
+        },
+        "content_chars": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 32,
+          "record_count": 32,
+          "semantic_class": "unclassified"
+        },
+        "content_sections": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 32,
+          "record_count": 32,
+          "semantic_class": "content_critical"
+        },
+        "content_status": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 32,
+          "record_count": 32,
+          "semantic_class": "content_critical"
+        },
+        "content_text": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 32,
+          "record_count": 32,
+          "semantic_class": "content_critical"
+        },
+        "course_code": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 32,
+          "record_count": 32,
+          "semantic_class": "identity_critical"
+        },
+        "course_description": {
+          "absent_count": 28,
+          "availability_class": "source_heterogeneous_or_record_missing",
+          "presence_rate": 0.125,
+          "present_count": 4,
+          "record_count": 32,
+          "semantic_class": "unclassified"
+        },
+        "course_title": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 32,
+          "record_count": 32,
+          "semantic_class": "identity_critical"
+        },
+        "degree_level": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 32,
+          "record_count": 32,
+          "semantic_class": "unclassified"
+        },
+        "department": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 32,
+          "record_count": 32,
+          "semantic_class": "conditional_identity"
+        },
+        "hash_status": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 32,
+          "record_count": 32,
+          "semantic_class": "unclassified"
+        },
+        "objectives": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 32,
+          "record_count": 32,
+          "semantic_class": "unclassified"
+        },
+        "official_url": {
+          "absent_count": 32,
+          "availability_class": "schema_absence_candidate",
+          "presence_rate": 0.0,
+          "present_count": 0,
+          "record_count": 32,
+          "semantic_class": "provenance_critical"
+        },
+        "outline": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 32,
+          "record_count": 32,
+          "semantic_class": "unclassified"
+        },
+        "prerequisite": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 32,
+          "record_count": 32,
+          "semantic_class": "conditional"
+        },
+        "provenance_status": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 32,
+          "record_count": 32,
+          "semantic_class": "unclassified"
+        },
+        "raw_artifact_path": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 32,
+          "record_count": 32,
+          "semantic_class": "provenance_critical"
+        },
+        "raw_sha256": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 32,
+          "record_count": 32,
+          "semantic_class": "provenance_critical"
+        },
+        "reference": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 32,
+          "record_count": 32,
+          "semantic_class": "descriptive"
+        },
+        "school_id": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 32,
+          "record_count": 32,
+          "semantic_class": "identity_critical"
+        },
+        "school_name": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 32,
+          "record_count": 32,
+          "semantic_class": "identity_critical"
+        },
+        "semester": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 32,
+          "record_count": 32,
+          "semantic_class": "identity_critical"
+        },
+        "source_record_status": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 32,
+          "record_count": 32,
+          "semantic_class": "unclassified"
+        },
+        "structured_id": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 32,
+          "record_count": 32,
+          "semantic_class": "unclassified"
+        },
+        "syllabus_fields": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 32,
+          "record_count": 32,
+          "semantic_class": "unclassified"
+        },
+        "target_program": {
+          "absent_count": 32,
+          "availability_class": "schema_absence_candidate",
+          "presence_rate": 0.0,
+          "present_count": 0,
+          "record_count": 32,
+          "semantic_class": "conditional"
+        },
+        "teacher": {
+          "absent_count": 32,
+          "availability_class": "schema_absence_candidate",
+          "presence_rate": 0.0,
+          "present_count": 0,
+          "record_count": 32,
+          "semantic_class": "descriptive"
+        },
+        "textbook": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 32,
+          "record_count": 32,
+          "semantic_class": "descriptive"
+        }
+      },
+      "record_count": 32
+    },
+    "SCH004": {
+      "field_profile": {
+        "academic_year": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 4,
+          "record_count": 4,
+          "semantic_class": "identity_critical"
+        },
+        "assessment": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 4,
+          "record_count": 4,
+          "semantic_class": "descriptive"
+        },
+        "content_chars": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 4,
+          "record_count": 4,
+          "semantic_class": "unclassified"
+        },
+        "content_sections": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 4,
+          "record_count": 4,
+          "semantic_class": "content_critical"
+        },
+        "content_status": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 4,
+          "record_count": 4,
+          "semantic_class": "content_critical"
+        },
+        "content_text": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 4,
+          "record_count": 4,
+          "semantic_class": "content_critical"
+        },
+        "course_code": {
+          "absent_count": 4,
+          "availability_class": "schema_absence_candidate",
+          "presence_rate": 0.0,
+          "present_count": 0,
+          "record_count": 4,
+          "semantic_class": "identity_critical"
+        },
+        "course_description": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 4,
+          "record_count": 4,
+          "semantic_class": "unclassified"
+        },
+        "course_title": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 4,
+          "record_count": 4,
+          "semantic_class": "identity_critical"
+        },
+        "degree_level": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 4,
+          "record_count": 4,
+          "semantic_class": "unclassified"
+        },
+        "department": {
+          "absent_count": 4,
+          "availability_class": "schema_absence_candidate",
+          "presence_rate": 0.0,
+          "present_count": 0,
+          "record_count": 4,
+          "semantic_class": "conditional_identity"
+        },
+        "hash_status": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 4,
+          "record_count": 4,
+          "semantic_class": "unclassified"
+        },
+        "objectives": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 4,
+          "record_count": 4,
+          "semantic_class": "unclassified"
+        },
+        "official_url": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 4,
+          "record_count": 4,
+          "semantic_class": "provenance_critical"
+        },
+        "outline": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 4,
+          "record_count": 4,
+          "semantic_class": "unclassified"
+        },
+        "prerequisite": {
+          "absent_count": 4,
+          "availability_class": "schema_absence_candidate",
+          "presence_rate": 0.0,
+          "present_count": 0,
+          "record_count": 4,
+          "semantic_class": "conditional"
+        },
+        "provenance_status": {
+          "absent_count": 4,
+          "availability_class": "schema_absence_candidate",
+          "presence_rate": 0.0,
+          "present_count": 0,
+          "record_count": 4,
+          "semantic_class": "unclassified"
+        },
+        "raw_artifact_path": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 4,
+          "record_count": 4,
+          "semantic_class": "provenance_critical"
+        },
+        "raw_sha256": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 4,
+          "record_count": 4,
+          "semantic_class": "provenance_critical"
+        },
+        "reference": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 4,
+          "record_count": 4,
+          "semantic_class": "descriptive"
+        },
+        "school_id": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 4,
+          "record_count": 4,
+          "semantic_class": "identity_critical"
+        },
+        "school_name": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 4,
+          "record_count": 4,
+          "semantic_class": "identity_critical"
+        },
+        "semester": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 4,
+          "record_count": 4,
+          "semantic_class": "identity_critical"
+        },
+        "source_record_status": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 4,
+          "record_count": 4,
+          "semantic_class": "unclassified"
+        },
+        "structured_id": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 4,
+          "record_count": 4,
+          "semantic_class": "unclassified"
+        },
+        "syllabus_fields": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 4,
+          "record_count": 4,
+          "semantic_class": "unclassified"
+        },
+        "target_program": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 4,
+          "record_count": 4,
+          "semantic_class": "conditional"
+        },
+        "teacher": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 4,
+          "record_count": 4,
+          "semantic_class": "descriptive"
+        },
+        "textbook": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 4,
+          "record_count": 4,
+          "semantic_class": "descriptive"
+        }
+      },
+      "record_count": 4
+    },
+    "SCH012": {
+      "field_profile": {
+        "academic_year": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 98,
+          "record_count": 98,
+          "semantic_class": "identity_critical"
+        },
+        "assessment": {
+          "absent_count": 51,
+          "availability_class": "source_heterogeneous_or_record_missing",
+          "presence_rate": 0.479592,
+          "present_count": 47,
+          "record_count": 98,
+          "semantic_class": "descriptive"
+        },
+        "content_chars": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 98,
+          "record_count": 98,
+          "semantic_class": "unclassified"
+        },
+        "content_sections": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 98,
+          "record_count": 98,
+          "semantic_class": "content_critical"
+        },
+        "content_status": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 98,
+          "record_count": 98,
+          "semantic_class": "content_critical"
+        },
+        "content_text": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 98,
+          "record_count": 98,
+          "semantic_class": "content_critical"
+        },
+        "course_code": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 98,
+          "record_count": 98,
+          "semantic_class": "identity_critical"
+        },
+        "course_description": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 98,
+          "record_count": 98,
+          "semantic_class": "unclassified"
+        },
+        "course_title": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 98,
+          "record_count": 98,
+          "semantic_class": "identity_critical"
+        },
+        "degree_level": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 98,
+          "record_count": 98,
+          "semantic_class": "unclassified"
+        },
+        "department": {
+          "absent_count": 98,
+          "availability_class": "schema_absence_candidate",
+          "presence_rate": 0.0,
+          "present_count": 0,
+          "record_count": 98,
+          "semantic_class": "conditional_identity"
+        },
+        "hash_status": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 98,
+          "record_count": 98,
+          "semantic_class": "unclassified"
+        },
+        "objectives": {
+          "absent_count": 98,
+          "availability_class": "schema_absence_candidate",
+          "presence_rate": 0.0,
+          "present_count": 0,
+          "record_count": 98,
+          "semantic_class": "unclassified"
+        },
+        "official_url": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 98,
+          "record_count": 98,
+          "semantic_class": "provenance_critical"
+        },
+        "outline": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 98,
+          "record_count": 98,
+          "semantic_class": "unclassified"
+        },
+        "prerequisite": {
+          "absent_count": 95,
+          "availability_class": "source_heterogeneous_or_record_missing",
+          "presence_rate": 0.030612,
+          "present_count": 3,
+          "record_count": 98,
+          "semantic_class": "conditional"
+        },
+        "provenance_status": {
+          "absent_count": 98,
+          "availability_class": "schema_absence_candidate",
+          "presence_rate": 0.0,
+          "present_count": 0,
+          "record_count": 98,
+          "semantic_class": "unclassified"
+        },
+        "raw_artifact_path": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 98,
+          "record_count": 98,
+          "semantic_class": "provenance_critical"
+        },
+        "raw_sha256": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 98,
+          "record_count": 98,
+          "semantic_class": "provenance_critical"
+        },
+        "reference": {
+          "absent_count": 58,
+          "availability_class": "source_heterogeneous_or_record_missing",
+          "presence_rate": 0.408163,
+          "present_count": 40,
+          "record_count": 98,
+          "semantic_class": "descriptive"
+        },
+        "school_id": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 98,
+          "record_count": 98,
+          "semantic_class": "identity_critical"
+        },
+        "school_name": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 98,
+          "record_count": 98,
+          "semantic_class": "identity_critical"
+        },
+        "semester": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 98,
+          "record_count": 98,
+          "semantic_class": "identity_critical"
+        },
+        "source_record_status": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 98,
+          "record_count": 98,
+          "semantic_class": "unclassified"
+        },
+        "structured_id": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 98,
+          "record_count": 98,
+          "semantic_class": "unclassified"
+        },
+        "syllabus_fields": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 98,
+          "record_count": 98,
+          "semantic_class": "unclassified"
+        },
+        "target_program": {
+          "absent_count": 98,
+          "availability_class": "schema_absence_candidate",
+          "presence_rate": 0.0,
+          "present_count": 0,
+          "record_count": 98,
+          "semantic_class": "conditional"
+        },
+        "teacher": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 98,
+          "record_count": 98,
+          "semantic_class": "descriptive"
+        },
+        "textbook": {
+          "absent_count": 52,
+          "availability_class": "source_heterogeneous_or_record_missing",
+          "presence_rate": 0.469388,
+          "present_count": 46,
+          "record_count": 98,
+          "semantic_class": "descriptive"
+        }
+      },
+      "record_count": 98
+    },
+    "SCH014": {
+      "field_profile": {
+        "academic_year": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 297,
+          "record_count": 297,
+          "semantic_class": "identity_critical"
+        },
+        "assessment": {
+          "absent_count": 36,
+          "availability_class": "source_heterogeneous_or_record_missing",
+          "presence_rate": 0.878788,
+          "present_count": 261,
+          "record_count": 297,
+          "semantic_class": "descriptive"
+        },
+        "content_chars": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 297,
+          "record_count": 297,
+          "semantic_class": "unclassified"
+        },
+        "content_sections": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 297,
+          "record_count": 297,
+          "semantic_class": "content_critical"
+        },
+        "content_status": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 297,
+          "record_count": 297,
+          "semantic_class": "content_critical"
+        },
+        "content_text": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 297,
+          "record_count": 297,
+          "semantic_class": "content_critical"
+        },
+        "course_code": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 297,
+          "record_count": 297,
+          "semantic_class": "identity_critical"
+        },
+        "course_description": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 297,
+          "record_count": 297,
+          "semantic_class": "unclassified"
+        },
+        "course_title": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 297,
+          "record_count": 297,
+          "semantic_class": "identity_critical"
+        },
+        "degree_level": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 297,
+          "record_count": 297,
+          "semantic_class": "unclassified"
+        },
+        "department": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 297,
+          "record_count": 297,
+          "semantic_class": "conditional_identity"
+        },
+        "hash_status": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 297,
+          "record_count": 297,
+          "semantic_class": "unclassified"
+        },
+        "objectives": {
+          "absent_count": 40,
+          "availability_class": "source_heterogeneous_or_record_missing",
+          "presence_rate": 0.86532,
+          "present_count": 257,
+          "record_count": 297,
+          "semantic_class": "unclassified"
+        },
+        "official_url": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 297,
+          "record_count": 297,
+          "semantic_class": "provenance_critical"
+        },
+        "outline": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 297,
+          "record_count": 297,
+          "semantic_class": "unclassified"
+        },
+        "prerequisite": {
+          "absent_count": 281,
+          "availability_class": "source_heterogeneous_or_record_missing",
+          "presence_rate": 0.053872,
+          "present_count": 16,
+          "record_count": 297,
+          "semantic_class": "conditional"
+        },
+        "provenance_status": {
+          "absent_count": 297,
+          "availability_class": "schema_absence_candidate",
+          "presence_rate": 0.0,
+          "present_count": 0,
+          "record_count": 297,
+          "semantic_class": "unclassified"
+        },
+        "raw_artifact_path": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 297,
+          "record_count": 297,
+          "semantic_class": "provenance_critical"
+        },
+        "raw_sha256": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 297,
+          "record_count": 297,
+          "semantic_class": "provenance_critical"
+        },
+        "reference": {
+          "absent_count": 82,
+          "availability_class": "source_heterogeneous_or_record_missing",
+          "presence_rate": 0.723906,
+          "present_count": 215,
+          "record_count": 297,
+          "semantic_class": "descriptive"
+        },
+        "school_id": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 297,
+          "record_count": 297,
+          "semantic_class": "identity_critical"
+        },
+        "school_name": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 297,
+          "record_count": 297,
+          "semantic_class": "identity_critical"
+        },
+        "semester": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 297,
+          "record_count": 297,
+          "semantic_class": "identity_critical"
+        },
+        "source_record_status": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 297,
+          "record_count": 297,
+          "semantic_class": "unclassified"
+        },
+        "structured_id": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 297,
+          "record_count": 297,
+          "semantic_class": "unclassified"
+        },
+        "syllabus_fields": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 297,
+          "record_count": 297,
+          "semantic_class": "unclassified"
+        },
+        "target_program": {
+          "absent_count": 297,
+          "availability_class": "schema_absence_candidate",
+          "presence_rate": 0.0,
+          "present_count": 0,
+          "record_count": 297,
+          "semantic_class": "conditional"
+        },
+        "teacher": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 297,
+          "record_count": 297,
+          "semantic_class": "descriptive"
+        },
+        "textbook": {
+          "absent_count": 214,
+          "availability_class": "source_heterogeneous_or_record_missing",
+          "presence_rate": 0.279461,
+          "present_count": 83,
+          "record_count": 297,
+          "semantic_class": "descriptive"
+        }
+      },
+      "record_count": 297
+    },
+    "SCH019": {
+      "field_profile": {
+        "academic_year": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 23,
+          "record_count": 23,
+          "semantic_class": "identity_critical"
+        },
+        "assessment": {
+          "absent_count": 23,
+          "availability_class": "schema_absence_candidate",
+          "presence_rate": 0.0,
+          "present_count": 0,
+          "record_count": 23,
+          "semantic_class": "descriptive"
+        },
+        "content_chars": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 23,
+          "record_count": 23,
+          "semantic_class": "unclassified"
+        },
+        "content_sections": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 23,
+          "record_count": 23,
+          "semantic_class": "content_critical"
+        },
+        "content_status": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 23,
+          "record_count": 23,
+          "semantic_class": "content_critical"
+        },
+        "content_text": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 23,
+          "record_count": 23,
+          "semantic_class": "content_critical"
+        },
+        "course_code": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 23,
+          "record_count": 23,
+          "semantic_class": "identity_critical"
+        },
+        "course_description": {
+          "absent_count": 22,
+          "availability_class": "source_heterogeneous_or_record_missing",
+          "presence_rate": 0.043478,
+          "present_count": 1,
+          "record_count": 23,
+          "semantic_class": "unclassified"
+        },
+        "course_title": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 23,
+          "record_count": 23,
+          "semantic_class": "identity_critical"
+        },
+        "degree_level": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 23,
+          "record_count": 23,
+          "semantic_class": "unclassified"
+        },
+        "department": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 23,
+          "record_count": 23,
+          "semantic_class": "conditional_identity"
+        },
+        "hash_status": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 23,
+          "record_count": 23,
+          "semantic_class": "unclassified"
+        },
+        "objectives": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 23,
+          "record_count": 23,
+          "semantic_class": "unclassified"
+        },
+        "official_url": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 23,
+          "record_count": 23,
+          "semantic_class": "provenance_critical"
+        },
+        "outline": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 23,
+          "record_count": 23,
+          "semantic_class": "unclassified"
+        },
+        "prerequisite": {
+          "absent_count": 23,
+          "availability_class": "schema_absence_candidate",
+          "presence_rate": 0.0,
+          "present_count": 0,
+          "record_count": 23,
+          "semantic_class": "conditional"
+        },
+        "provenance_status": {
+          "absent_count": 23,
+          "availability_class": "schema_absence_candidate",
+          "presence_rate": 0.0,
+          "present_count": 0,
+          "record_count": 23,
+          "semantic_class": "unclassified"
+        },
+        "raw_artifact_path": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 23,
+          "record_count": 23,
+          "semantic_class": "provenance_critical"
+        },
+        "raw_sha256": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 23,
+          "record_count": 23,
+          "semantic_class": "provenance_critical"
+        },
+        "reference": {
+          "absent_count": 14,
+          "availability_class": "source_heterogeneous_or_record_missing",
+          "presence_rate": 0.391304,
+          "present_count": 9,
+          "record_count": 23,
+          "semantic_class": "descriptive"
+        },
+        "school_id": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 23,
+          "record_count": 23,
+          "semantic_class": "identity_critical"
+        },
+        "school_name": {
+          "absent_count": 23,
+          "availability_class": "schema_absence_candidate",
+          "presence_rate": 0.0,
+          "present_count": 0,
+          "record_count": 23,
+          "semantic_class": "identity_critical"
+        },
+        "semester": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 23,
+          "record_count": 23,
+          "semantic_class": "identity_critical"
+        },
+        "source_record_status": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 23,
+          "record_count": 23,
+          "semantic_class": "unclassified"
+        },
+        "structured_id": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 23,
+          "record_count": 23,
+          "semantic_class": "unclassified"
+        },
+        "syllabus_fields": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 23,
+          "record_count": 23,
+          "semantic_class": "unclassified"
+        },
+        "target_program": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 23,
+          "record_count": 23,
+          "semantic_class": "conditional"
+        },
+        "teacher": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 23,
+          "record_count": 23,
+          "semantic_class": "descriptive"
+        },
+        "textbook": {
+          "absent_count": 23,
+          "availability_class": "schema_absence_candidate",
+          "presence_rate": 0.0,
+          "present_count": 0,
+          "record_count": 23,
+          "semantic_class": "descriptive"
+        }
+      },
+      "record_count": 23
+    },
+    "SCH024": {
+      "field_profile": {
+        "academic_year": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 57,
+          "record_count": 57,
+          "semantic_class": "identity_critical"
+        },
+        "assessment": {
+          "absent_count": 55,
+          "availability_class": "source_heterogeneous_or_record_missing",
+          "presence_rate": 0.035088,
+          "present_count": 2,
+          "record_count": 57,
+          "semantic_class": "descriptive"
+        },
+        "content_chars": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 57,
+          "record_count": 57,
+          "semantic_class": "unclassified"
+        },
+        "content_sections": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 57,
+          "record_count": 57,
+          "semantic_class": "content_critical"
+        },
+        "content_status": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 57,
+          "record_count": 57,
+          "semantic_class": "content_critical"
+        },
+        "content_text": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 57,
+          "record_count": 57,
+          "semantic_class": "content_critical"
+        },
+        "course_code": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 57,
+          "record_count": 57,
+          "semantic_class": "identity_critical"
+        },
+        "course_description": {
+          "absent_count": 51,
+          "availability_class": "source_heterogeneous_or_record_missing",
+          "presence_rate": 0.105263,
+          "present_count": 6,
+          "record_count": 57,
+          "semantic_class": "unclassified"
+        },
+        "course_title": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 57,
+          "record_count": 57,
+          "semantic_class": "identity_critical"
+        },
+        "degree_level": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 57,
+          "record_count": 57,
+          "semantic_class": "unclassified"
+        },
+        "department": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 57,
+          "record_count": 57,
+          "semantic_class": "conditional_identity"
+        },
+        "hash_status": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 57,
+          "record_count": 57,
+          "semantic_class": "unclassified"
+        },
+        "objectives": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 57,
+          "record_count": 57,
+          "semantic_class": "unclassified"
+        },
+        "official_url": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 57,
+          "record_count": 57,
+          "semantic_class": "provenance_critical"
+        },
+        "outline": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 57,
+          "record_count": 57,
+          "semantic_class": "unclassified"
+        },
+        "prerequisite": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 57,
+          "record_count": 57,
+          "semantic_class": "conditional"
+        },
+        "provenance_status": {
+          "absent_count": 57,
+          "availability_class": "schema_absence_candidate",
+          "presence_rate": 0.0,
+          "present_count": 0,
+          "record_count": 57,
+          "semantic_class": "unclassified"
+        },
+        "raw_artifact_path": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 57,
+          "record_count": 57,
+          "semantic_class": "provenance_critical"
+        },
+        "raw_sha256": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 57,
+          "record_count": 57,
+          "semantic_class": "provenance_critical"
+        },
+        "reference": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 57,
+          "record_count": 57,
+          "semantic_class": "descriptive"
+        },
+        "school_id": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 57,
+          "record_count": 57,
+          "semantic_class": "identity_critical"
+        },
+        "school_name": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 57,
+          "record_count": 57,
+          "semantic_class": "identity_critical"
+        },
+        "semester": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 57,
+          "record_count": 57,
+          "semantic_class": "identity_critical"
+        },
+        "source_record_status": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 57,
+          "record_count": 57,
+          "semantic_class": "unclassified"
+        },
+        "structured_id": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 57,
+          "record_count": 57,
+          "semantic_class": "unclassified"
+        },
+        "syllabus_fields": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 57,
+          "record_count": 57,
+          "semantic_class": "unclassified"
+        },
+        "target_program": {
+          "absent_count": 57,
+          "availability_class": "schema_absence_candidate",
+          "presence_rate": 0.0,
+          "present_count": 0,
+          "record_count": 57,
+          "semantic_class": "conditional"
+        },
+        "teacher": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 57,
+          "record_count": 57,
+          "semantic_class": "descriptive"
+        },
+        "textbook": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 57,
+          "record_count": 57,
+          "semantic_class": "descriptive"
+        }
+      },
+      "record_count": 57
+    },
+    "SCH026": {
+      "field_profile": {
+        "academic_year": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 89,
+          "record_count": 89,
+          "semantic_class": "identity_critical"
+        },
+        "assessment": {
+          "absent_count": 89,
+          "availability_class": "schema_absence_candidate",
+          "presence_rate": 0.0,
+          "present_count": 0,
+          "record_count": 89,
+          "semantic_class": "descriptive"
+        },
+        "content_chars": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 89,
+          "record_count": 89,
+          "semantic_class": "unclassified"
+        },
+        "content_sections": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 89,
+          "record_count": 89,
+          "semantic_class": "content_critical"
+        },
+        "content_status": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 89,
+          "record_count": 89,
+          "semantic_class": "content_critical"
+        },
+        "content_text": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 89,
+          "record_count": 89,
+          "semantic_class": "content_critical"
+        },
+        "course_code": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 89,
+          "record_count": 89,
+          "semantic_class": "identity_critical"
+        },
+        "course_description": {
+          "absent_count": 2,
+          "availability_class": "source_heterogeneous_or_record_missing",
+          "presence_rate": 0.977528,
+          "present_count": 87,
+          "record_count": 89,
+          "semantic_class": "unclassified"
+        },
+        "course_title": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 89,
+          "record_count": 89,
+          "semantic_class": "identity_critical"
+        },
+        "degree_level": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 89,
+          "record_count": 89,
+          "semantic_class": "unclassified"
+        },
+        "department": {
+          "absent_count": 89,
+          "availability_class": "schema_absence_candidate",
+          "presence_rate": 0.0,
+          "present_count": 0,
+          "record_count": 89,
+          "semantic_class": "conditional_identity"
+        },
+        "hash_status": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 89,
+          "record_count": 89,
+          "semantic_class": "unclassified"
+        },
+        "objectives": {
+          "absent_count": 83,
+          "availability_class": "source_heterogeneous_or_record_missing",
+          "presence_rate": 0.067416,
+          "present_count": 6,
+          "record_count": 89,
+          "semantic_class": "unclassified"
+        },
+        "official_url": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 89,
+          "record_count": 89,
+          "semantic_class": "provenance_critical"
+        },
+        "outline": {
+          "absent_count": 71,
+          "availability_class": "source_heterogeneous_or_record_missing",
+          "presence_rate": 0.202247,
+          "present_count": 18,
+          "record_count": 89,
+          "semantic_class": "unclassified"
+        },
+        "prerequisite": {
+          "absent_count": 89,
+          "availability_class": "schema_absence_candidate",
+          "presence_rate": 0.0,
+          "present_count": 0,
+          "record_count": 89,
+          "semantic_class": "conditional"
+        },
+        "provenance_status": {
+          "absent_count": 89,
+          "availability_class": "schema_absence_candidate",
+          "presence_rate": 0.0,
+          "present_count": 0,
+          "record_count": 89,
+          "semantic_class": "unclassified"
+        },
+        "raw_artifact_path": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 89,
+          "record_count": 89,
+          "semantic_class": "provenance_critical"
+        },
+        "raw_sha256": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 89,
+          "record_count": 89,
+          "semantic_class": "provenance_critical"
+        },
+        "reference": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 89,
+          "record_count": 89,
+          "semantic_class": "descriptive"
+        },
+        "school_id": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 89,
+          "record_count": 89,
+          "semantic_class": "identity_critical"
+        },
+        "school_name": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 89,
+          "record_count": 89,
+          "semantic_class": "identity_critical"
+        },
+        "semester": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 89,
+          "record_count": 89,
+          "semantic_class": "identity_critical"
+        },
+        "source_record_status": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 89,
+          "record_count": 89,
+          "semantic_class": "unclassified"
+        },
+        "structured_id": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 89,
+          "record_count": 89,
+          "semantic_class": "unclassified"
+        },
+        "syllabus_fields": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 89,
+          "record_count": 89,
+          "semantic_class": "unclassified"
+        },
+        "target_program": {
+          "absent_count": 89,
+          "availability_class": "schema_absence_candidate",
+          "presence_rate": 0.0,
+          "present_count": 0,
+          "record_count": 89,
+          "semantic_class": "conditional"
+        },
+        "teacher": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 89,
+          "record_count": 89,
+          "semantic_class": "descriptive"
+        },
+        "textbook": {
+          "absent_count": 0,
+          "availability_class": "source_consistently_present",
+          "presence_rate": 1.0,
+          "present_count": 89,
+          "record_count": 89,
+          "semantic_class": "descriptive"
+        }
+      },
+      "record_count": 89
+    }
+  },
+  "source_commit": "6454e22c2ad00087d62481171352738eb3396bad",
+  "source_path": "output/unified_dataset/round26_20261004/structured_content_600.json",
+  "source_schema_candidates": {
+    "academic_year": {
+      "field_semantic_class": "identity_critical",
+      "interpretation": "schema-level observation only; do not use as a school quality score or model feature",
+      "school_availability_class_counts": {
+        "source_consistently_present": 7
+      }
+    },
+    "assessment": {
+      "field_semantic_class": "descriptive",
+      "interpretation": "schema-level observation only; do not use as a school quality score or model feature",
+      "school_availability_class_counts": {
+        "schema_absence_candidate": 2,
+        "source_consistently_present": 2,
+        "source_heterogeneous_or_record_missing": 3
+      }
+    },
+    "content_chars": {
+      "field_semantic_class": "unclassified",
+      "interpretation": "schema-level observation only; do not use as a school quality score or model feature",
+      "school_availability_class_counts": {
+        "source_consistently_present": 7
+      }
+    },
+    "content_sections": {
+      "field_semantic_class": "content_critical",
+      "interpretation": "schema-level observation only; do not use as a school quality score or model feature",
+      "school_availability_class_counts": {
+        "source_consistently_present": 7
+      }
+    },
+    "content_status": {
+      "field_semantic_class": "content_critical",
+      "interpretation": "schema-level observation only; do not use as a school quality score or model feature",
+      "school_availability_class_counts": {
+        "source_consistently_present": 7
+      }
+    },
+    "content_text": {
+      "field_semantic_class": "content_critical",
+      "interpretation": "schema-level observation only; do not use as a school quality score or model feature",
+      "school_availability_class_counts": {
+        "source_consistently_present": 7
+      }
+    },
+    "course_code": {
+      "field_semantic_class": "identity_critical",
+      "interpretation": "schema-level observation only; do not use as a school quality score or model feature",
+      "school_availability_class_counts": {
+        "schema_absence_candidate": 1,
+        "source_consistently_present": 6
+      }
+    },
+    "course_description": {
+      "field_semantic_class": "unclassified",
+      "interpretation": "schema-level observation only; do not use as a school quality score or model feature",
+      "school_availability_class_counts": {
+        "source_consistently_present": 3,
+        "source_heterogeneous_or_record_missing": 4
+      }
+    },
+    "course_title": {
+      "field_semantic_class": "identity_critical",
+      "interpretation": "schema-level observation only; do not use as a school quality score or model feature",
+      "school_availability_class_counts": {
+        "source_consistently_present": 7
+      }
+    },
+    "degree_level": {
+      "field_semantic_class": "unclassified",
+      "interpretation": "schema-level observation only; do not use as a school quality score or model feature",
+      "school_availability_class_counts": {
+        "source_consistently_present": 7
+      }
+    },
+    "department": {
+      "field_semantic_class": "conditional_identity",
+      "interpretation": "schema-level observation only; do not use as a school quality score or model feature",
+      "school_availability_class_counts": {
+        "schema_absence_candidate": 3,
+        "source_consistently_present": 4
+      }
+    },
+    "hash_status": {
+      "field_semantic_class": "unclassified",
+      "interpretation": "schema-level observation only; do not use as a school quality score or model feature",
+      "school_availability_class_counts": {
+        "source_consistently_present": 7
+      }
+    },
+    "objectives": {
+      "field_semantic_class": "unclassified",
+      "interpretation": "schema-level observation only; do not use as a school quality score or model feature",
+      "school_availability_class_counts": {
+        "schema_absence_candidate": 1,
+        "source_consistently_present": 4,
+        "source_heterogeneous_or_record_missing": 2
+      }
+    },
+    "official_url": {
+      "field_semantic_class": "provenance_critical",
+      "interpretation": "schema-level observation only; do not use as a school quality score or model feature",
+      "school_availability_class_counts": {
+        "schema_absence_candidate": 1,
+        "source_consistently_present": 6
+      }
+    },
+    "outline": {
+      "field_semantic_class": "unclassified",
+      "interpretation": "schema-level observation only; do not use as a school quality score or model feature",
+      "school_availability_class_counts": {
+        "source_consistently_present": 6,
+        "source_heterogeneous_or_record_missing": 1
+      }
+    },
+    "prerequisite": {
+      "field_semantic_class": "conditional",
+      "interpretation": "schema-level observation only; do not use as a school quality score or model feature",
+      "school_availability_class_counts": {
+        "schema_absence_candidate": 3,
+        "source_consistently_present": 2,
+        "source_heterogeneous_or_record_missing": 2
+      }
+    },
+    "provenance_status": {
+      "field_semantic_class": "unclassified",
+      "interpretation": "schema-level observation only; do not use as a school quality score or model feature",
+      "school_availability_class_counts": {
+        "schema_absence_candidate": 6,
+        "source_consistently_present": 1
+      }
+    },
+    "raw_artifact_path": {
+      "field_semantic_class": "provenance_critical",
+      "interpretation": "schema-level observation only; do not use as a school quality score or model feature",
+      "school_availability_class_counts": {
+        "source_consistently_present": 7
+      }
+    },
+    "raw_sha256": {
+      "field_semantic_class": "provenance_critical",
+      "interpretation": "schema-level observation only; do not use as a school quality score or model feature",
+      "school_availability_class_counts": {
+        "source_consistently_present": 7
+      }
+    },
+    "reference": {
+      "field_semantic_class": "descriptive",
+      "interpretation": "schema-level observation only; do not use as a school quality score or model feature",
+      "school_availability_class_counts": {
+        "source_consistently_present": 4,
+        "source_heterogeneous_or_record_missing": 3
+      }
+    },
+    "school_id": {
+      "field_semantic_class": "identity_critical",
+      "interpretation": "schema-level observation only; do not use as a school quality score or model feature",
+      "school_availability_class_counts": {
+        "source_consistently_present": 7
+      }
+    },
+    "school_name": {
+      "field_semantic_class": "identity_critical",
+      "interpretation": "schema-level observation only; do not use as a school quality score or model feature",
+      "school_availability_class_counts": {
+        "schema_absence_candidate": 1,
+        "source_consistently_present": 6
+      }
+    },
+    "semester": {
+      "field_semantic_class": "identity_critical",
+      "interpretation": "schema-level observation only; do not use as a school quality score or model feature",
+      "school_availability_class_counts": {
+        "source_consistently_present": 7
+      }
+    },
+    "source_record_status": {
+      "field_semantic_class": "unclassified",
+      "interpretation": "schema-level observation only; do not use as a school quality score or model feature",
+      "school_availability_class_counts": {
+        "source_consistently_present": 7
+      }
+    },
+    "structured_id": {
+      "field_semantic_class": "unclassified",
+      "interpretation": "schema-level observation only; do not use as a school quality score or model feature",
+      "school_availability_class_counts": {
+        "source_consistently_present": 7
+      }
+    },
+    "syllabus_fields": {
+      "field_semantic_class": "unclassified",
+      "interpretation": "schema-level observation only; do not use as a school quality score or model feature",
+      "school_availability_class_counts": {
+        "source_consistently_present": 7
+      }
+    },
+    "target_program": {
+      "field_semantic_class": "conditional",
+      "interpretation": "schema-level observation only; do not use as a school quality score or model feature",
+      "school_availability_class_counts": {
+        "schema_absence_candidate": 5,
+        "source_consistently_present": 2
+      }
+    },
+    "teacher": {
+      "field_semantic_class": "descriptive",
+      "interpretation": "schema-level observation only; do not use as a school quality score or model feature",
+      "school_availability_class_counts": {
+        "schema_absence_candidate": 1,
+        "source_consistently_present": 6
+      }
+    },
+    "textbook": {
+      "field_semantic_class": "descriptive",
+      "interpretation": "schema-level observation only; do not use as a school quality score or model feature",
+      "school_availability_class_counts": {
+        "schema_absence_candidate": 1,
+        "source_consistently_present": 4,
+        "source_heterogeneous_or_record_missing": 2
+      }
+    }
+  }
+}
