@@ -80,6 +80,23 @@ def test_structured_content_candidate_audit() -> None:
     assert len(provenance_lines) == 600
 
 
+def test_candidate_text_chunk_pilot() -> None:
+    """Validate chunk pilot lanes / 驗證 chunk pilot 分層。"""
+    artifact_dir = ROOT / "experiments" / "structured_content_600_candidate_v1" / "text_chunk_pilot"
+    report = json.loads((artifact_dir / "candidate_text_chunk_pilot_report.json").read_text(encoding="utf-8"))
+    chunk_lines = (artifact_dir / "candidate_chunk_manifest.jsonl").read_text(encoding="utf-8").splitlines()
+
+    assert report["record_count"] == 600
+    assert report["record_lane_counts"]["primary_content_bearing"] == 520
+    assert report["record_lane_counts"]["partial_sensitivity"] == 80
+    assert report["chunk_count"] == 2661
+    assert report["chunk_lane_counts"]["primary_content_bearing"] == 2429
+    assert report["chunk_lane_counts"]["partial_sensitivity"] == 232
+    assert len(chunk_lines) == 2661
+    assert report["embedding_executed"] is False
+    assert report["promotion_status"] == "blocked"
+
+
 def test_phase1_audit_artifacts() -> None:
     """Validate Phase 1 audit outputs / 驗證 Phase 1 審計輸出。"""
     artifact_dir = ROOT / "experiments/phase1_audit_v1"

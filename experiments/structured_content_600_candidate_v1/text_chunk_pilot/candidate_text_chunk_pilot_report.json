@@ -1,0 +1,34 @@
+{
+  "char_count": {
+    "max": 4935,
+    "mean": 339.23,
+    "min": 10
+  },
+  "chunk_count": 2661,
+  "chunk_lane_counts": {
+    "partial_sensitivity": 232,
+    "primary_content_bearing": 2429
+  },
+  "embedding_executed": false,
+  "human_adjudicated": false,
+  "pilot_version": "candidate-text-chunking-v1",
+  "promotion_status": "blocked",
+  "record_count": 600,
+  "record_lane_counts": {
+    "partial_sensitivity": 80,
+    "primary_content_bearing": 520
+  },
+  "section_counts": {
+    "assessment": 347,
+    "course_description": 497,
+    "document": 41,
+    "objectives": 379,
+    "outline": 529,
+    "prerequisite": 108,
+    "reference": 449,
+    "textbook": 311
+  },
+  "source_commit": "6454e22c2ad00087d62481171352738eb3396bad",
+  "source_path": "output/unified_dataset/round26_20261004/structured_content_600.json",
+  "source_text_written_to_experiment_repo": false
+}
