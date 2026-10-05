@@ -1,0 +1,39 @@
+{
+  "cause_candidate_counts": {
+    "cause_unresolved": 1235,
+    "other_causes_not_excluded": 1772,
+    "source_not_published_or_not_available_or_unresolved": 32,
+    "structural_schema_candidate": 1772
+  },
+  "experiment": "phase1_1b_multi_cause_missingness_audit",
+  "field_missingness_event_counts": {
+    "assessment": 254,
+    "course_code": 4,
+    "course_description": 103,
+    "department": 191,
+    "objectives": 221,
+    "official_url": 32,
+    "outline": 71,
+    "prerequisite": 492,
+    "provenance_status": 568,
+    "reference": 154,
+    "school_name": 23,
+    "target_program": 573,
+    "teacher": 32,
+    "textbook": 289
+  },
+  "missingness_event_count": 3007,
+  "policy": {
+    "cause_inference_is_advisory": true,
+    "direct_source_check_required": true,
+    "imputation_performed": false,
+    "missingness_as_model_feature": false,
+    "null_is_not_treated_as_content_absence": true,
+    "school_quality_ranking": false,
+    "school_schema_is_only_one_candidate_cause": true
+  },
+  "record_count": 600,
+  "release_status": "blocked_pending_cause_resolution",
+  "source_commit": "6454e22c2ad00087d62481171352738eb3396bad",
+  "source_path": "output/unified_dataset/round26_20261004/structured_content_600.json"
+}

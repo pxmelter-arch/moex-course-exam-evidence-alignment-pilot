@@ -113,6 +113,23 @@ def test_school_specific_schema_profile() -> None:
     assert profile["missingness_policy"]["school_quality_ranking_performed"] is False
 
 
+def test_multi_cause_missingness_audit() -> None:
+    """Validate conservative missingness causes / 驗證多原因缺失審計。"""
+    artifact_dir = ROOT / "experiments/phase1_1b_missingness_causes_v1"
+    report = json.loads((artifact_dir / "missingness_cause_report.json").read_text(encoding="utf-8"))
+    queue_lines = (artifact_dir / "missingness_cause_review_queue.jsonl").read_text(encoding="utf-8").splitlines()
+
+    assert report["record_count"] == 600
+    assert report["missingness_event_count"] == 3007
+    assert report["cause_candidate_counts"]["structural_schema_candidate"] == 1772
+    assert report["cause_candidate_counts"]["cause_unresolved"] == 1235
+    assert report["cause_candidate_counts"]["source_not_published_or_not_available_or_unresolved"] == 32
+    assert len(queue_lines) == 3007
+    assert report["policy"]["school_schema_is_only_one_candidate_cause"] is True
+    assert report["policy"]["imputation_performed"] is False
+    assert report["release_status"] == "blocked_pending_cause_resolution"
+
+
 def test_phase1_audit_artifacts() -> None:
     """Validate Phase 1 audit outputs / 驗證 Phase 1 審計輸出。"""
     artifact_dir = ROOT / "experiments/phase1_audit_v1"
