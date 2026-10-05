@@ -1,0 +1,51 @@
+{
+  "experiment": "phase1_2_exam_outline_catalog_input_freeze_v1",
+  "status": "pass",
+  "formal_course_input": {
+    "repository": "caperspeert-blip/moex-course-exam-alignment",
+    "commit": "1f2a2e635d61e01b5788a3c8c5b66adeb5c7e9db",
+    "path": "output/dataset/round26_formal_dataset_2026-10-02.json",
+    "record_count": 176,
+    "sha256": "98ebd092fb7efb53dfab97e33cfffc0864b1812f3ef620ef02b37a6c3944c4f0",
+    "promotion_status": "formal_unchanged"
+  },
+  "priority5_acquisition_input": {
+    "repository": "caperspeert-blip/moex-course-exam-alignment",
+    "commit": "1f2a2e635d61e01b5788a3c8c5b66adeb5c7e9db",
+    "path": "output/acquisition/round26_20261005_priority5_validation.json",
+    "candidate_rows": 880,
+    "records": 532,
+    "content_or_detail": 373,
+    "raw_hash_verified": 446,
+    "raw_missing": 0,
+    "hash_mismatch": 0,
+    "formal_promotions": 0,
+    "promotion_status": "staged_not_formal"
+  },
+  "exam_outline_catalog_input": {
+    "repository": "caperspeert-blip/moex-course-exam-alignment",
+    "branch": "add-exam-outline-catalog",
+    "commit": "4cb1b5a7155a052450354cdff2e7e00a66728b89",
+    "path": "data/raw/exam_outlines/exam_outline_catalog/output/exam_outline_catalog.json",
+    "sha256": "aac8a330b6bcc6ee78118a46860e717bb1fdbd82a351f8cd1552357237b7996d",
+    "subject_count": 542,
+    "administrative_count": 202,
+    "technical_count": 328,
+    "shared_count": 12,
+    "outline_item_count": 14022,
+    "missing_applicable_exam_count": 15,
+    "source_page_provenance": true,
+    "normalization_status": "parsed_normalized_deduplicated",
+    "formal_alignment_status": "not_started",
+    "promotion_status": "catalog_only"
+  },
+  "scope_policy": {
+    "priority5_mixed_into_formal": false,
+    "exam_outline_subject_ids_generated": false,
+    "subject_mapping_modified": false,
+    "qdrant_ingest": false,
+    "human_adjudication": false,
+    "machine_output_is_truth": false,
+    "formal_promotion": "blocked_pending_identity_provenance_and_expert_review"
+  }
+}

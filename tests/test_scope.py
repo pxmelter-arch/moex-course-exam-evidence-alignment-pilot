@@ -130,6 +130,23 @@ def test_multi_cause_missingness_audit() -> None:
     assert report["release_status"] == "blocked_pending_cause_resolution"
 
 
+def test_exam_outline_catalog_input_freeze() -> None:
+    """Validate formal/staged/catalog separation / 驗證 formal、staged、catalog 分離。"""
+    artifact_dir = ROOT / "experiments/phase1_2_exam_outline_catalog_v1"
+    manifest = json.loads((artifact_dir / "exam_outline_input_manifest.json").read_text(encoding="utf-8"))
+
+    assert manifest["formal_course_input"]["record_count"] == 176
+    assert manifest["formal_course_input"]["promotion_status"] == "formal_unchanged"
+    assert manifest["priority5_acquisition_input"]["formal_promotions"] == 0
+    assert manifest["priority5_acquisition_input"]["promotion_status"] == "staged_not_formal"
+    assert manifest["exam_outline_catalog_input"]["subject_count"] == 542
+    assert manifest["exam_outline_catalog_input"]["outline_item_count"] == 14022
+    assert manifest["exam_outline_catalog_input"]["formal_alignment_status"] == "not_started"
+    assert manifest["scope_policy"]["priority5_mixed_into_formal"] is False
+    assert manifest["scope_policy"]["qdrant_ingest"] is False
+    assert manifest["scope_policy"]["formal_promotion"] == "blocked_pending_identity_provenance_and_expert_review"
+
+
 def test_phase1_audit_artifacts() -> None:
     """Validate Phase 1 audit outputs / 驗證 Phase 1 審計輸出。"""
     artifact_dir = ROOT / "experiments/phase1_audit_v1"
