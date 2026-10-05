@@ -165,6 +165,27 @@ def test_phase2_1_course_outline_retrieval() -> None:
     assert report["promotion_status"] == "blocked"
 
 
+def test_phase2_2_identity_alias_audit() -> None:
+    """Validate identity and alias audit / 驗證 identity 與 alias audit。"""
+    artifact_dir = ROOT / "experiments/phase2_2_identity_alias_audit_v1"
+    report = json.loads((artifact_dir / "audit_report.json").read_text(encoding="utf-8"))
+    identity_lines = (artifact_dir / "outline_identity_manifest.jsonl").read_text(encoding="utf-8").splitlines()
+    duplicate_groups = json.loads((artifact_dir / "duplicate_subject_groups.json").read_text(encoding="utf-8"))
+    review_lines = (artifact_dir / "candidate_review_queue.jsonl").read_text(encoding="utf-8").splitlines()
+    alias_lines = (artifact_dir / "course_title_alias_candidates.jsonl").read_text(encoding="utf-8").splitlines()
+
+    assert report["outline_record_id_count"] == 542
+    assert report["duplicate_subject_name_group_count"] == 36
+    assert report["candidate_review_counts"] == {"ambiguous": 35, "exact": 11, "weak": 130}
+    assert report["alias_candidate_count"] == 151
+    assert len(identity_lines) == 542
+    assert len(duplicate_groups) == 36
+    assert len(review_lines) == 176
+    assert len(alias_lines) == 151
+    assert report["department_scoring"] == "advisory_only"
+    assert report["promotion_status"] == "blocked"
+
+
 def test_phase1_audit_artifacts() -> None:
     """Validate Phase 1 audit outputs / 驗證 Phase 1 審計輸出。"""
     artifact_dir = ROOT / "experiments/phase1_audit_v1"

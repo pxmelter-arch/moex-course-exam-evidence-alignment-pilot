@@ -1,0 +1,2672 @@
+[
+  {
+    "normalized_subject_name": "交通工程",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "交通工程"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "交通技術"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "063510a4f943f2c0",
+        "outline_record_id": "OUT-36cc47af62aab3fffbbb",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 81,
+            "page_start": 80
+          }
+        ],
+        "subject_name": "交通工程",
+        "type": [
+          "技術"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "交通技術"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "交通技術"
+            ],
+            "exam_name": "特種考試地方政府公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "交通技術"
+            ],
+            "exam_name": "特種考試離島地區公務人員考試三等考試"
+          }
+        ],
+        "content_signature": "2bc474969a0e1b7e",
+        "outline_record_id": "OUT-b1df57671857fcd2c427",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 361,
+            "page_start": 361
+          }
+        ],
+        "subject_name": "交通工程",
+        "type": [
+          "技術"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "作物學",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "作物學"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "農業技術"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "c6643c2fc56c8968",
+        "outline_record_id": "OUT-7022902536f247b4d4e4",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 102,
+            "page_start": 102
+          }
+        ],
+        "subject_name": "作物學",
+        "type": [
+          "技術"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "農業技術"
+            ],
+            "exam_name": "特種考試離島地區公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "農業技術"
+            ],
+            "exam_name": "公務人員特種考試原住民族考試三等考試"
+          }
+        ],
+        "content_signature": "aef888f15f16acdf",
+        "outline_record_id": "OUT-a4935232999cb3ceb390",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 393,
+            "page_start": 392
+          }
+        ],
+        "subject_name": "作物學",
+        "type": [
+          "技術"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "僑務行政",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "僑務行政"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "僑務行政"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "9e81ff2e3e2bd9d4",
+        "outline_record_id": "OUT-40001bb121891e3f1a10",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 252,
+            "page_start": 252
+          }
+        ],
+        "subject_name": "僑務行政",
+        "type": [
+          "行政"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "僑務行政"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          }
+        ],
+        "content_signature": "9c5144f08072d5ce",
+        "outline_record_id": "OUT-58a9ba285111893b8596",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 279,
+            "page_start": 279
+          }
+        ],
+        "subject_name": "僑務行政",
+        "type": [
+          "行政"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "公共政策",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "公共政策"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "一般行政"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "一般行政"
+            ],
+            "exam_name": "特種考試地方政府公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "一般行政"
+            ],
+            "exam_name": "特種考試離島地區公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "一般行政"
+            ],
+            "exam_name": "公務人員特種考試身心障礙人員考試三等考試"
+          },
+          {
+            "categories": [
+              "一般行政"
+            ],
+            "exam_name": "特種考試退除役軍人轉任公務人員考試三等考試"
+          }
+        ],
+        "content_signature": "63068c6c32486b4e",
+        "outline_record_id": "OUT-b9d1069e764440b2e98f",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 64,
+            "page_start": 64
+          }
+        ],
+        "subject_name": "公共政策",
+        "type": [
+          "行政"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "一般行政"
+            ],
+            "exam_name": "公務人員特種考試原住民族考試三等考試"
+          }
+        ],
+        "content_signature": "d6a8471614e17f49",
+        "outline_record_id": "OUT-f99ad76b0d5bf6145faa",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 226,
+            "page_start": 226
+          }
+        ],
+        "subject_name": "公共政策",
+        "type": [
+          "行政"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "公共衛生學",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "公共衛生學"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "衛生技術"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "53f6a8ba8bd006f6",
+        "outline_record_id": "OUT-98c4d73052dfa0effc13",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 87,
+            "page_start": 87
+          }
+        ],
+        "subject_name": "公共衛生學",
+        "type": [
+          "技術"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "衛生技術"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "衛生技術"
+            ],
+            "exam_name": "特種考試地方政府公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "衛生技術"
+            ],
+            "exam_name": "特種考試離島地區公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "衛生技術"
+            ],
+            "exam_name": "公務人員特種考試身心障礙人員考試三等考試"
+          }
+        ],
+        "content_signature": "3eb4fc0f4ce3a721",
+        "outline_record_id": "OUT-5c09543ef4a524d8ea15",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 409,
+            "page_start": 409
+          }
+        ],
+        "subject_name": "公共衛生學",
+        "type": [
+          "技術"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "刑法與刑事訴訟法",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "刑法與刑事訴訟法"
+    ],
+    "variant_count": 3,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "警察行政",
+              "安全保防",
+              "廉政"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          },
+          {
+            "categories": [
+              "法制"
+            ],
+            "exam_name": "公務人員特種考試原住民族考試三等考試"
+          },
+          {
+            "categories": [
+              "行政執行官",
+              "檢察事務官財經實務組",
+              "檢察事務官電子資訊組",
+              "檢察事務官"
+            ],
+            "exam_name": "公務人員特種考試司法人員考試三等考試"
+          },
+          {
+            "categories": [
+              "調查工作組"
+            ],
+            "exam_name": "營繕工程組公務人員特種考試法務部調查局調查人員考試三等考試"
+          }
+        ],
+        "content_signature": "1eb33481241e50d3",
+        "outline_record_id": "OUT-338dd6d6f76b7ae2225f",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 134,
+            "page_start": 132
+          }
+        ],
+        "subject_name": "刑法與刑事訴訟法",
+        "type": [
+          "行政"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "法律廉政"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "法律廉政"
+            ],
+            "exam_name": "特種考試地方政府公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "法律廉政"
+            ],
+            "exam_name": "特種考試離島地區公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "法律廉政"
+            ],
+            "exam_name": "特種考試退除役軍人轉任公務人員考試三等考試"
+          }
+        ],
+        "content_signature": "b057fba4baf1cbe6",
+        "outline_record_id": "OUT-017e405fd34dde2029a1",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 302,
+            "page_start": 300
+          }
+        ],
+        "subject_name": "刑法與刑事訴訟法",
+        "type": [
+          "行政"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "法制"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "法制"
+            ],
+            "exam_name": "特種考試地方政府公務人員考試三等考試"
+          }
+        ],
+        "content_signature": "18cf8736ad79d912",
+        "outline_record_id": "OUT-7ce9cf6a1059bb554862",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 341,
+            "page_start": 339
+          }
+        ],
+        "subject_name": "刑法與刑事訴訟法",
+        "type": [
+          "行政"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "勞工行政與勞工立法",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "勞工行政與勞工立法"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "勞工行政"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "075ab02caa4dacf7",
+        "outline_record_id": "OUT-23c563228640a904b8d5",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 179,
+            "page_start": 179
+          }
+        ],
+        "subject_name": "勞工行政與勞工立法",
+        "type": [
+          "行政"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "勞工行政"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "勞工行政"
+            ],
+            "exam_name": "特種考試地方政府公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "勞工行政"
+            ],
+            "exam_name": "特種考試離島地區公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "勞工行政"
+            ],
+            "exam_name": "公務人員特種考試身心障礙人員考試三等考試"
+          },
+          {
+            "categories": [
+              "勞工行政"
+            ],
+            "exam_name": "特種考試退除役軍人轉任公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "勞工行政"
+            ],
+            "exam_name": "公務人員特種考試原住民族考試三等考試"
+          }
+        ],
+        "content_signature": "65346de760349f2c",
+        "outline_record_id": "OUT-4483e411d66907364c32",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 282,
+            "page_start": 281
+          }
+        ],
+        "subject_name": "勞工行政與勞工立法",
+        "type": [
+          "行政"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "勞資關係",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "勞資關係"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "勞工行政"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "f5f557cca36a63a7",
+        "outline_record_id": "OUT-1d71c89387cfe477c606",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 177,
+            "page_start": 177
+          }
+        ],
+        "subject_name": "勞資關係",
+        "type": [
+          "行政"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "勞工行政"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "勞工行政"
+            ],
+            "exam_name": "特種考試地方政府公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "勞工行政"
+            ],
+            "exam_name": "特種考試離島地區公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "勞工行政"
+            ],
+            "exam_name": "公務人員特種考試身心障礙人員考試三等考試"
+          },
+          {
+            "categories": [
+              "勞工行政"
+            ],
+            "exam_name": "特種考試退除役軍人轉任公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "勞工行政"
+            ],
+            "exam_name": "公務人員特種考試原住民族考試三等考試"
+          }
+        ],
+        "content_signature": "42544673be532dae",
+        "outline_record_id": "OUT-c3194d57375e0625b75f",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 280,
+            "page_start": 280
+          }
+        ],
+        "subject_name": "勞資關係",
+        "type": [
+          "行政"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "史學方法論",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "史學方法論"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "史料編纂"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "e8755a656465340e",
+        "outline_record_id": "OUT-c8199b0dba3ed2a9c336",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 249,
+            "page_start": 249
+          }
+        ],
+        "subject_name": "史學方法論",
+        "type": [
+          "行政"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "史料編纂"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          }
+        ],
+        "content_signature": "68e81bfef7382ef3",
+        "outline_record_id": "OUT-7342bf6990fad082494c",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 273,
+            "page_start": 273
+          }
+        ],
+        "subject_name": "史學方法論",
+        "type": [
+          "行政"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "國際關係",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "國際關係"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "外交事務",
+              "僑務行政"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          },
+          {
+            "categories": [
+              "國際組"
+            ],
+            "exam_name": "公務人員特種考試國家安全局國家安全情報人員考試三等考試"
+          }
+        ],
+        "content_signature": "9fd228e91922d75d",
+        "outline_record_id": "OUT-0ecddfdf3a5938655bf7",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 251,
+            "page_start": 251
+          }
+        ],
+        "subject_name": "國際關係",
+        "type": [
+          "行政"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "僑務行政"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          }
+        ],
+        "content_signature": "02f8cd42f7b8c6fb",
+        "outline_record_id": "OUT-36d0bd2209c3ef23ee5c",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 278,
+            "page_start": 278
+          }
+        ],
+        "subject_name": "國際關係",
+        "type": [
+          "行政"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "土壤力學",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "土壤力學"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "土木工程"
+            ],
+            "exam_name": "公務人員特種考試原住民族考試三等考試"
+          }
+        ],
+        "content_signature": "927c0d9ff261e370",
+        "outline_record_id": "OUT-3cae1ff7c50442557523",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 323,
+            "page_start": 323
+          }
+        ],
+        "subject_name": "土壤力學",
+        "type": [
+          "技術"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "水利工程"
+            ],
+            "exam_name": "公務人員特種考試身心障礙人員考試三等考試"
+          }
+        ],
+        "content_signature": "89eecc212b9b30d4",
+        "outline_record_id": "OUT-04cae3df8bf330c6dc91",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 329,
+            "page_start": 329
+          }
+        ],
+        "subject_name": "土壤力學",
+        "type": [
+          "技術"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "微生物學概論",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "微生物學概論"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "農畜水產品檢驗"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "0f536826d53ff9fc",
+        "outline_record_id": "OUT-e7da0e98bb3e8693a6bd",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 185,
+            "page_start": 185
+          }
+        ],
+        "subject_name": "微生物學概論",
+        "type": [
+          "技術"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "農畜水產品檢驗"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          }
+        ],
+        "content_signature": "bb5a207340c821e4",
+        "outline_record_id": "OUT-5cb02bcebb46df101313",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 396,
+            "page_start": 396
+          }
+        ],
+        "subject_name": "微生物學概論",
+        "type": [
+          "技術"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "政府會計",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "政府會計"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "會計",
+              "審計"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "a219474377045621",
+        "outline_record_id": "OUT-fdc948aa6e4a5e1a37c0",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 49,
+            "page_start": 49
+          }
+        ],
+        "subject_name": "政府會計",
+        "type": [
+          "行政"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "會計"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "會計"
+            ],
+            "exam_name": "特種考試地方政府公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "會計"
+            ],
+            "exam_name": "特種考試離島地區公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "關稅會計"
+            ],
+            "exam_name": "公務人員特種考試關務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "會計"
+            ],
+            "exam_name": "特種考試退除役軍人轉任公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "會計"
+            ],
+            "exam_name": "公務人員特種考試原住民族考試三等考試"
+          },
+          {
+            "categories": [
+              "會計"
+            ],
+            "exam_name": "公務人員特種考試身心障礙人員考試三等考試"
+          }
+        ],
+        "content_signature": "5e9cfbbcf7cbc460",
+        "outline_record_id": "OUT-ea58734ca3dec65dd3fb",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 293,
+            "page_start": 293
+          }
+        ],
+        "subject_name": "政府會計",
+        "type": [
+          "行政"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "教育哲學與比較教育",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "教育哲學與比較教育"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "國際文教行政"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          }
+        ],
+        "content_signature": "27b6527212975390",
+        "outline_record_id": "OUT-5a1c78196dccf6548795",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 288,
+            "page_start": 287
+          }
+        ],
+        "subject_name": "教育哲學與比較教育",
+        "type": [
+          "行政"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "教育行政"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "教育行政"
+            ],
+            "exam_name": "特種考試地方政府公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "教育行政"
+            ],
+            "exam_name": "特種考試離島地區公務人員考試三等考試"
+          }
+        ],
+        "content_signature": "12c67c7858da61cf",
+        "outline_record_id": "OUT-df598a6cbd38e7335339",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 326,
+            "page_start": 324
+          }
+        ],
+        "subject_name": "教育哲學與比較教育",
+        "type": [
+          "行政"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "森林經營學",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "森林經營學"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "林業技術"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "050a214f01f52235",
+        "outline_record_id": "OUT-815c96fcfc67fa87991c",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 31,
+            "page_start": 31
+          }
+        ],
+        "subject_name": "森林經營學",
+        "type": [
+          "技術"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "林業技術"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "林業技術"
+            ],
+            "exam_name": "特種考試地方政府公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "林業技術"
+            ],
+            "exam_name": "特種考試離島地區公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "林業技術"
+            ],
+            "exam_name": "公務人員特種考試原住民族考試三等考試"
+          },
+          {
+            "categories": [
+              "林業技術"
+            ],
+            "exam_name": "公務人員特種考試身心障礙人員考試三等考試"
+          }
+        ],
+        "content_signature": "af869a885a90dc0e",
+        "outline_record_id": "OUT-3ba0e22952b42cd22437",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 398,
+            "page_start": 398
+          }
+        ],
+        "subject_name": "森林經營學",
+        "type": [
+          "技術"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "水產概論",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "水產概論"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "漁業行政",
+              "水產利用"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "水產技術"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "614175d491d8812a",
+        "outline_record_id": "OUT-7180c8077a382ba07a7e",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 191,
+            "page_start": 190
+          }
+        ],
+        "subject_name": "水產概論",
+        "type": [
+          "行政"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "漁業行政"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "水產技術"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "614175d491d8812a",
+        "outline_record_id": "OUT-5c6ef1d5b5ad9db45345",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 166,
+            "page_start": 165
+          }
+        ],
+        "subject_name": "水產概論",
+        "type": [
+          "技術"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "水產養殖",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "水產養殖"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "水產技術"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "6cfa8b15ca0dadd1",
+        "outline_record_id": "OUT-d14714d5dcd009438efc",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 168,
+            "page_start": 168
+          }
+        ],
+        "subject_name": "水產養殖",
+        "type": [
+          "技術"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "養殖技術"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "養殖技術"
+            ],
+            "exam_name": "特種考試地方政府公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "養殖技術"
+            ],
+            "exam_name": "特種考試離島地區公務人員考試三等考試"
+          }
+        ],
+        "content_signature": "2a1255bab96878cc",
+        "outline_record_id": "OUT-e07f8d58a76f6f9d1ecc",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 401,
+            "page_start": 401
+          }
+        ],
+        "subject_name": "水產養殖",
+        "type": [
+          "技術"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "海洋生態學",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "海洋生態學"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "水產技術"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "d691a79848415d2a",
+        "outline_record_id": "OUT-a7c7d81010eeea732c4f",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 245,
+            "page_start": 245
+          }
+        ],
+        "subject_name": "海洋生態學",
+        "type": [
+          "技術"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "海洋技術"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          }
+        ],
+        "content_signature": "a14bf155b1743980",
+        "outline_record_id": "OUT-1729230fc5c7ba8cc24a",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 321,
+            "page_start": 321
+          }
+        ],
+        "subject_name": "海洋生態學",
+        "type": [
+          "技術"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "消防法規",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "消防法規"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "消防技術"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "消防與災害防救",
+              "消防技術"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "c3e7d64cd8a874ff",
+        "outline_record_id": "OUT-4bd72d5ebaee6eeb2b81",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 154,
+            "page_start": 153
+          }
+        ],
+        "subject_name": "消防法規",
+        "type": [
+          "行政"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "消防技術"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "消防消防與災害防救",
+              "消防技術"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "c3e7d64cd8a874ff",
+        "outline_record_id": "OUT-6904d6d1de2317b1512f",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 68,
+            "page_start": 67
+          }
+        ],
+        "subject_name": "消防法規",
+        "type": [
+          "技術"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "火災學",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "火災學"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "消防技術"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "消防與災害防救",
+              "消防技術"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "286378c49bb488d5",
+        "outline_record_id": "OUT-62d066775bf9e1d11f58",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 156,
+            "page_start": 155
+          }
+        ],
+        "subject_name": "火災學",
+        "type": [
+          "行政"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "消防技術"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "消防與災害防救",
+              "消防技術"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "8deb5513456f54a6",
+        "outline_record_id": "OUT-a714ed91af4d0ba2b765",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 70,
+            "page_start": 69
+          }
+        ],
+        "subject_name": "火災學",
+        "type": [
+          "技術"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "環境規劃與管理",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "環境規劃與管理"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "環保行政"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "環保行政"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          },
+          {
+            "categories": [
+              "環保行政"
+            ],
+            "exam_name": "特種考試地方政府公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "環保行政"
+            ],
+            "exam_name": "特種考試離島地區公務人員考試三等考試"
+          }
+        ],
+        "content_signature": "efce18645a8628db",
+        "outline_record_id": "OUT-2eae5325b41a6d5b165b",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 163,
+            "page_start": 163
+          },
+          {
+            "file": "技術",
+            "page_end": 114,
+            "page_start": 114
+          }
+        ],
+        "subject_name": "環境規劃與管理",
+        "type": [
+          "行政",
+          "技術"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "環保技術"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "環保技術"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          },
+          {
+            "categories": [
+              "環保技術"
+            ],
+            "exam_name": "特種考試地方政府公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "環保技術"
+            ],
+            "exam_name": "特種考試離島地區公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "環保技術"
+            ],
+            "exam_name": "公務人員特種考試原住民族考試三等考試"
+          },
+          {
+            "categories": [
+              "環保技術"
+            ],
+            "exam_name": "公務人員特種考試身心障礙人員考試三等考試"
+          }
+        ],
+        "content_signature": "98cb75a629a80436",
+        "outline_record_id": "OUT-e6b4b6e08eea6a70f2a0",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 115,
+            "page_start": 115
+          }
+        ],
+        "subject_name": "環境規劃與管理",
+        "type": [
+          "技術"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "生物技術學",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "生物技術學"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "生物技術"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "fd5504d9b49f0d3e",
+        "outline_record_id": "OUT-5e1f1c9358b00f6332df",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 86,
+            "page_start": 86
+          }
+        ],
+        "subject_name": "生物技術學",
+        "type": [
+          "技術"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "生物技術"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "生物技術"
+            ],
+            "exam_name": "公務人員特種考試身心障礙人員考試三等考試"
+          }
+        ],
+        "content_signature": "1b2e4005cc83bc05",
+        "outline_record_id": "OUT-0c8d0859c44d910e51f6",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 415,
+            "page_start": 415
+          }
+        ],
+        "subject_name": "生物技術學",
+        "type": [
+          "技術"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "生物材料學",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "生物材料學"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "醫學工程"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "6735c80bab029fc5",
+        "outline_record_id": "OUT-c980187844fbcb6e6fae",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 282,
+            "page_start": 282
+          }
+        ],
+        "subject_name": "生物材料學",
+        "type": [
+          "技術"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "醫學工程"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "醫學工程"
+            ],
+            "exam_name": "特種考試身心障礙人員考試三等考試"
+          }
+        ],
+        "content_signature": "19e2ec4e28ef89b4",
+        "outline_record_id": "OUT-4b74569aade7bcc9b172",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 314,
+            "page_start": 314
+          }
+        ],
+        "subject_name": "生物材料學",
+        "type": [
+          "技術"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "社會福利政策與法規",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "社會福利政策與法規"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "社會工作"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "53c8196596c957d4",
+        "outline_record_id": "OUT-299b652e4107038c7b76",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 44,
+            "page_start": 43
+          }
+        ],
+        "subject_name": "社會福利政策與法規",
+        "type": [
+          "行政"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "社會行政"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "社會行政"
+            ],
+            "exam_name": "特種考試地方政府公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "社會行政"
+            ],
+            "exam_name": "特種考試離島地區公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "社會行政"
+            ],
+            "exam_name": "公務人員特種考試原住民族考試三等考試"
+          },
+          {
+            "categories": [
+              "社會行政"
+            ],
+            "exam_name": "公務人員特種考試身心障礙人員考試三等考試"
+          }
+        ],
+        "content_signature": "9ed5e6f9d8487d94",
+        "outline_record_id": "OUT-a9b56e5ae0834b87fd0d",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 321,
+            "page_start": 321
+          }
+        ],
+        "subject_name": "社會福利政策與法規",
+        "type": [
+          "行政"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "稅務法規",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "稅務法規"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "財稅行政"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "財稅行政"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          },
+          {
+            "categories": [
+              "財稅行政"
+            ],
+            "exam_name": "特種考試地方政府公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "財稅行政"
+            ],
+            "exam_name": "特種考試離島地區公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "財稅行政"
+            ],
+            "exam_name": "公務人員特種考試原住民族考試三等考試"
+          },
+          {
+            "categories": [
+              "財稅行政"
+            ],
+            "exam_name": "公務人員特種考試身心障礙人員考試三等考試"
+          },
+          {
+            "categories": [
+              "司法事務官財經事務組",
+              "檢察事務官財經實務組"
+            ],
+            "exam_name": "公務人員特種考試司法人員考試三等考試"
+          }
+        ],
+        "content_signature": "fe9141b9da118bdc",
+        "outline_record_id": "OUT-6b66aa47c65bf2150e85",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 31,
+            "page_start": 31
+          }
+        ],
+        "subject_name": "稅務法規",
+        "type": [
+          "行政"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "財稅法務"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          }
+        ],
+        "content_signature": "0bd773e051559ffc",
+        "outline_record_id": "OUT-851c2f628d8a60bd0d65",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 314,
+            "page_start": 314
+          }
+        ],
+        "subject_name": "稅務法規",
+        "type": [
+          "行政"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "統計學",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "統計學"
+    ],
+    "variant_count": 3,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "統計"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          },
+          {
+            "categories": [
+              "關稅統計"
+            ],
+            "exam_name": "公務人員特種考試關務人員考試三等考試"
+          }
+        ],
+        "content_signature": "ea2f6a8ce22d9110",
+        "outline_record_id": "OUT-db73be9b6bb17bcc4139",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 172,
+            "page_start": 171
+          }
+        ],
+        "subject_name": "統計學",
+        "type": [
+          "行政"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "經建行政",
+              "工業行政",
+              "農業行政"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "經建行政",
+              "工業行政"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          },
+          {
+            "categories": [
+              "經建行政",
+              "工業行政",
+              "農業行政"
+            ],
+            "exam_name": "特種考試地方政府公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "經建行政"
+            ],
+            "exam_name": "特種考試離島地區公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "經建行政"
+            ],
+            "exam_name": "公務人員特種考試身心障礙人員考試三等考試"
+          },
+          {
+            "categories": [
+              "經建行政"
+            ],
+            "exam_name": "公務人員特種考試原住民族考試三等考試"
+          }
+        ],
+        "content_signature": "2eac40cba34cf7dc",
+        "outline_record_id": "OUT-c66e7d585c6e4be8a402",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 201,
+            "page_start": 200
+          }
+        ],
+        "subject_name": "統計學",
+        "type": [
+          "行政"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "統計"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "統計"
+            ],
+            "exam_name": "特種考試地方政府公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "統計"
+            ],
+            "exam_name": "特種考試離島地區公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "統計"
+            ],
+            "exam_name": "公務人員特種考試身心障礙人員考試三等考試"
+          }
+        ],
+        "content_signature": "6922359ba408382e",
+        "outline_record_id": "OUT-29a2a377b1462f052319",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 297,
+            "page_start": 296
+          }
+        ],
+        "subject_name": "統計學",
+        "type": [
+          "行政"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "美學",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "美學"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "技藝"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "技藝"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "3b7347f6667f59c0",
+        "outline_record_id": "OUT-578fbfef016debd3938a",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 260,
+            "page_start": 260
+          }
+        ],
+        "subject_name": "美學",
+        "type": [
+          "行政"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "技藝",
+              "視聽製作"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "技藝"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "3b7347f6667f59c0",
+        "outline_record_id": "OUT-117cdde22c39a1418bfe",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 205,
+            "page_start": 205
+          }
+        ],
+        "subject_name": "美學",
+        "type": [
+          "技術"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "航行學",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "航行學"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "航空駕駛"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "d193c16d668e8583",
+        "outline_record_id": "OUT-d8f17cb41f6c6de8da98",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 284,
+            "page_start": 284
+          }
+        ],
+        "subject_name": "航行學",
+        "type": [
+          "技術"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "航空駕駛"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          }
+        ],
+        "content_signature": "6a61121bb4e397e6",
+        "outline_record_id": "OUT-992284663fc7979cc823",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 363,
+            "page_start": 363
+          }
+        ],
+        "subject_name": "航行學",
+        "type": [
+          "技術"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "藝術概論",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "藝術概論"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "技藝"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "文化行政"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "6fa57b1df80eb8a0",
+        "outline_record_id": "OUT-e9d2dda5e3e7871a8b4e",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 76,
+            "page_start": 76
+          }
+        ],
+        "subject_name": "藝術概論",
+        "type": [
+          "行政"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "文化行政"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "文化行政"
+            ],
+            "exam_name": "特種考試地方政府公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "文化行政"
+            ],
+            "exam_name": "特種考試離島地區公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "文化行政"
+            ],
+            "exam_name": "公務人員特種考試身心障礙人員考試三等考試"
+          }
+        ],
+        "content_signature": "4b0650e08258f796",
+        "outline_record_id": "OUT-510d4cb649a7ae62c35e",
+        "source": [
+          {
+            "file": "行政",
+            "page_end": 286,
+            "page_start": 285
+          }
+        ],
+        "subject_name": "藝術概論",
+        "type": [
+          "行政"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "藥事行政與法規",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "藥事行政與法規"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "藥事"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "454d573bb60cd08f",
+        "outline_record_id": "OUT-bf813d72237f72200024",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 227,
+            "page_start": 226
+          }
+        ],
+        "subject_name": "藥事行政與法規",
+        "type": [
+          "技術"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "藥事"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "藥事"
+            ],
+            "exam_name": "公務人員特種考試關務人員考試三等考試"
+          }
+        ],
+        "content_signature": "6819b06a3251bf70",
+        "outline_record_id": "OUT-1a489b014d522866e274",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 423,
+            "page_start": 422
+          }
+        ],
+        "subject_name": "藥事行政與法規",
+        "type": [
+          "技術"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "藥理學與藥物化學",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "藥理學與藥物化學"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "藥事"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "a119ca44d2828e9c",
+        "outline_record_id": "OUT-a9b7510a20c200405012",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 222,
+            "page_start": 221
+          }
+        ],
+        "subject_name": "藥理學與藥物化學",
+        "type": [
+          "技術"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "藥事"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "藥事"
+            ],
+            "exam_name": "公務人員特種考試關務人員考試三等考試"
+          }
+        ],
+        "content_signature": "9e6bea3c3f1f6c9f",
+        "outline_record_id": "OUT-c4d16913499ec07f3ecb",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 417,
+            "page_start": 416
+          }
+        ],
+        "subject_name": "藥理學與藥物化學",
+        "type": [
+          "技術"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "資料結構",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "資料結構"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "資訊處理"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          },
+          {
+            "categories": [
+              "檢察事務官電子資訊組"
+            ],
+            "exam_name": "公務人員特種考試司法人員考試三等考試"
+          }
+        ],
+        "content_signature": "e1b0d1cf7d9089d4",
+        "outline_record_id": "OUT-80d710c8eac4098fd217",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 35,
+            "page_start": 35
+          }
+        ],
+        "subject_name": "資料結構",
+        "type": [
+          "技術"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "資訊處理"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "資訊處理"
+            ],
+            "exam_name": "特種考試地方政府公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "資訊處理"
+            ],
+            "exam_name": "特種考試離島地區公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "資訊處理"
+            ],
+            "exam_name": "公務人員特種考試關務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "資訊處理"
+            ],
+            "exam_name": "公務人員特種考試身心障礙人員考試三等考試"
+          },
+          {
+            "categories": [
+              "資訊處理"
+            ],
+            "exam_name": "特種考試退除役軍人轉任公務人員考試三等考試"
+          }
+        ],
+        "content_signature": "e0df333d5b0c2356",
+        "outline_record_id": "OUT-2a1ac02432ff3717e609",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 368,
+            "page_start": 368
+          }
+        ],
+        "subject_name": "資料結構",
+        "type": [
+          "技術"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "農畜水產品概論",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "農畜水產品概論"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "農畜水產品檢驗"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "fa5c62a6a93c8c27",
+        "outline_record_id": "OUT-33cfc33841af89b59fb0",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 188,
+            "page_start": 188
+          }
+        ],
+        "subject_name": "農畜水產品概論",
+        "type": [
+          "技術"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "農畜水產品檢驗"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          }
+        ],
+        "content_signature": "3447845bf07727cd",
+        "outline_record_id": "OUT-d7d41d21aff3a5f23152",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 395,
+            "page_start": 395
+          }
+        ],
+        "subject_name": "農畜水產品概論",
+        "type": [
+          "技術"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "醫學工程概論",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "醫學工程概論"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "醫學工程"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "406c6a94d4b9c3c3",
+        "outline_record_id": "OUT-643fe6518157092ef88e",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 279,
+            "page_start": 279
+          }
+        ],
+        "subject_name": "醫學工程概論",
+        "type": [
+          "技術"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "醫學工程"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "醫學工程"
+            ],
+            "exam_name": "特種考試身心障礙人員考試三等考試"
+          }
+        ],
+        "content_signature": "d2a963283a116101",
+        "outline_record_id": "OUT-f6648b5ca6d3c45bddc6",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 315,
+            "page_start": 315
+          }
+        ],
+        "subject_name": "醫學工程概論",
+        "type": [
+          "技術"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "食品分析與檢驗",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "食品分析與檢驗"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "衛生檢驗"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "8e510803af9a9933",
+        "outline_record_id": "OUT-1dbffd00af74546fa530",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 154,
+            "page_start": 154
+          }
+        ],
+        "subject_name": "食品分析與檢驗",
+        "type": [
+          "技術"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "食品衛生檢驗"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "食品衛生檢驗"
+            ],
+            "exam_name": "公務人員特種考試身心障礙人員考試三等考試"
+          },
+          {
+            "categories": [
+              "食品衛生檢驗"
+            ],
+            "exam_name": "特種考試地方政府公務人員考試三等考試"
+          }
+        ],
+        "content_signature": "aeb16ed5a653b121",
+        "outline_record_id": "OUT-11c23edac17426246f41",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 312,
+            "page_start": 312
+          }
+        ],
+        "subject_name": "食品分析與檢驗",
+        "type": [
+          "技術"
+        ]
+      }
+    ]
+  },
+  {
+    "normalized_subject_name": "食品微生物學",
+    "resolution_status": "review_required",
+    "subject_name_values": [
+      "食品微生物學"
+    ],
+    "variant_count": 2,
+    "variants": [
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "農產加工",
+              "水產利用"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "衛生檢驗"
+            ],
+            "exam_name": "公務人員升官等考試薦任升官等考試"
+          }
+        ],
+        "content_signature": "1a41845bf6daf386",
+        "outline_record_id": "OUT-e8fb95107b8c95b4d0b9",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 155,
+            "page_start": 155
+          }
+        ],
+        "subject_name": "食品微生物學",
+        "type": [
+          "技術"
+        ]
+      },
+      {
+        "applicable_exams": [
+          {
+            "categories": [
+              "食品衛生檢驗"
+            ],
+            "exam_name": "公務人員高等考試三級考試"
+          },
+          {
+            "categories": [
+              "食品衛生檢驗"
+            ],
+            "exam_name": "特種考試地方政府公務人員考試三等考試"
+          },
+          {
+            "categories": [
+              "食品衛生檢驗"
+            ],
+            "exam_name": "公務人員特種考試身心障礙人員考試三等考試"
+          }
+        ],
+        "content_signature": "fdee700235499a76",
+        "outline_record_id": "OUT-951a8f0e5ff167bf62f7",
+        "source": [
+          {
+            "file": "技術",
+            "page_end": 414,
+            "page_start": 414
+          }
+        ],
+        "subject_name": "食品微生物學",
+        "type": [
+          "技術"
+        ]
+      }
+    ]
+  }
+]

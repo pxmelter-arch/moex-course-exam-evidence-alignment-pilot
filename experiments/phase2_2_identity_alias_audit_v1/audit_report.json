@@ -1,0 +1,21 @@
+{
+  "alias_candidate_count": 151,
+  "candidate_review_counts": {
+    "ambiguous": 35,
+    "exact": 11,
+    "weak": 130
+  },
+  "department_scoring": "advisory_only",
+  "duplicate_subject_name_group_count": 36,
+  "duplicate_subject_name_group_expected": 36,
+  "experiment": "phase2_2_candidate_identity_alias_audit_v1",
+  "formal_alignment": "not_started",
+  "formal_record_count": 176,
+  "human_adjudication": "not_available",
+  "outline_record_count": 542,
+  "outline_record_id_count": 542,
+  "priority5_content_lane": "not_included_in_this_phase",
+  "promotion_status": "blocked",
+  "source_page_evidence_preserved": true,
+  "status": "pass"
+}
