@@ -250,6 +250,25 @@ raw_sha256
 - degree-level heterogeneity
 - syllabus content-bearing status
 
+本 Phase 的目的不是找出每個 null 的真實成因，也不是建立學校資料完整度排名。不同學校的 source schema 差異應由 source-native schema、canonical superset schema 與 field-level eligibility 表示；缺失本身不得被解讀為課程內容不存在、不同課程或負面 evidence。只有在 identity、provenance 或特定 downstream gate 受到影響時，才保留最低必要的 status 與 unresolved queue。
+
+### 1.1 Candidate structured-content overlay
+
+round26 `structured_content_600.json` 是 additive candidate overlay，不取代 176 筆 formal bounded input。`content_bearing` 與 `partial` 分開作 diagnostic lane；candidate 不得直接 promotion 到 default、formal exam alignment 或 evidence-grade runtime。
+
+### 1.2 下一步：source-aware canonical normalization
+
+下一步聚焦於：
+
+- source registry 與 source_schema_id
+- source-native field preservation
+- canonical field mapping / adapter
+- identity-critical normalization
+- provenance-critical gate
+- school/schema variation 下的可比較性
+
+missingness-cause audit 僅作輔助診斷；不擴張為本研究的主要工作。
+
 ### Phase 2：Subject and outline registry
 
 使用 GitHub repository 既有 registry，不重新編號：

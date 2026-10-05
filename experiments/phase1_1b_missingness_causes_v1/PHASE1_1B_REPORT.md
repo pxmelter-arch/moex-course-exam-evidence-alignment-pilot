@@ -1,8 +1,8 @@
 # Phase 1.1b Multi-Cause Missingness Audit
 
-## 實驗目的
+## 實驗定位
 
-不把所有 null 都歸因於學校 schema 差異。每個缺失事件保留多個可能原因、證據與不確定性，沒有直接證據時標記 `cause_unresolved`。
+本 audit 是輔助 diagnostic，不是本研究的主要工作，也不要求為每個缺失欄位找出唯一真實原因。它只用來避免在 identity、provenance 或 downstream eligibility 判斷時做出過度推論。
 
 ## 實際結果
 
