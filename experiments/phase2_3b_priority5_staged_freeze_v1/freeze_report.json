@@ -1,0 +1,34 @@
+{
+  "duplicate_within_staged_count": 54,
+  "experiment": "phase2_3b_priority5_staged_input_freeze_v1",
+  "formal_promotions": 0,
+  "overlap_with_primary_count": 302,
+  "primary_content_bearing_count": 520,
+  "promotion_status": "blocked",
+  "provenance_incomplete_count": 0,
+  "quarantine_count": 251,
+  "release_partition": "staged_experiment_only",
+  "retrieval_gate": "pass_for_373_staged_diagnostic_with_status_preservation",
+  "selection_rules": {
+    "SCH006": "content_status=content_bearing",
+    "SCH014": "content_signal=true",
+    "SCH022": "content_status=content_bearing",
+    "SCH026": "all official detail records"
+  },
+  "source_commit": "1f2a2e635d61e01b5788a3c8c5b66adeb5c7e9db",
+  "source_counts": {
+    "SCH006": 6,
+    "SCH014": 261,
+    "SCH022": 17,
+    "SCH026": 89
+  },
+  "source_paths": {
+    "SCH006": "output/fresh/live_20261005/SCH006_live_closeout.json",
+    "SCH014": "output/crawler_rebuild_2026-10-04/course_acquisition/sch014_ntu_1141_candidate_review.json",
+    "SCH022": "output/acquisition/round26_20261005_formal_retry5/structured.jsonl",
+    "SCH026": "output/acquisition/sch026_pu_114_bounded_acquisition.json",
+    "primary": "output/unified_dataset/round26_20261004/structured_content_600.json"
+  },
+  "staged_record_count": 373,
+  "status": "pass"
+}

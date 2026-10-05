@@ -203,6 +203,47 @@ def test_phase2_3a_primary_content_retrieval() -> None:
     assert report["promotion_status"] == "blocked"
 
 
+def test_phase2_3b_priority5_freeze() -> None:
+    """Validate 373-record staged freeze / 驗證 373 筆 staged freeze。"""
+    artifact_dir = ROOT / "experiments/phase2_3b_priority5_staged_freeze_v1"
+    report = json.loads((artifact_dir / "freeze_report.json").read_text(encoding="utf-8"))
+    manifest_lines = (artifact_dir / "priority5_staged_manifest.jsonl").read_text(encoding="utf-8").splitlines()
+    overlap = json.loads((artifact_dir / "overlap_audit.json").read_text(encoding="utf-8"))
+    duplicates = json.loads((artifact_dir / "duplicate_audit.json").read_text(encoding="utf-8"))
+
+    assert report["source_counts"] == {"SCH006": 6, "SCH014": 261, "SCH022": 17, "SCH026": 89}
+    assert report["staged_record_count"] == 373
+    assert report["overlap_with_primary_count"] == 302
+    assert report["duplicate_within_staged_count"] == 54
+    assert report["quarantine_count"] == 251
+    assert report["provenance_incomplete_count"] == 0
+    assert len(manifest_lines) == 373
+    assert len(overlap) == 302
+    assert len(duplicates) == 54
+    assert report["promotion_status"] == "blocked"
+
+
+def test_phase2_3b_priority5_retrieval_and_comparison() -> None:
+    """Validate staged retrieval and lane comparison / 驗證 staged retrieval。"""
+    retrieval_dir = ROOT / "experiments/phase2_3b_priority5_staged_retrieval_v1"
+    comparison_dir = ROOT / "experiments/phase2_3_lane_comparison_v1"
+    report = json.loads((retrieval_dir / "retrieval_report.json").read_text(encoding="utf-8"))
+    comparison = json.loads((comparison_dir / "lane_comparison.json").read_text(encoding="utf-8"))
+    result_lines = (retrieval_dir / "retrieval_results.jsonl").read_text(encoding="utf-8").splitlines()
+
+    assert report["staged_record_count"] == 373
+    assert report["outline_record_count"] == 542
+    assert report["methods"]["exact_title"]["top1_exact_subject"] == 79
+    assert report["methods"]["tfidf"]["top1_exact_subject"] == 70
+    assert report["methods"]["bm25"]["top1_exact_subject"] == 63
+    assert len(result_lines) == 373
+    assert comparison["primary"]["query_count"] == 520
+    assert comparison["staged"]["query_count"] == 373
+    assert comparison["staged"]["overlap_query_count"] == 302
+    assert comparison["staged"]["quarantine_query_count"] == 251
+    assert comparison["promotion_status"] == "blocked"
+
+
 def test_phase1_audit_artifacts() -> None:
     """Validate Phase 1 audit outputs / 驗證 Phase 1 審計輸出。"""
     artifact_dir = ROOT / "experiments/phase1_audit_v1"
