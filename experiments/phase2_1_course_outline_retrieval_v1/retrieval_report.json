@@ -1,0 +1,41 @@
+{
+  "candidate_only": true,
+  "experiment": "phase2_1_course_outline_lexical_retrieval_v1",
+  "formal_alignment": "not_started",
+  "formal_commit": "1f2a2e635d61e01b5788a3c8c5b66adeb5c7e9db",
+  "formal_path": "output/dataset/round26_formal_dataset_2026-10-02.json",
+  "formal_record_count": 176,
+  "human_adjudication": "not_available",
+  "interpretation": "Lexical candidate retrieval diagnostic; exact title match is not truth alignment.",
+  "methods": {
+    "bm25": {
+      "nonempty_top10": 176,
+      "queries": 176,
+      "top10_exact_subject": 25,
+      "top1_exact_subject": 18
+    },
+    "exact_title": {
+      "nonempty_top10": 27,
+      "queries": 176,
+      "top10_exact_subject": 27,
+      "top1_exact_subject": 27
+    },
+    "tfidf": {
+      "nonempty_top10": 176,
+      "queries": 176,
+      "top10_exact_subject": 25,
+      "top1_exact_subject": 25
+    }
+  },
+  "outline_commit": "4cb1b5a7155a052450354cdff2e7e00a66728b89",
+  "outline_path": "data/raw/exam_outlines/exam_outline_catalog/output/exam_outline_catalog.json",
+  "outline_record_count": 542,
+  "promotion_status": "blocked",
+  "query_fields": [
+    "course_title",
+    "department_name"
+  ],
+  "status": "pass",
+  "syllabus_full_text_available_in_formal_input": false,
+  "top_k": 10
+}

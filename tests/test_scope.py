@@ -147,6 +147,24 @@ def test_exam_outline_catalog_input_freeze() -> None:
     assert manifest["scope_policy"]["formal_promotion"] == "blocked_pending_identity_provenance_and_expert_review"
 
 
+def test_phase2_1_course_outline_retrieval() -> None:
+    """Validate lexical retrieval diagnostic / 驗證 lexical retrieval 診斷。"""
+    artifact_dir = ROOT / "experiments/phase2_1_course_outline_retrieval_v1"
+    report = json.loads((artifact_dir / "retrieval_report.json").read_text(encoding="utf-8"))
+    result_lines = (artifact_dir / "retrieval_results.jsonl").read_text(encoding="utf-8").splitlines()
+
+    assert report["formal_record_count"] == 176
+    assert report["outline_record_count"] == 542
+    assert report["top_k"] == 10
+    assert report["methods"]["exact_title"]["top1_exact_subject"] == 27
+    assert report["methods"]["tfidf"]["top1_exact_subject"] == 25
+    assert report["methods"]["bm25"]["top1_exact_subject"] == 18
+    assert len(result_lines) == 176
+    assert report["candidate_only"] is True
+    assert report["formal_alignment"] == "not_started"
+    assert report["promotion_status"] == "blocked"
+
+
 def test_phase1_audit_artifacts() -> None:
     """Validate Phase 1 audit outputs / 驗證 Phase 1 審計輸出。"""
     artifact_dir = ROOT / "experiments/phase1_audit_v1"
