@@ -1,0 +1,30 @@
+{
+  "candidate_name": "structured_content_600_candidate_v1",
+  "content_lanes": {
+    "content_bearing": 520,
+    "partial": 80,
+    "zero_content_chars": 5
+  },
+  "formal_exam_alignment": false,
+  "generated_at_utc": "2026-10-05T01:03:00.048646+00:00",
+  "integrity_lanes": {
+    "hash_mismatch": 89,
+    "hash_verified": 511,
+    "official_url_missing": 32,
+    "provenance_status_null": 568
+  },
+  "method_policy": {
+    "candidate_does_not_replace_176_formal_scope": true,
+    "content_bearing_is_not_formal": true,
+    "human_adjudication_available": false,
+    "machine_output_is_truth": false
+  },
+  "promotion_status": "blocked",
+  "qdrant_ingest": false,
+  "record_count": 600,
+  "scope_status": "candidate_overlay",
+  "source_commit": "6454e22c2ad00087d62481171352738eb3396bad",
+  "source_file_sha256": "f0f6197c0eb33ceee03a9e2ff08d2e403f60e0609cdd263964a3542b57c9d2e0",
+  "source_path": "output/unified_dataset/round26_20261004/structured_content_600.json",
+  "source_repository": "caperspeert-blip/moex-course-exam-alignment"
+}

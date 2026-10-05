@@ -102,7 +102,20 @@ experiments/phase1_audit_v1/phase1_input_freeze_receipt.json
 
 Phase 1 不會覆蓋 source raw fields，也不會將 machine normalization 或 identity inference 當成人工 truth。
 
-## 執行驗證
+## 執行 structured-content candidate audit
+
+`structured_content_600.json` 是 additive candidate overlay，不取代 176 筆 formal input：
+
+```bash
+/home/aelix/.hermes/profiles/ml-expert/workspace/ml-expert-workspace/.venv/bin/python \\
+  scripts/audit_structured_content_candidate.py \\
+  --source-repo /tmp/moex-course-exam-alignment-inspect \\
+  --commit 6454e22c2ad00087d62481171352738eb3396bad \\
+  --output-dir experiments/structured_content_600_candidate_v1
+```
+
+目前 candidate 必須維持 `promotion_status=blocked`；`content_bearing` 與 `partial` 需分開作為 diagnostic lanes。
+
 
 ```bash
 /home/aelix/.hermes/profiles/ml-expert/workspace/ml-expert-workspace/.venv/bin/python scripts/validate_project.py

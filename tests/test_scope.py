@@ -61,6 +61,25 @@ def test_phase0_freeze_artifacts() -> None:
     assert report["claims"]["promotion_status"] == "blocked"
 
 
+def test_structured_content_candidate_audit() -> None:
+    """Validate candidate overlay gates / 驗證 structured candidate gate。"""
+    artifact_dir = ROOT / "experiments" / "structured_content_600_candidate_v1"
+    manifest = json.loads((artifact_dir / "candidate_input_manifest.json").read_text(encoding="utf-8"))
+    report = json.loads((artifact_dir / "candidate_status_report.json").read_text(encoding="utf-8"))
+    mismatch_lines = (artifact_dir / "hash_mismatch_quarantine.jsonl").read_text(encoding="utf-8").splitlines()
+    provenance_lines = (artifact_dir / "provenance_gap_review_queue.jsonl").read_text(encoding="utf-8").splitlines()
+
+    assert manifest["candidate_name"] == "structured_content_600_candidate_v1"
+    assert manifest["record_count"] == 600
+    assert manifest["promotion_status"] == "blocked"
+    assert manifest["content_lanes"]["content_bearing"] == 520
+    assert manifest["content_lanes"]["partial"] == 80
+    assert manifest["integrity_lanes"]["hash_mismatch"] == 89
+    assert report["provenance_gap_count"] == 600
+    assert len(mismatch_lines) == 89
+    assert len(provenance_lines) == 600
+
+
 def test_phase1_audit_artifacts() -> None:
     """Validate Phase 1 audit outputs / 驗證 Phase 1 審計輸出。"""
     artifact_dir = ROOT / "experiments/phase1_audit_v1"

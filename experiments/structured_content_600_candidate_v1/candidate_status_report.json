@@ -1,0 +1,149 @@
+{
+  "candidate_name": "structured_content_600_candidate_v1",
+  "content_status_counts": {
+    "content_bearing": 520,
+    "partial": 80
+  },
+  "field_count": 29,
+  "field_presence": {
+    "academic_year": {
+      "empty_count": 0,
+      "nonempty_count": 600
+    },
+    "assessment": {
+      "empty_count": 254,
+      "nonempty_count": 346
+    },
+    "content_chars": {
+      "empty_count": 0,
+      "nonempty_count": 600
+    },
+    "content_sections": {
+      "empty_count": 0,
+      "nonempty_count": 600
+    },
+    "content_status": {
+      "empty_count": 0,
+      "nonempty_count": 600
+    },
+    "content_text": {
+      "empty_count": 0,
+      "nonempty_count": 600
+    },
+    "course_code": {
+      "empty_count": 4,
+      "nonempty_count": 596
+    },
+    "course_description": {
+      "empty_count": 103,
+      "nonempty_count": 497
+    },
+    "course_title": {
+      "empty_count": 0,
+      "nonempty_count": 600
+    },
+    "degree_level": {
+      "empty_count": 0,
+      "nonempty_count": 600
+    },
+    "department": {
+      "empty_count": 191,
+      "nonempty_count": 409
+    },
+    "hash_status": {
+      "empty_count": 0,
+      "nonempty_count": 600
+    },
+    "objectives": {
+      "empty_count": 221,
+      "nonempty_count": 379
+    },
+    "official_url": {
+      "empty_count": 32,
+      "nonempty_count": 568
+    },
+    "outline": {
+      "empty_count": 71,
+      "nonempty_count": 529
+    },
+    "prerequisite": {
+      "empty_count": 492,
+      "nonempty_count": 108
+    },
+    "provenance_status": {
+      "empty_count": 568,
+      "nonempty_count": 32
+    },
+    "raw_artifact_path": {
+      "empty_count": 0,
+      "nonempty_count": 600
+    },
+    "raw_sha256": {
+      "empty_count": 0,
+      "nonempty_count": 600
+    },
+    "reference": {
+      "empty_count": 154,
+      "nonempty_count": 446
+    },
+    "school_id": {
+      "empty_count": 0,
+      "nonempty_count": 600
+    },
+    "school_name": {
+      "empty_count": 23,
+      "nonempty_count": 577
+    },
+    "semester": {
+      "empty_count": 0,
+      "nonempty_count": 600
+    },
+    "source_record_status": {
+      "empty_count": 0,
+      "nonempty_count": 600
+    },
+    "structured_id": {
+      "empty_count": 0,
+      "nonempty_count": 600
+    },
+    "syllabus_fields": {
+      "empty_count": 0,
+      "nonempty_count": 600
+    },
+    "target_program": {
+      "empty_count": 573,
+      "nonempty_count": 27
+    },
+    "teacher": {
+      "empty_count": 32,
+      "nonempty_count": 568
+    },
+    "textbook": {
+      "empty_count": 289,
+      "nonempty_count": 311
+    }
+  },
+  "hash_mismatch_count": 89,
+  "hash_status_counts": {
+    "mismatch": 89,
+    "verified": 511
+  },
+  "official_url_missing_count": 32,
+  "provenance_gap_count": 600,
+  "provenance_status_counts": {
+    "candidate_title_only_pending_identity": 9,
+    "no_exact_candidate_title": 23,
+    "null": 568
+  },
+  "record_count": 600,
+  "release_decision": "blocked_pending_provenance_and_identity_review",
+  "report_version": "structured-content-candidate-audit-v1",
+  "source_record_status_counts": {
+    "quarantine": 370,
+    "quarantine_candidate_provenance_pending": 23,
+    "staged": 57,
+    "staged_course_evidence": 150
+  },
+  "unique_raw_sha256_count": 396,
+  "unique_structured_id_count": 600
+}
