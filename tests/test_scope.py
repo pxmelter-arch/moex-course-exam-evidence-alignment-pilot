@@ -307,6 +307,24 @@ def test_phase2_6_formal_chunk_dense_hybrid_evidence() -> None:
     assert report["promotion_status"] == "blocked_pending_alignment_evidence"
 
 
+def test_phase2_6_formal_error_analysis() -> None:
+    """Validate formal error stages / 驗證 formal error stages。"""
+    artifact_dir = ROOT / "experiments/phase2_6_formal_chunk_dense_hybrid_evidence_v1"
+    report = json.loads((artifact_dir / "error_analysis_report.json").read_text(encoding="utf-8"))
+    rows = (artifact_dir / "error_analysis_records.jsonl").read_text(encoding="utf-8").splitlines()
+
+    assert report["formal_records"] == 176
+    assert report["catalog_exact_title_records"] == 27
+    assert report["summary"] == {
+        "exact_excluded_by_course_gate": 3,
+        "exact_survives_gate_and_top10": 24,
+        "no_exact_title_in_catalog": 149,
+    }
+    assert report["top1_exact_subject"] == 22
+    assert len(rows) == 176
+    assert report["interpretation"]["promotion_status"] == "blocked"
+
+
 def test_phase2_3a_primary_content_retrieval() -> None:
     """Validate primary content retrieval / 驗證 primary content retrieval。"""
     artifact_dir = ROOT / "experiments/phase2_3a_primary_content_retrieval_v1"

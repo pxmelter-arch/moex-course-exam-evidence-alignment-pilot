@@ -1,0 +1,19 @@
+{
+  "catalog_exact_title_records": 27,
+  "catalog_records": 542,
+  "experiment": "phase2_6_formal_error_analysis_v1",
+  "formal_records": 176,
+  "interpretation": {
+    "alignment_truth_available": false,
+    "candidate_generation_gate_cases": 3,
+    "primary_bottleneck": "formal_course_title_to_outline_subject_identity_coverage",
+    "promotion_status": "blocked"
+  },
+  "result_records": 176,
+  "summary": {
+    "exact_excluded_by_course_gate": 3,
+    "exact_survives_gate_and_top10": 24,
+    "no_exact_title_in_catalog": 149
+  },
+  "top1_exact_subject": 22
+}

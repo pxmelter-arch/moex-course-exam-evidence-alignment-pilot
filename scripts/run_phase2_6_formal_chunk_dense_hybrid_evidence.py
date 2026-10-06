@@ -206,6 +206,8 @@ def main() -> int:
             "formal_gate": record.get("formal_gate"),
             "chunk_count": len(chunks),
             "course_candidate_count": len(candidate_indices),
+            "course_candidate_outline_record_ids": [outlines[i]["outline_record_id"] for i in sorted(candidate_indices)],
+            "course_candidate_subject_names": [outlines[i].get("subject_name") for i in sorted(candidate_indices)],
             "candidates": candidates,
         })
         if top10_has_exact:
