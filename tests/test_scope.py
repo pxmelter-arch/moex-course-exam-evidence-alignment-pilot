@@ -325,6 +325,24 @@ def test_phase2_6_formal_error_analysis() -> None:
     assert report["interpretation"]["promotion_status"] == "blocked"
 
 
+def test_phase2_7_formal_identity_bridge() -> None:
+    """Validate identity bridge / 驗證 formal identity bridge。"""
+    artifact_dir = ROOT / "experiments/phase2_7_formal_identity_bridge_v1"
+    report = json.loads((artifact_dir / "identity_bridge_report.json").read_text(encoding="utf-8"))
+    candidates = (artifact_dir / "identity_bridge_candidates.jsonl").read_text(encoding="utf-8").splitlines()
+    review = (artifact_dir / "identity_review_queue.jsonl").read_text(encoding="utf-8").splitlines()
+
+    assert report["formal_records"] == 176
+    assert report["outline_records"] == 542
+    assert report["duplicate_subject_name_groups"] == 36
+    assert report["identity_status_counts"] == {"ambiguous": 20, "exact": 13, "weak": 143}
+    assert report["course_gate_exact_recovered"] == 3
+    assert len(candidates) == 176
+    assert len(review) == 163
+    assert report["promotion_status"] == "blocked"
+    assert report["qdrant_ingest"] is False
+
+
 def test_phase2_3a_primary_content_retrieval() -> None:
     """Validate primary content retrieval / 驗證 primary content retrieval。"""
     artifact_dir = ROOT / "experiments/phase2_3a_primary_content_retrieval_v1"

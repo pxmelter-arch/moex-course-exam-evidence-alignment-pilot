@@ -1,0 +1,40 @@
+{
+  "alias_policy": "machine_candidate_review_required",
+  "course_gate_exact_recovered": 3,
+  "course_gate_exact_recovered_records": [
+    {
+      "course_title": "計算機概論",
+      "record_id": "CAND-5eb256c08ce5ed50",
+      "recovered_outline_record_ids": [
+        "OUT-62b98cd63f9cf230f308"
+      ]
+    },
+    {
+      "course_title": "計算機概論",
+      "record_id": "formal-125",
+      "recovered_outline_record_ids": [
+        "OUT-62b98cd63f9cf230f308"
+      ]
+    },
+    {
+      "course_title": "計算機概論",
+      "record_id": "formal-143",
+      "recovered_outline_record_ids": [
+        "OUT-62b98cd63f9cf230f308"
+      ]
+    }
+  ],
+  "duplicate_subject_name_groups": 36,
+  "experiment": "phase2_7_formal_identity_bridge_audit_v1",
+  "formal_alignment": "not_started",
+  "formal_records": 176,
+  "human_adjudication": "not_available",
+  "identity_status_counts": {
+    "ambiguous": 20,
+    "exact": 13,
+    "weak": 143
+  },
+  "outline_records": 542,
+  "promotion_status": "blocked",
+  "qdrant_ingest": false
+}
