@@ -1,0 +1,43 @@
+{
+  "all_diagnostic_gates_pass": true,
+  "experiment": "phase2_candidate_retrieval_diagnostic_completion_v1",
+  "formal_alignment_status": "not_started",
+  "gates": {
+    "ambiguity_delta_audited": true,
+    "duplicate_groups_audited": true,
+    "evidence_spans_provenance_preserved": true,
+    "formal_scope_176": true,
+    "identity_bridge_176": true,
+    "local_embedding_only": true,
+    "original_expanded_paired_comparison": true,
+    "outline_scope_542": true,
+    "promotion_blocked": true,
+    "qdrant_ingest_blocked": true,
+    "section_chunks_1490": true,
+    "three_gate_misses_recovered": true
+  },
+  "next_phase_boundary": "independent evidence/human adjudication and promotion review",
+  "non_goals_remaining": [
+    "human_adjudicated alignment truth",
+    "gold-label accuracy",
+    "automatic promotion to default runtime",
+    "Qdrant production ingest"
+  ],
+  "phase2_status": "complete_for_candidate_retrieval_diagnostic",
+  "results": {
+    "ambiguous_delta": -3,
+    "expanded_top10_exact": 27,
+    "formal_records": 176,
+    "gate_miss_recovery": 3,
+    "identity_status_counts": {
+      "ambiguous": 20,
+      "exact": 13,
+      "weak": 143
+    },
+    "original_top10_exact": 24,
+    "outline_records": 542,
+    "phase2_6_top10_exact": 24,
+    "phase2_6_top1_exact": 22,
+    "section_chunks": 1490
+  }
+}

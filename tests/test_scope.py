@@ -360,6 +360,27 @@ def test_phase2_8_identity_expanded_pool_comparison() -> None:
     assert report["qdrant_ingest"] is False
 
 
+def test_phase2_completion_audit() -> None:
+    """Validate Phase 2 completion gates / 驗證 Phase 2 completion gates。"""
+    artifact = ROOT / "experiments/phase2_completion_v1/phase2_completion_report.json"
+    report = json.loads(artifact.read_text(encoding="utf-8"))
+    assert report["phase2_status"] == "complete_for_candidate_retrieval_diagnostic"
+    assert report["formal_alignment_status"] == "not_started"
+    assert report["all_diagnostic_gates_pass"] is True
+    assert report["results"] == {
+        "ambiguous_delta": -3,
+        "expanded_top10_exact": 27,
+        "formal_records": 176,
+        "gate_miss_recovery": 3,
+        "identity_status_counts": {"ambiguous": 20, "exact": 13, "weak": 143},
+        "original_top10_exact": 24,
+        "outline_records": 542,
+        "phase2_6_top10_exact": 24,
+        "phase2_6_top1_exact": 22,
+        "section_chunks": 1490,
+    }
+
+
 def test_phase2_3a_primary_content_retrieval() -> None:
     """Validate primary content retrieval / 驗證 primary content retrieval。"""
     artifact_dir = ROOT / "experiments/phase2_3a_primary_content_retrieval_v1"
