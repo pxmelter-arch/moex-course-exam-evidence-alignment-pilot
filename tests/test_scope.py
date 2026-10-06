@@ -343,6 +343,23 @@ def test_phase2_7_formal_identity_bridge() -> None:
     assert report["qdrant_ingest"] is False
 
 
+def test_phase2_8_identity_expanded_pool_comparison() -> None:
+    """Validate paired candidate-pool comparison / 驗證 paired comparison。"""
+    artifact_dir = ROOT / "experiments/phase2_8_identity_expanded_pool_comparison_v1"
+    report = json.loads((artifact_dir / "comparison_report.json").read_text(encoding="utf-8"))
+    rows = (artifact_dir / "paired_comparison.jsonl").read_text(encoding="utf-8").splitlines()
+
+    assert report["formal_records"] == 176
+    assert report["outline_records"] == 542
+    assert report["original_pool"]["metrics"] == {"ambiguous_top10": 1750, "top1_exact": 22, "top10_exact": 24}
+    assert report["expanded_pool"]["metrics"] == {"ambiguous_top10": 1747, "top1_exact": 22, "top10_exact": 27}
+    assert report["gate_miss_recovery"]["count"] == 3
+    assert len(rows) == 176
+    assert sum(json.loads(row)["recovered_top10"] for row in rows) == 3
+    assert report["promotion_status"] == "blocked"
+    assert report["qdrant_ingest"] is False
+
+
 def test_phase2_3a_primary_content_retrieval() -> None:
     """Validate primary content retrieval / 驗證 primary content retrieval。"""
     artifact_dir = ROOT / "experiments/phase2_3a_primary_content_retrieval_v1"

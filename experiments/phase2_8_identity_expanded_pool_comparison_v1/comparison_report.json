@@ -1,0 +1,81 @@
+{
+  "ambiguous_delta": -3,
+  "embedding": {
+    "chunk_overlap": 60,
+    "chunk_size": 420,
+    "local_only": true,
+    "model": "BAAI/bge-small-zh-v1.5"
+  },
+  "expanded_pool": {
+    "definition": "phase2_6 pool + exact identity + top-5 machine alias candidates",
+    "metrics": {
+      "ambiguous_top10": 1747,
+      "top10_exact": 27,
+      "top1_exact": 22
+    }
+  },
+  "experiment": "phase2_8_formal_identity_expanded_pool_comparison_v1",
+  "formal_alignment": "not_started",
+  "formal_records": 176,
+  "gate_miss_recovery": {
+    "count": 3,
+    "records": [
+      {
+        "course_title": "計算機概論",
+        "expanded_exact_candidates": [
+          {
+            "candidate_status": "exact",
+            "hybrid_score": 0.62846042,
+            "margin": 0.04704663,
+            "outline_record_id": "OUT-62b98cd63f9cf230f308",
+            "rank": 6,
+            "subject_name": "計算機概論",
+            "title_exact": true
+          }
+        ],
+        "record_id": "CAND-5eb256c08ce5ed50"
+      },
+      {
+        "course_title": "計算機概論",
+        "expanded_exact_candidates": [
+          {
+            "candidate_status": "exact",
+            "hybrid_score": 0.59767092,
+            "margin": 0.01581142,
+            "outline_record_id": "OUT-62b98cd63f9cf230f308",
+            "rank": 6,
+            "subject_name": "計算機概論",
+            "title_exact": true
+          }
+        ],
+        "record_id": "formal-125"
+      },
+      {
+        "course_title": "計算機概論",
+        "expanded_exact_candidates": [
+          {
+            "candidate_status": "exact",
+            "hybrid_score": 0.59767092,
+            "margin": 0.01581142,
+            "outline_record_id": "OUT-62b98cd63f9cf230f308",
+            "rank": 6,
+            "subject_name": "計算機概論",
+            "title_exact": true
+          }
+        ],
+        "record_id": "formal-143"
+      }
+    ]
+  },
+  "original_pool": {
+    "definition": "phase2_6 course-level top-50",
+    "metrics": {
+      "ambiguous_top10": 1750,
+      "top10_exact": 24,
+      "top1_exact": 22
+    }
+  },
+  "outline_records": 542,
+  "promotion_status": "blocked",
+  "qdrant_ingest": false
+}
