@@ -1,0 +1,26 @@
+{
+  "blocker_counts": {
+    "ambiguous_candidate_requires_review": 1747,
+    "chunk_evidence_span_missing_from_phase2_6_top10": 5,
+    "human_adjudication_required": 1760,
+    "independent_cross_source_validation_missing": 1760
+  },
+  "evidence_contract": {
+    "content_evidence_span": true,
+    "course_provenance": true,
+    "human_adjudication": false,
+    "identity_evidence": true,
+    "independent_cross_source_evidence": false,
+    "outline_provenance": true,
+    "promotion": false
+  },
+  "expanded_top10_evidence_packs": 1760,
+  "experiment": "phase3_independent_evidence_pack_audit_v1",
+  "formal_alignment_status": "not_started",
+  "formal_records": 176,
+  "promotion_status": "blocked",
+  "qdrant_ingest": false,
+  "status_counts": {
+    "blocked": 1760
+  }
+}

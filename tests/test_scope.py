@@ -381,6 +381,28 @@ def test_phase2_completion_audit() -> None:
     }
 
 
+def test_phase3_independent_evidence_audit() -> None:
+    """Validate Phase 3 evidence packs / 驗證 Phase 3 evidence packs。"""
+    artifact_dir = ROOT / "experiments/phase3_independent_evidence_audit_v1"
+    report = json.loads((artifact_dir / "phase3_evidence_audit_report.json").read_text(encoding="utf-8"))
+    packs = (artifact_dir / "evidence_packs.jsonl").read_text(encoding="utf-8").splitlines()
+    blockers = (artifact_dir / "promotion_blocker_queue.jsonl").read_text(encoding="utf-8").splitlines()
+
+    assert report["formal_records"] == 176
+    assert report["expanded_top10_evidence_packs"] == 1760
+    assert report["status_counts"] == {"blocked": 1760}
+    assert report["blocker_counts"] == {
+        "ambiguous_candidate_requires_review": 1747,
+        "chunk_evidence_span_missing_from_phase2_6_top10": 5,
+        "human_adjudication_required": 1760,
+        "independent_cross_source_validation_missing": 1760,
+    }
+    assert len(packs) == 1760
+    assert len(blockers) == 1760
+    assert report["promotion_status"] == "blocked"
+    assert report["qdrant_ingest"] is False
+
+
 def test_phase2_3a_primary_content_retrieval() -> None:
     """Validate primary content retrieval / 驗證 primary content retrieval。"""
     artifact_dir = ROOT / "experiments/phase2_3a_primary_content_retrieval_v1"
