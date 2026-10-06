@@ -1,0 +1,36 @@
+{
+  "chunk_count": 1490,
+  "chunk_overlap": 60,
+  "chunk_size": 420,
+  "course_candidate_k": 50,
+  "embedding": {
+    "device": "cuda:0",
+    "local_only": true,
+    "local_path": "/home/aelix/.hermes/profiles/ml-expert/home/.cache/huggingface/hub/models--BAAI--bge-small-zh-v1.5/snapshots/7999e1d3359715c523056ef9478215996d62a620",
+    "model": "BAAI/bge-small-zh-v1.5",
+    "normalize_embeddings": true
+  },
+  "evidence_span_status": "provenance_preserved",
+  "experiment": "phase2_6_formal_course_chunk_dense_hybrid_evidence_v1",
+  "formal_alignment": "not_started",
+  "formal_projection_commit": "8922edc",
+  "formal_projection_path": "output/canonical/round26_formal_syllabus_projection.json",
+  "formal_records": 176,
+  "metrics": {
+    "top10_exact_subject": 24,
+    "top1_exact_subject": 22,
+    "top_candidate_status_counts": {
+      "ambiguous": 168,
+      "exact": 8,
+      "weak": 0
+    }
+  },
+  "outline_commit": "4cb1b5a7155a052450354cdff2e7e00a66728b89",
+  "outline_path": "data/raw/exam_outlines/exam_outline_catalog/output/exam_outline_catalog.json",
+  "outline_records": 542,
+  "output_k": 10,
+  "promotion_status": "blocked_pending_alignment_evidence",
+  "qdrant_ingest": false,
+  "retrieval_status": "candidate_only",
+  "status": "pass"
+}

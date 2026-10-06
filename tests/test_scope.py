@@ -284,6 +284,29 @@ def test_phase2_5_formal_retrieval_ablation() -> None:
     assert report["promotion_status"] == "blocked_pending_alignment_evidence"
 
 
+def test_phase2_6_formal_chunk_dense_hybrid_evidence() -> None:
+    """Validate formal chunk/dense/evidence pipeline / 驗證 formal pipeline。"""
+    artifact_dir = ROOT / "experiments/phase2_6_formal_chunk_dense_hybrid_evidence_v1"
+    report = json.loads((artifact_dir / "pipeline_report.json").read_text(encoding="utf-8"))
+    chunks = (artifact_dir / "section_chunks.jsonl").read_text(encoding="utf-8").splitlines()
+    rows = [json.loads(line) for line in (artifact_dir / "course_chunk_hybrid_results.jsonl").read_text(encoding="utf-8").splitlines()]
+
+    assert report["formal_records"] == 176
+    assert report["outline_records"] == 542
+    assert report["chunk_count"] == 1490
+    assert report["metrics"]["top1_exact_subject"] == 22
+    assert report["metrics"]["top10_exact_subject"] == 24
+    assert report["metrics"]["top_candidate_status_counts"] == {"ambiguous": 168, "exact": 8, "weak": 0}
+    assert len(chunks) == 1490
+    assert len(rows) == 176
+    assert all(len(row["candidates"]) == 10 for row in rows)
+    assert all(candidate["evidence_span"]["chunk_id"] for row in rows for candidate in row["candidates"])
+    assert all(candidate["evidence_span"]["source_path"] for row in rows for candidate in row["candidates"])
+    assert report["embedding"]["local_only"] is True
+    assert report["qdrant_ingest"] is False
+    assert report["promotion_status"] == "blocked_pending_alignment_evidence"
+
+
 def test_phase2_3a_primary_content_retrieval() -> None:
     """Validate primary content retrieval / 驗證 primary content retrieval。"""
     artifact_dir = ROOT / "experiments/phase2_3a_primary_content_retrieval_v1"
