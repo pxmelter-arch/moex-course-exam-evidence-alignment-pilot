@@ -1,0 +1,36 @@
+{
+  "candidate_only": true,
+  "experiment": "phase2_3_formal_syllabus_projection_retrieval_v1",
+  "formal_alignment": "not_started",
+  "formal_gate_passed_count": 176,
+  "formal_projection_commit": "8922edc",
+  "formal_projection_path": "output/canonical/round26_formal_syllabus_projection.json",
+  "formal_record_count": 176,
+  "methods": {
+    "bm25": {
+      "nonempty_top10": 176,
+      "queries": 176,
+      "top10_exact_subject": 18,
+      "top1_exact_subject": 7
+    },
+    "exact_title": {
+      "nonempty_top10": 27,
+      "queries": 176,
+      "top10_exact_subject": 27,
+      "top1_exact_subject": 27
+    },
+    "tfidf": {
+      "nonempty_top10": 176,
+      "queries": 176,
+      "top10_exact_subject": 18,
+      "top1_exact_subject": 14
+    }
+  },
+  "outline_commit": "4cb1b5a7155a052450354cdff2e7e00a66728b89",
+  "outline_path": "data/raw/exam_outlines/exam_outline_catalog/output/exam_outline_catalog.json",
+  "outline_record_count": 542,
+  "promotion_status": "blocked_pending_alignment_evidence",
+  "replaces_formal_metadata_only_lane": true,
+  "status": "pass",
+  "top_k": 10
+}

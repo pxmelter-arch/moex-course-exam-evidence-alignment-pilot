@@ -186,6 +186,23 @@ def test_phase2_2_identity_alias_audit() -> None:
     assert report["promotion_status"] == "blocked"
 
 
+def test_phase2_3_formal_syllabus_projection_retrieval() -> None:
+    """Validate formal syllabus projection retrieval / 驗證正式 projection retrieval。"""
+    artifact_dir = ROOT / "experiments/phase2_3_formal_syllabus_projection_retrieval_v1"
+    report = json.loads((artifact_dir / "retrieval_report.json").read_text(encoding="utf-8"))
+    result_lines = (artifact_dir / "retrieval_results.jsonl").read_text(encoding="utf-8").splitlines()
+
+    assert report["formal_record_count"] == 176
+    assert report["formal_gate_passed_count"] == 176
+    assert report["outline_record_count"] == 542
+    assert report["methods"]["exact_title"]["top1_exact_subject"] == 27
+    assert report["methods"]["tfidf"]["top1_exact_subject"] == 14
+    assert report["methods"]["bm25"]["top1_exact_subject"] == 7
+    assert len(result_lines) == 176
+    assert report["replaces_formal_metadata_only_lane"] is True
+    assert report["promotion_status"] == "blocked_pending_alignment_evidence"
+
+
 def test_phase2_3a_primary_content_retrieval() -> None:
     """Validate primary content retrieval / 驗證 primary content retrieval。"""
     artifact_dir = ROOT / "experiments/phase2_3a_primary_content_retrieval_v1"
