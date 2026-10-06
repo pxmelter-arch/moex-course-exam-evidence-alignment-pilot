@@ -247,6 +247,26 @@ def test_formal_vs_curated_replacement_audit() -> None:
     assert report["replacement_gate"]["curated_can_replace_formal_without_reformalization"] is False
 
 
+def test_curated_600_section_aware_hybrid() -> None:
+    """Validate curated experimental retrieval / 驗證 curated 實驗 retrieval。"""
+    artifact_dir = ROOT / "experiments/curated_600_section_aware_hybrid_v1"
+    report = json.loads((artifact_dir / "retrieval_report.json").read_text(encoding="utf-8"))
+    result_lines = (artifact_dir / "content_bearing_results.jsonl").read_text(encoding="utf-8").splitlines()
+    partial_lines = (artifact_dir / "partial_abstention_queue.jsonl").read_text(encoding="utf-8").splitlines()
+
+    assert report["curated_records"] == 600
+    assert report["content_bearing_records"] == 520
+    assert report["partial_records"] == 80
+    assert report["retrieval_records"] == 520
+    assert report["outline_records"] == 542
+    assert report["top_candidate_status_counts"] == {"ambiguous": 491, "exact": 12, "weak": 17}
+    assert report["partial_abstention_count"] == 80
+    assert len(result_lines) == 520
+    assert len(partial_lines) == 80
+    assert report["qdrant_ingest"] is False
+    assert report["promotion_status"] == "blocked_experimental_only"
+
+
 def test_phase2_3a_primary_content_retrieval() -> None:
     """Validate primary content retrieval / 驗證 primary content retrieval。"""
     artifact_dir = ROOT / "experiments/phase2_3a_primary_content_retrieval_v1"

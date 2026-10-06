@@ -1,0 +1,33 @@
+{
+  "content_bearing_records": 520,
+  "curated_commit": "a22f8e7",
+  "curated_path": "release/curated_experiment_20261006/experiment_projection.jsonl",
+  "curated_records": 600,
+  "experiment": "curated_600_section_aware_hybrid_retrieval_v1",
+  "outline_commit": "4cb1b5a7155a052450354cdff2e7e00a66728b89",
+  "outline_path": "data/raw/exam_outlines/exam_outline_catalog/output/exam_outline_catalog.json",
+  "outline_records": 542,
+  "partial_abstention_count": 80,
+  "partial_records": 80,
+  "promotion_status": "blocked_experimental_only",
+  "qdrant_ingest": false,
+  "retrieval_records": 520,
+  "retrieval_status": "candidate_only",
+  "status": "pass",
+  "top_candidate_status_counts": {
+    "ambiguous": 491,
+    "exact": 12,
+    "weak": 17
+  },
+  "topic_weights": {
+    "core_knowledge": 0.6,
+    "outline": 0.4
+  },
+  "weights": {
+    "content_bm25": 0.2,
+    "remarks": 0.1,
+    "title_identity": 0.3,
+    "title_similarity": 0.2,
+    "topic_score": 0.2
+  }
+}
