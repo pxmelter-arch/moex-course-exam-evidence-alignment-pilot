@@ -267,6 +267,23 @@ def test_curated_600_section_aware_hybrid() -> None:
     assert report["promotion_status"] == "blocked_experimental_only"
 
 
+def test_phase2_5_formal_retrieval_ablation() -> None:
+    """Validate formal ablation / 驗證 formal ablation。"""
+    artifact_dir = ROOT / "experiments/phase2_5_formal_retrieval_ablation_v1"
+    report = json.loads((artifact_dir / "ablation_report.json").read_text(encoding="utf-8"))
+    rows = (artifact_dir / "ablation_results.jsonl").read_text(encoding="utf-8").splitlines()
+
+    assert report["formal_records"] == 176
+    assert report["outline_records"] == 542
+    assert report["methods"]["title_identity"] == {"query_count": 176, "top1_exact_subject": 27, "top10_exact_subject": 27}
+    assert report["methods"]["topic_only"] == {"query_count": 176, "top1_exact_subject": 11, "top10_exact_subject": 17}
+    assert report["methods"]["content_topic_only"] == {"query_count": 176, "top1_exact_subject": 15, "top10_exact_subject": 19}
+    assert report["methods"]["section_hybrid"] == {"query_count": 176, "top1_exact_subject": 27, "top10_exact_subject": 27}
+    assert len(rows) == 176
+    assert report["qdrant_ingest"] is False
+    assert report["promotion_status"] == "blocked_pending_alignment_evidence"
+
+
 def test_phase2_3a_primary_content_retrieval() -> None:
     """Validate primary content retrieval / 驗證 primary content retrieval。"""
     artifact_dir = ROOT / "experiments/phase2_3a_primary_content_retrieval_v1"
