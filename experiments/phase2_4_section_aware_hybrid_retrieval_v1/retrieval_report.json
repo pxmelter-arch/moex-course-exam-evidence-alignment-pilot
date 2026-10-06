@@ -1,0 +1,51 @@
+{
+  "candidate_only": true,
+  "experiment": "phase2_4_formal_section_aware_hybrid_retrieval_v1",
+  "formal_alignment": "not_started",
+  "formal_gate_passed_count": 176,
+  "formal_projection_commit": "8922edc",
+  "formal_projection_path": "output/canonical/round26_formal_syllabus_projection.json",
+  "formal_record_count": 176,
+  "methods": {
+    "hybrid": {
+      "top10_exact_subject": 27,
+      "top1_exact_subject": 27
+    },
+    "title_identity": {
+      "top10_exact_subject": 27,
+      "top1_exact_subject": 27
+    }
+  },
+  "outline_commit": "4cb1b5a7155a052450354cdff2e7e00a66728b89",
+  "outline_path": "data/raw/exam_outlines/exam_outline_catalog/output/exam_outline_catalog.json",
+  "outline_record_count": 542,
+  "promotion_status": "blocked_pending_alignment_evidence",
+  "qdrant_ingest": false,
+  "review_queue_count": 166,
+  "section_field_presence": {
+    "assessment": 104,
+    "course_description": 22,
+    "objectives": 126,
+    "outline": 175,
+    "prerequisite": 153,
+    "textbook": 158
+  },
+  "status": "pass",
+  "top_candidate_status_counts": {
+    "ambiguous": 157,
+    "exact": 10,
+    "weak": 9
+  },
+  "top_k": 10,
+  "topic_weights": {
+    "core_knowledge": 0.6,
+    "outline": 0.4
+  },
+  "weights": {
+    "content_bm25": 0.2,
+    "remarks": 0.1,
+    "title_identity": 0.3,
+    "title_similarity": 0.2,
+    "topic_score": 0.2
+  }
+}
