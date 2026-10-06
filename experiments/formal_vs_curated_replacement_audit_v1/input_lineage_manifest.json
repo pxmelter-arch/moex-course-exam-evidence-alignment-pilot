@@ -1,0 +1,12 @@
+{
+  "curated": {
+    "commit": "a22f8e7",
+    "path": "release/curated_experiment_20261006/experiment_projection.jsonl",
+    "records": 600
+  },
+  "formal": {
+    "commit": "8922edc",
+    "path": "output/canonical/round26_formal_syllabus_projection.json",
+    "records": 176
+  }
+}

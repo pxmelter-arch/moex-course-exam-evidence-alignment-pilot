@@ -225,6 +225,28 @@ def test_phase2_4_section_aware_hybrid_retrieval() -> None:
     assert report["promotion_status"] == "blocked_pending_alignment_evidence"
 
 
+def test_formal_vs_curated_replacement_audit() -> None:
+    """Validate formal replacement audit / 驗證 formal replacement audit。"""
+    artifact_dir = ROOT / "experiments/formal_vs_curated_replacement_audit_v1"
+    report = json.loads((artifact_dir / "replacement_audit_report.json").read_text(encoding="utf-8"))
+    review_lines = (artifact_dir / "curated_replacement_review_queue.jsonl").read_text(encoding="utf-8").splitlines()
+    lineage = json.loads((artifact_dir / "input_lineage_manifest.json").read_text(encoding="utf-8"))
+
+    assert report["decision"] == "do_not_replace_formal_176"
+    assert lineage["formal"]["records"] == 176
+    assert lineage["curated"]["records"] == 600
+    assert report["overlap"]["exact_composite_identity_key_count"] == 2
+    assert report["overlap"]["exact_raw_sha256_count"] == 2
+    assert report["overlap"]["school_title_key_count"] == 7
+    assert report["duplicates"]["curated_duplicate_structured_id_groups"] == 0
+    assert report["duplicates"]["curated_duplicate_raw_sha256_groups"] == 75
+    assert report["curated_quality_partition"]["content_status"] == {"content_bearing": 520, "partial": 80}
+    assert report["formal_quality_partition"]["formal_gate"] == {"passed": 176}
+    assert len(review_lines) == 600
+    assert report["replacement_gate"]["formal_lane_unchanged"] is True
+    assert report["replacement_gate"]["curated_can_replace_formal_without_reformalization"] is False
+
+
 def test_phase2_3a_primary_content_retrieval() -> None:
     """Validate primary content retrieval / 驗證 primary content retrieval。"""
     artifact_dir = ROOT / "experiments/phase2_3a_primary_content_retrieval_v1"
