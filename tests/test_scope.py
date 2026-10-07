@@ -424,6 +424,26 @@ def test_phase3_topic_refinement_extraction() -> None:
     assert report["promotion_status"] == "blocked"
 
 
+def test_phase3_topic_coverage_reranking() -> None:
+    """Validate topic coverage reranking / 驗證 topic coverage reranking。"""
+    artifact_dir = ROOT / "experiments/phase3_topic_coverage_reranking_v1"
+    report = json.loads((artifact_dir / "topic_coverage_reranking_report.json").read_text(encoding="utf-8"))
+    results = (artifact_dir / "coverage_reranked_results.jsonl").read_text(encoding="utf-8").splitlines()
+    matches = (artifact_dir / "topic_match_evidence.jsonl").read_text(encoding="utf-8").splitlines()
+
+    assert report["formal_records"] == 176
+    assert report["syllabus_atomic_chunks"] == 4750
+    assert report["outline_atomic_items"] == 2573
+    assert report["candidate_rows"] == 1760
+    assert report["baseline_expanded"] == {"top1_exact": 22, "top10_exact": 27}
+    assert report["coverage_reranked"] == {"top1_exact": 22, "top10_exact": 27}
+    assert report["delta"] == {"top1": 0, "top10": 0}
+    assert len(results) == 176
+    assert len(matches) == 1760
+    assert report["promotion_status"] == "blocked"
+    assert report["qdrant_ingest"] is False
+
+
 def test_phase2_3a_primary_content_retrieval() -> None:
     """Validate primary content retrieval / 驗證 primary content retrieval。"""
     artifact_dir = ROOT / "experiments/phase2_3a_primary_content_retrieval_v1"
