@@ -1,0 +1,164 @@
+{
+  "contamination": {
+    "outline_flagged_items": 57,
+    "syllabus_flagged_chunks": 830,
+    "terms": {
+      "administrative": {
+        "outline_items": 8,
+        "syllabus_chunks": 194
+      },
+      "assessment": {
+        "outline_items": 34,
+        "syllabus_chunks": 428
+      },
+      "schedule_note": {
+        "outline_items": 13,
+        "syllabus_chunks": 73
+      },
+      "teaching_method": {
+        "outline_items": 4,
+        "syllabus_chunks": 204
+      },
+      "textbook": {
+        "outline_items": 0,
+        "syllabus_chunks": 13
+      }
+    }
+  },
+  "experiment": "phase3_negative_result_audit_v1",
+  "formal_alignment": "not_started",
+  "hierarchy": {
+    "hierarchy_status": "chapter_mapping_unresolved",
+    "outline_chapter_unresolved": 2571,
+    "outline_items": 2571,
+    "outline_topic_present": 2571,
+    "section_fields": {
+      "course_description": 522,
+      "objectives": 1845,
+      "outline": 3978
+    },
+    "syllabus_chapter_unresolved": 3311,
+    "syllabus_chunks": 6345,
+    "syllabus_records": 176,
+    "syllabus_topic_present": 6345
+  },
+  "human_review": {
+    "machine_labels_created": 0,
+    "protocol": {
+      "mode": "no-human-label",
+      "promotion_rule": "no automatic promotion; explicit adjudication and independent evidence required",
+      "purpose": "review machine candidates without treating machine inference as truth",
+      "queue_size": 1760,
+      "required_fields": {
+        "adjudication_timestamp": null,
+        "adjudicator": null,
+        "evidence_sufficiency": [
+          "sufficient",
+          "insufficient",
+          "unclear",
+          null
+        ],
+        "identity_decision": [
+          "accept",
+          "alias",
+          "reject",
+          "unclear",
+          null
+        ],
+        "label": [
+          "supports",
+          "partially_supports",
+          "does_not_support",
+          "unclear",
+          null
+        ],
+        "notes": null
+      }
+    },
+    "queue_size": 1760
+  },
+  "independent_corroboration": {
+    "catalog_source_labels": {
+      "技術": 1495,
+      "行政": 293
+    },
+    "independent_corroboration_ready": 0,
+    "outline_source_paths": {
+      "data/raw/exam_outlines/exam_outline_catalog/output/exam_outline_catalog.json": 1760
+    },
+    "packs": 1760,
+    "status": "not_available_same_catalog_provenance_only"
+  },
+  "promotion_status": "blocked",
+  "qdrant_ingest": false,
+  "threshold_sensitivity": {
+    "0.3": {
+      "top10_exact": 27,
+      "top1_exact": 22
+    },
+    "0.42": {
+      "top10_exact": 27,
+      "top1_exact": 22
+    },
+    "0.55": {
+      "top10_exact": 27,
+      "top1_exact": 22
+    },
+    "0.65": {
+      "top10_exact": 27,
+      "top1_exact": 22
+    }
+  },
+  "weight_ablation": {
+    "coverage_heavy": {
+      "top10_exact": 27,
+      "top1_exact": 22,
+      "weights": {
+        "coverage": 0.5,
+        "dense": 0.2,
+        "identity": 0.1,
+        "lexical": 0.2
+      }
+    },
+    "current": {
+      "top10_exact": 27,
+      "top1_exact": 22,
+      "weights": {
+        "coverage": 0.3,
+        "dense": 0.25,
+        "identity": 0.2,
+        "lexical": 0.25
+      }
+    },
+    "dense_heavy": {
+      "top10_exact": 27,
+      "top1_exact": 22,
+      "weights": {
+        "coverage": 0.2,
+        "dense": 0.45,
+        "identity": 0.15,
+        "lexical": 0.2
+      }
+    },
+    "identity_removed": {
+      "top10_exact": 27,
+      "top1_exact": 11,
+      "weights": {
+        "coverage": 0.4,
+        "dense": 0.3,
+        "identity": 0.0,
+        "lexical": 0.3
+      }
+    },
+    "lexical_heavy": {
+      "top10_exact": 27,
+      "top1_exact": 22,
+      "weights": {
+        "coverage": 0.15,
+        "dense": 0.3,
+        "identity": 0.15,
+        "lexical": 0.4
+      }
+    }
+  }
+}

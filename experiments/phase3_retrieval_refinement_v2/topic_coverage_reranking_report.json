@@ -1,0 +1,35 @@
+{
+  "baseline_expanded": {
+    "top10_exact": 27,
+    "top1_exact": 22
+  },
+  "candidate_rows": 1760,
+  "coverage": {
+    "directional": true,
+    "threshold": 0.42
+  },
+  "coverage_reranked": {
+    "top10_exact": 27,
+    "top1_exact": 22
+  },
+  "delta": {
+    "top1": 0,
+    "top10": 0
+  },
+  "embedding": {
+    "local_only": true,
+    "model": "BAAI/bge-small-zh-v1.5",
+    "normalized": true
+  },
+  "experiment": "phase3_topic_matching_bidirectional_coverage_reranking_v1",
+  "formal_alignment": "not_started",
+  "formal_records": 176,
+  "outline_atomic_items": 2571,
+  "promotion_status": "blocked",
+  "qdrant_ingest": false,
+  "status_counts": {
+    "ambiguous": 1747,
+    "exact": 13
+  },
+  "syllabus_atomic_chunks": 6345
+}

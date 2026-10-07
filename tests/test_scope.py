@@ -414,13 +414,13 @@ def test_phase3_topic_refinement_extraction() -> None:
     assert report["formal_records"] == 176
     assert report["outline_records"] == 542
     assert report["syllabus_sections"] == 176
-    assert report["syllabus_atomic_topic_chunks"] == 4750
-    assert report["outline_atomic_items"] == 2573
+    assert report["syllabus_atomic_topic_chunks"] == 6345
+    assert report["outline_atomic_items"] == 2571
     assert report["raw_preserved"] is True
     assert report["machine_inference_only"] is True
     assert len(syllabus) == 176
-    assert len(chunks) == 4750
-    assert len(outline_items) == 2573
+    assert len(chunks) == 6345
+    assert len(outline_items) == 2571
     assert report["promotion_status"] == "blocked"
 
 
@@ -446,15 +446,15 @@ def test_phase3_topic_coverage_reranking() -> None:
 
 def test_phase3_negative_result_audits() -> None:
     """Validate negative-result audits / 驗證 negative-result audits。"""
-    artifact_dir = ROOT / "experiments/phase3_negative_result_audits_v1"
+    artifact_dir = ROOT / "experiments/phase3_negative_result_audits_v2"
     report = json.loads((artifact_dir / "negative_result_audit_report.json").read_text(encoding="utf-8"))
     queue = (artifact_dir / "human_review_queue.jsonl").read_text(encoding="utf-8").splitlines()
-    assert report["hierarchy"]["syllabus_chapter_unresolved"] == 4750
-    assert report["hierarchy"]["outline_chapter_unresolved"] == 2573
-    assert report["contamination"]["syllabus_flagged_chunks"] == 632
+    assert report["hierarchy"]["syllabus_chapter_unresolved"] == 3311
+    assert report["hierarchy"]["outline_chapter_unresolved"] == 2571
+    assert report["contamination"]["syllabus_flagged_chunks"] == 830
     assert report["contamination"]["outline_flagged_items"] == 57
     assert all(metrics == {"top1_exact": 22, "top10_exact": 27} for metrics in report["threshold_sensitivity"].values())
-    assert report["weight_ablation"]["identity_removed"]["top1_exact"] == 2
+    assert report["weight_ablation"]["identity_removed"]["top1_exact"] == 11
     assert report["independent_corroboration"]["independent_corroboration_ready"] == 0
     assert report["human_review"]["queue_size"] == 1760
     assert report["human_review"]["machine_labels_created"] == 0

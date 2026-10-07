@@ -21,9 +21,13 @@ OUTLINE_COMMIT = "4cb1b5a7155a052450354cdff2e7e00a66728b89"
 OUTLINE_PATH = "data/raw/exam_outlines/exam_outline_catalog/output/exam_outline_catalog.json"
 FIELD_ALLOWLIST = ("course_description", "outline", "objectives")
 OUTLINE_ALLOWLIST = ("outline", "core_knowledge")
-GENERIC_RE = re.compile(r"(本課程|學生|學習|課程目標|教學|評量|教材|參考書|office|授課|了解|介紹|培養|能力|course|student|learn)", re.I)
-HEADING_RE = re.compile(r"(?:^|\n)\s*(?P<head>(?:[一二三四五六七八九十]+、|\d+[\.、)]|[A-Z][\.、]))\s*(?P<text>[^\n]{2,120})")
-SEPARATOR_RE = re.compile(r"[\n；;。！？!?]|(?:\s{2,})")
+CONTAMINATION_PATTERNS = {
+    "assessment": re.compile(r"評量|考試|assessment|exam|quiz|作業|報告", re.I),
+    "administrative": re.compile(r"office|email|電話|時間|星期|教室|授課|教師|office hour", re.I),
+    "textbook": re.compile(r"教材|教科書|textbook|參考書|handbook", re.I),
+    "schedule_note": re.compile(r"schedule|課程進度|note|備註|注意|copyright|智慧財產|週次|日期", re.I),
+    "teaching_method": re.compile(r"教學方式|講授|討論|實作|teaching approach", re.I),
+}
 
 
 def git_json(repo: Path, commit: str, path: str) -> Any:
@@ -51,33 +55,72 @@ def record_id(row: dict[str, Any]) -> str:
     return "OUT-" + hashlib.sha256(json.dumps(payload, ensure_ascii=False, sort_keys=True).encode()).hexdigest()[:20]
 
 
-def split_atomic(raw: str) -> list[str]:
-    """Split raw section into atomic topic candidates / 拆成 atomic topic candidates。"""
+def heading_level(marker: str) -> int:
+    """Infer hierarchy depth / 推斷 hierarchy depth。"""
+    if re.fullmatch(r"第[一二三四五六七八九十]+章", marker):
+        return 1
+    if re.fullmatch(r"第[一二三四五六七八九十]+節", marker):
+        return 2
+    if re.fullmatch(r"[一二三四五六七八九十]+、", marker):
+        return 1
+    if re.fullmatch(r"\d+\.\d+\.\d+", marker):
+        return 3
+    if re.fullmatch(r"\d+\.\d+", marker):
+        return 2
+    if re.fullmatch(r"\d+[\.、)]", marker):
+        return 1
+    return 0
+
+
+def split_atomic(raw: str) -> list[dict[str, Any]]:
+    """Split raw text and propagate heading context / 拆分並傳遞 hierarchy。"""
     text = raw.replace("\r", "\n")
-    pieces = []
-    for match in HEADING_RE.finditer(text):
-        value = norm(match.group("text"))
-        if value:
-            pieces.append(value)
-    if not pieces:
-        pieces = [norm(piece) for piece in SEPARATOR_RE.split(text)]
+    pattern = re.compile(r"^\s*(?P<head>(?:第[一二三四五六七八九十]+[章節]|[一二三四五六七八九十]+、|\d+\.\d+\.\d+|\d+\.\d+|\d+[\.、)]))\s*(?P<body>.+?)\s*$")
+    units: list[dict[str, Any]] = []
+    chapter = topic = None
+    lines = [line.strip() for line in text.splitlines() if line.strip()]
+    if not lines:
+        lines = [piece.strip() for piece in re.split(r"[；;。！？!?]", text) if piece.strip()]
+    for line in lines:
+        match = pattern.match(line)
+        if match:
+            marker = match.group("head")
+            body = norm(match.group("body"))
+            level = heading_level(marker)
+            if level == 1:
+                chapter, topic = body, None
+            elif level == 2:
+                topic = body
+            units.append({"text": body, "level": level, "chapter": chapter, "topic": topic, "marker": marker})
+        else:
+            for piece in re.split(r"[；;。！？!?]", line):
+                value = norm(piece)
+                if value:
+                    units.append({"text": value, "level": 0, "chapter": chapter, "topic": topic, "marker": None})
     output = []
     seen = set()
-    for piece in pieces:
-        piece = re.sub(r"^(?:[-*•]|\d+[\.、)]|[一二三四五六七八九十]+、)\s*", "", piece)
-        piece = norm(piece)
-        if len(piece) < 3 or len(piece) > 300 or piece in seen:
+    for unit in units:
+        value = re.sub(r"^(?:[-*•]|\d+[\.、)]|[一二三四五六七八九十]+、)\s*", "", unit["text"])
+        value = norm(value)
+        if len(value) < 3 or len(value) > 300 or value in seen:
             continue
-        seen.add(piece)
-        output.append(piece)
+        seen.add(value)
+        unit["text"] = value
+        unit["subtopic"] = value
+        output.append(unit)
     return output
 
 
 def topic_label(text: str) -> str:
     """Assign a transparent heuristic topic label / 建立透明 heuristic label。"""
     words = re.findall(r"[\u4e00-\u9fffA-Za-z][\u4e00-\u9fffA-Za-z0-9+#-]{1,30}", text)
-    meaningful = [word for word in words if not GENERIC_RE.search(word)]
+    meaningful = [word for word in words if not any(pattern.search(word) for pattern in CONTAMINATION_PATTERNS.values())]
     return " / ".join(meaningful[:5]) if meaningful else text[:80]
+
+
+def contamination_labels(text: str) -> list[str]:
+    """Return contamination flags / 回傳 contamination flags。"""
+    return [name for name, pattern in CONTAMINATION_PATTERNS.items() if pattern.search(text)]
 
 
 def main() -> int:
@@ -103,9 +146,10 @@ def main() -> int:
             parser_status[status] += 1
             sections.append({"field": field, "raw_text": raw, "item_count": len(items), "parser_status": status})
             for index, item in enumerate(items):
-                chunk_id = "SCH-" + hashlib.sha256(f"{record.get('record_id')}|{field}|{index}|{item}".encode()).hexdigest()[:20]
-                syllabus_chunks.append({"chunk_id": chunk_id, "record_id": record.get("record_id"), "course_title": record.get("course_title"), "field": field, "section_index": index, "chapter": None, "topic": topic_label(item), "subtopic": item, "text": item, "raw_text": item, "source_path": FORMAL_PATH, "source_commit": FORMAL_COMMIT, "raw_sha256": record.get("raw_sha256") or record.get("content_sha256"), "extraction_status": "machine_candidate"})
-        syllabus_rows.append({"record_id": record.get("record_id"), "course_title": record.get("course_title"), "sections": sections, "parser_status": "partial" if not sections else "extracted", "source_path": FORMAL_PATH, "source_commit": FORMAL_COMMIT})
+                chunk_id = "SCH-" + hashlib.sha256(f"{record.get('candidate_id')}|{field}|{index}|{item['text']}".encode()).hexdigest()[:20]
+                flags = contamination_labels(item["text"])
+                syllabus_chunks.append({"chunk_id": chunk_id, "record_id": record.get("candidate_id"), "course_title": record.get("course_title"), "field": field, "section_index": index, "chapter": item.get("chapter"), "topic": item.get("topic") or topic_label(item["text"]), "subtopic": item["text"], "text": item["text"], "raw_text": item["text"], "source_path": FORMAL_PATH, "source_commit": FORMAL_COMMIT, "raw_sha256": record.get("raw_sha256") or record.get("content_sha256"), "contamination_labels": flags, "lane": "contamination" if flags else "content", "extraction_status": "machine_candidate"})
+        syllabus_rows.append({"record_id": record.get("candidate_id"), "course_title": record.get("course_title"), "sections": sections, "parser_status": "partial" if not sections else "extracted", "source_path": FORMAL_PATH, "source_commit": FORMAL_COMMIT})
     outline_status = Counter()
     for outline in outlines:
         oid = record_id(outline)
@@ -116,9 +160,10 @@ def main() -> int:
             items = split_atomic(raw)
             outline_status["fields_present"] += 1
             for index, item in enumerate(items):
-                item_id = "OIT-" + hashlib.sha256(f"{oid}|{field}|{index}|{item}".encode()).hexdigest()[:20]
-                outline_items.append({"outline_record_id": oid, "subject_name": outline.get("subject_name"), "field": field, "item_index": index, "chapter": None, "topic": topic_label(item), "subtopic": item, "text": item, "raw_text": item, "source": outline.get("source"), "source_path": OUTLINE_PATH, "source_commit": OUTLINE_COMMIT, "item_id": item_id, "extraction_status": "machine_candidate"})
-    report = {"experiment": "phase3_retrieval_refinement_topic_extraction_v1", "formal_records": len(formal), "outline_records": len(outlines), "syllabus_sections": len(syllabus_rows), "syllabus_atomic_topic_chunks": len(syllabus_chunks), "outline_atomic_items": len(outline_items), "syllabus_parser_status": dict(parser_status), "outline_status": dict(outline_status), "raw_preserved": True, "machine_inference_only": True, "human_truth": False, "promotion_status": "blocked"}
+                item_id = "OIT-" + hashlib.sha256(f"{oid}|{field}|{index}|{item['text']}".encode()).hexdigest()[:20]
+                flags = contamination_labels(item["text"])
+                outline_items.append({"outline_record_id": oid, "subject_name": outline.get("subject_name"), "field": field, "item_index": index, "chapter": item.get("chapter"), "topic": item.get("topic") or topic_label(item["text"]), "subtopic": item["text"], "text": item["text"], "raw_text": item["text"], "source": outline.get("source"), "source_path": OUTLINE_PATH, "source_commit": OUTLINE_COMMIT, "item_id": item_id, "contamination_labels": flags, "lane": "contamination" if flags else "content", "extraction_status": "machine_candidate"})
+    report = {"experiment": "phase3_retrieval_refinement_topic_extraction_v2", "formal_records": len(formal), "outline_records": len(outlines), "syllabus_sections": len(syllabus_rows), "syllabus_atomic_topic_chunks": len(syllabus_chunks), "outline_atomic_items": len(outline_items), "syllabus_parser_status": dict(parser_status), "outline_status": dict(outline_status), "syllabus_lanes": dict(Counter(row["lane"] for row in syllabus_chunks)), "outline_lanes": dict(Counter(row["lane"] for row in outline_items)), "syllabus_hierarchy_depth": dict(Counter(1 if row.get("chapter") else 0 for row in syllabus_chunks)), "outline_hierarchy_depth": dict(Counter(1 if row.get("chapter") else 0 for row in outline_items)), "record_id_field": "candidate_id", "raw_preserved": True, "machine_inference_only": True, "human_truth": False, "promotion_status": "blocked"}
     (args.output_dir / "refinement_report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     (args.output_dir / "syllabus_section_parse.jsonl").write_text("".join(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n" for row in syllabus_rows), encoding="utf-8")
     (args.output_dir / "syllabus_atomic_topic_chunks.jsonl").write_text("".join(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n" for row in syllabus_chunks), encoding="utf-8")

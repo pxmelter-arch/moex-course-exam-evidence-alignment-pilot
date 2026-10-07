@@ -14,7 +14,7 @@ from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 REFINE = ROOT / "experiments/phase3_retrieval_refinement_v1"
-COVERAGE = ROOT / "experiments/phase3_topic_coverage_reranking_v1"
+COVERAGE = ROOT / "experiments/phase3_topic_coverage_reranking_v2"
 PACKS = ROOT / "experiments/phase3_independent_evidence_audit_v1/evidence_packs.jsonl"
 
 
