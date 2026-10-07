@@ -1,0 +1,31 @@
+{
+  "diagnostic_proxy": "title_exact; not human alignment truth",
+  "experiment": "phase3_identity_review_and_variant_ranking_v1",
+  "formal_alignment": "not_started",
+  "identity_review_queue": 149,
+  "promotion_status": "blocked",
+  "qdrant_ingest": false,
+  "ranker_miss_case_titles": [
+    "計算機概論"
+  ],
+  "ranker_miss_cases": 5,
+  "review_decisions_created": 0,
+  "variant_ablation_metrics": {
+    "current": {
+      "top10_exact": 27,
+      "top1_exact": 22
+    },
+    "hard_exact_then_score": {
+      "top10_exact": 27,
+      "top1_exact": 27
+    },
+    "title_boost_020": {
+      "top10_exact": 27,
+      "top1_exact": 27
+    },
+    "title_boost_050": {
+      "top10_exact": 27,
+      "top1_exact": 27
+    }
+  }
+}

@@ -477,6 +477,36 @@ def test_phase3_failure_localization() -> None:
     assert report["qdrant_ingest"] is False
 
 
+def test_phase3_identity_variant_ablation() -> None:
+    """Validate identity review and variant ablation / 驗證 identity review。"""
+    artifact_dir = ROOT / "experiments/phase3_identity_review_variant_ablation_v1"
+    report = json.loads((artifact_dir / "identity_variant_report.json").read_text(encoding="utf-8"))
+    queue = (artifact_dir / "identity_review_queue.jsonl").read_text(encoding="utf-8").splitlines()
+    cases = (artifact_dir / "variant_ranker_miss_cases.jsonl").read_text(encoding="utf-8").splitlines()
+    assert report["identity_review_queue"] == 149
+    assert report["ranker_miss_cases"] == 5
+    assert len(queue) == 149
+    assert len(cases) == 5
+    assert report["variant_ablation_metrics"]["current"] == {"top1_exact": 22, "top10_exact": 27}
+    assert report["variant_ablation_metrics"]["hard_exact_then_score"] == {"top1_exact": 27, "top10_exact": 27}
+    assert report["review_decisions_created"] == 0
+    assert report["promotion_status"] == "blocked"
+
+
+def test_phase3_contamination_paired_ablation() -> None:
+    """Validate contamination lanes / 驗證 contamination lanes。"""
+    root = ROOT / "experiments/phase3_contamination_ablation_v1"
+    all_report = json.loads((ROOT / "experiments/phase3_topic_coverage_reranking_v2/topic_coverage_reranking_report.json").read_text(encoding="utf-8"))
+    content_report = json.loads((root / "content_only/topic_coverage_reranking_report.json").read_text(encoding="utf-8"))
+    downweight_report = json.loads((root / "downweight_025/topic_coverage_reranking_report.json").read_text(encoding="utf-8"))
+    assert all_report["coverage_reranked"] == {"top1_exact": 22, "top10_exact": 27}
+    assert content_report["coverage_reranked"] == {"top1_exact": 22, "top10_exact": 27}
+    assert downweight_report["coverage_reranked"] == {"top1_exact": 22, "top10_exact": 27}
+    assert content_report["lane_mode"] == "content_only"
+    assert downweight_report["lane_mode"] == "downweight"
+    assert downweight_report["contamination_weight"] == 0.25
+
+
 def test_phase2_3a_primary_content_retrieval() -> None:
     """Validate primary content retrieval / 驗證 primary content retrieval。"""
     artifact_dir = ROOT / "experiments/phase2_3a_primary_content_retrieval_v1"

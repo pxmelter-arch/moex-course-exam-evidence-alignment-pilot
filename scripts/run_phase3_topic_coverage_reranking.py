@@ -49,12 +49,17 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--source-repo", type=Path, required=True)
     parser.add_argument("--output-dir", type=Path, required=True)
+    parser.add_argument("--lane-mode", choices=["all", "content_only", "downweight"], default="all")
+    parser.add_argument("--contamination-weight", type=float, default=0.25)
     parser.add_argument("--thresholds", default="0.30,0.42,0.55,0.65")
     args = parser.parse_args()
     thresholds = [float(value) for value in args.thresholds.split(",") if value.strip()]
     os.environ["HF_HUB_OFFLINE"] = "1"
     os.environ["TRANSFORMERS_OFFLINE"] = "1"
     syllabus = load_jsonl(REFINE / "syllabus_atomic_topic_chunks.jsonl")
+    if args.lane_mode == "content_only":
+        syllabus = [row for row in syllabus if row.get("lane") == "content"]
+    chunk_weights = np.asarray([1.0 if row.get("lane") == "content" else args.contamination_weight for row in syllabus], dtype=np.float32)
     outline_items = load_jsonl(REFINE / "outline_atomic_items.jsonl")
     paired = load_jsonl(PAIRED)
     outlines = git_json(args.source_repo, OUTLINE_COMMIT, OUTLINE_PATH)
@@ -93,6 +98,8 @@ def main() -> int:
                 lexical = (syllabus_tfidf[chunk_idx] @ outline_tfidf[item_idx].T).toarray()
                 dense = np.asarray(syllabus_emb[chunk_idx] @ outline_emb[item_idx].T)
                 combined = (lexical + dense) / 2.0
+                if args.lane_mode == "downweight":
+                    combined = combined * chunk_weights[chunk_idx][:, None]
                 lexical_max = float(lexical.max())
                 dense_max = float(dense.max())
                 coverage_by_threshold = {}
@@ -127,7 +134,7 @@ def main() -> int:
         for candidate in ranked:
             status_counts[candidate["candidate_status"]] += 1
         result_rows.append({"record_id": record_id, "course_title": paired_row["course_title"], "candidate_count": len(ranked), "candidates": ranked, "coverage_threshold": 0.42, "machine_inference_only": True})
-    report = {"experiment": "phase3_topic_matching_bidirectional_coverage_reranking_v1", "formal_records": len(paired), "syllabus_atomic_chunks": len(syllabus), "outline_atomic_items": len(outline_items), "candidate_rows": len(result_rows) * 10, "embedding": {"model": MODEL_NAME, "local_only": True, "normalized": True}, "coverage": {"threshold": 0.42, "directional": True}, "baseline_expanded": {"top1_exact": baseline_top1, "top10_exact": baseline_top10}, "coverage_reranked": {"top1_exact": top1, "top10_exact": top10}, "delta": {"top1": top1 - baseline_top1, "top10": top10 - baseline_top10}, "status_counts": dict(status_counts), "formal_alignment": "not_started", "promotion_status": "blocked", "qdrant_ingest": False}
+    report = {"experiment": "phase3_topic_matching_bidirectional_coverage_reranking_v1", "lane_mode": args.lane_mode, "contamination_weight": args.contamination_weight, "formal_records": len(paired), "syllabus_atomic_chunks": len(syllabus), "outline_atomic_items": len(outline_items), "candidate_rows": len(result_rows) * 10, "embedding": {"model": MODEL_NAME, "local_only": True, "normalized": True}, "coverage": {"threshold": 0.42, "directional": True}, "baseline_expanded": {"top1_exact": baseline_top1, "top10_exact": baseline_top10}, "coverage_reranked": {"top1_exact": top1, "top10_exact": top10}, "delta": {"top1": top1 - baseline_top1, "top10": top10 - baseline_top10}, "status_counts": dict(status_counts), "formal_alignment": "not_started", "promotion_status": "blocked", "qdrant_ingest": False}
     args.output_dir.mkdir(parents=True, exist_ok=True)
     (args.output_dir / "topic_coverage_reranking_report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     (args.output_dir / "coverage_reranked_results.jsonl").write_text("".join(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n" for row in result_rows), encoding="utf-8")
