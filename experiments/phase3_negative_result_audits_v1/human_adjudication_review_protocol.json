@@ -1,0 +1,31 @@
+{
+  "mode": "no-human-label",
+  "promotion_rule": "no automatic promotion; explicit adjudication and independent evidence required",
+  "purpose": "review machine candidates without treating machine inference as truth",
+  "queue_size": 1760,
+  "required_fields": {
+    "adjudication_timestamp": null,
+    "adjudicator": null,
+    "evidence_sufficiency": [
+      "sufficient",
+      "insufficient",
+      "unclear",
+      null
+    ],
+    "identity_decision": [
+      "accept",
+      "alias",
+      "reject",
+      "unclear",
+      null
+    ],
+    "label": [
+      "supports",
+      "partially_supports",
+      "does_not_support",
+      "unclear",
+      null
+    ],
+    "notes": null
+  }
+}

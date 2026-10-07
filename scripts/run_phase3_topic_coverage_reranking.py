@@ -49,7 +49,9 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--source-repo", type=Path, required=True)
     parser.add_argument("--output-dir", type=Path, required=True)
+    parser.add_argument("--thresholds", default="0.30,0.42,0.55,0.65")
     args = parser.parse_args()
+    thresholds = [float(value) for value in args.thresholds.split(",") if value.strip()]
     os.environ["HF_HUB_OFFLINE"] = "1"
     os.environ["TRANSFORMERS_OFFLINE"] = "1"
     syllabus = load_jsonl(REFINE / "syllabus_atomic_topic_chunks.jsonl")
@@ -84,6 +86,7 @@ def main() -> int:
             item_idx = items_by_outline.get(oid, [])
             if not item_idx or not chunk_idx:
                 lexical_max = dense_max = 0.0
+                coverage_by_threshold = {str(threshold): {"syllabus_to_outline": 0.0, "outline_to_syllabus": 0.0, "bidirectional": 0.0} for threshold in thresholds}
                 s_to_o = o_to_s = 0.0
                 matches = []
             else:
@@ -92,16 +95,22 @@ def main() -> int:
                 combined = (lexical + dense) / 2.0
                 lexical_max = float(lexical.max())
                 dense_max = float(dense.max())
-                s_to_o = float(np.mean(combined.max(axis=0) >= 0.42))
-                o_to_s = float(np.mean(combined.max(axis=1) >= 0.42))
+                coverage_by_threshold = {}
+                for threshold in thresholds:
+                    threshold_s_to_o = float(np.mean(combined.max(axis=0) >= threshold))
+                    threshold_o_to_s = float(np.mean(combined.max(axis=1) >= threshold))
+                    coverage_by_threshold[str(threshold)] = {"syllabus_to_outline": round(threshold_s_to_o, 6), "outline_to_syllabus": round(threshold_o_to_s, 6), "bidirectional": round((threshold_s_to_o + threshold_o_to_s) / 2.0, 6)}
+                s_to_o = coverage_by_threshold[str(0.42)]["syllabus_to_outline"] if str(0.42) in coverage_by_threshold else coverage_by_threshold[str(thresholds[0])]["syllabus_to_outline"]
+                o_to_s = coverage_by_threshold[str(0.42)]["outline_to_syllabus"] if str(0.42) in coverage_by_threshold else coverage_by_threshold[str(thresholds[0])]["outline_to_syllabus"]
                 matches = []
-                for left, right in zip(*np.where(combined >= 0.42)):
+                threshold_for_matches = 0.42 if 0.42 in thresholds else thresholds[0]
+                for left, right in zip(*np.where(combined >= threshold_for_matches)):
                     matches.append({"syllabus_chunk_id": syllabus[chunk_idx[left]]["chunk_id"], "outline_item_id": outline_items[item_idx[right]]["item_id"], "score": round(float(combined[left, right]), 6)})
                 matches = sorted(matches, key=lambda x: x["score"], reverse=True)[:5]
             coverage = (s_to_o + o_to_s) / 2.0
             rerank_score = 0.20 * float(candidate["hybrid_score"]) + 0.25 * lexical_max + 0.25 * dense_max + 0.30 * coverage
-            candidates.append({**candidate, "lexical_topic_max": round(lexical_max, 6), "dense_topic_max": round(dense_max, 6), "syllabus_to_outline_coverage": round(s_to_o, 6), "outline_to_syllabus_coverage": round(o_to_s, 6), "bidirectional_topic_coverage": round(coverage, 6), "coverage_reranked_score": round(rerank_score, 6)})
-            match_rows.append({"record_id": record_id, "outline_record_id": oid, "subject_name": subject_by_id.get(oid), "syllabus_to_outline_coverage": round(s_to_o, 6), "outline_to_syllabus_coverage": round(o_to_s, 6), "matches": matches})
+            candidates.append({**candidate, "lexical_topic_max": round(lexical_max, 6), "dense_topic_max": round(dense_max, 6), "syllabus_to_outline_coverage": round(s_to_o, 6), "outline_to_syllabus_coverage": round(o_to_s, 6), "bidirectional_topic_coverage": round(coverage, 6), "coverage_by_threshold": coverage_by_threshold, "coverage_reranked_score": round(rerank_score, 6)})
+            match_rows.append({"record_id": record_id, "outline_record_id": oid, "subject_name": subject_by_id.get(oid), "coverage_by_threshold": coverage_by_threshold, "syllabus_to_outline_coverage": round(s_to_o, 6), "outline_to_syllabus_coverage": round(o_to_s, 6), "matches": matches})
         ranked = sorted(candidates, key=lambda row: (-row["coverage_reranked_score"], row["outline_record_id"]))
         for rank, candidate in enumerate(ranked, 1):
             candidate["coverage_rank"] = rank

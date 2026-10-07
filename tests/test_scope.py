@@ -444,6 +444,25 @@ def test_phase3_topic_coverage_reranking() -> None:
     assert report["qdrant_ingest"] is False
 
 
+def test_phase3_negative_result_audits() -> None:
+    """Validate negative-result audits / 驗證 negative-result audits。"""
+    artifact_dir = ROOT / "experiments/phase3_negative_result_audits_v1"
+    report = json.loads((artifact_dir / "negative_result_audit_report.json").read_text(encoding="utf-8"))
+    queue = (artifact_dir / "human_review_queue.jsonl").read_text(encoding="utf-8").splitlines()
+    assert report["hierarchy"]["syllabus_chapter_unresolved"] == 4750
+    assert report["hierarchy"]["outline_chapter_unresolved"] == 2573
+    assert report["contamination"]["syllabus_flagged_chunks"] == 632
+    assert report["contamination"]["outline_flagged_items"] == 57
+    assert all(metrics == {"top1_exact": 22, "top10_exact": 27} for metrics in report["threshold_sensitivity"].values())
+    assert report["weight_ablation"]["identity_removed"]["top1_exact"] == 2
+    assert report["independent_corroboration"]["independent_corroboration_ready"] == 0
+    assert report["human_review"]["queue_size"] == 1760
+    assert report["human_review"]["machine_labels_created"] == 0
+    assert len(queue) == 1760
+    assert report["promotion_status"] == "blocked"
+    assert report["qdrant_ingest"] is False
+
+
 def test_phase2_3a_primary_content_retrieval() -> None:
     """Validate primary content retrieval / 驗證 primary content retrieval。"""
     artifact_dir = ROOT / "experiments/phase2_3a_primary_content_retrieval_v1"
