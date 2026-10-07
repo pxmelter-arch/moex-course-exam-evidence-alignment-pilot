@@ -463,6 +463,20 @@ def test_phase3_negative_result_audits() -> None:
     assert report["qdrant_ingest"] is False
 
 
+def test_phase3_failure_localization() -> None:
+    """Validate failure localization / 驗證 failure localization。"""
+    artifact_dir = ROOT / "experiments/phase3_failure_localization_v1"
+    report = json.loads((artifact_dir / "failure_localization_report.json").read_text(encoding="utf-8"))
+    rows = (artifact_dir / "failure_localization.jsonl").read_text(encoding="utf-8").splitlines()
+    assert report["records"] == 176
+    assert report["counts"] == {"proxy_identity_or_catalog_coverage_miss": 149, "proxy_ranker_miss_exact_in_top10": 5, "proxy_top1_exact": 22}
+    assert report["identity_status_counts"]["weak|no_unique_exact_or_strong_alias"] == 143
+    assert report["identity_status_counts"]["ambiguous|strong_machine_alias_requires_review"] == 6
+    assert len(rows) == 176
+    assert report["promotion_status"] == "blocked"
+    assert report["qdrant_ingest"] is False
+
+
 def test_phase2_3a_primary_content_retrieval() -> None:
     """Validate primary content retrieval / 驗證 primary content retrieval。"""
     artifact_dir = ROOT / "experiments/phase2_3a_primary_content_retrieval_v1"

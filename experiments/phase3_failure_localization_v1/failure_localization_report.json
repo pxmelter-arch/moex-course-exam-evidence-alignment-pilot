@@ -1,0 +1,597 @@
+{
+  "causal_boundary": {
+    "contamination_counts": "course-side flags are diagnostics and do not prove causality",
+    "proxy_identity_or_catalog_coverage_miss": "no exact identity proxy in expanded top10; inspect alias, candidate gate, naming, or catalog scope",
+    "proxy_ranker_miss_exact_in_top10": "identity proxy exists in expanded top10 but is not top1; inspect ranking and duplicate variant resolution"
+  },
+  "counts": {
+    "proxy_identity_or_catalog_coverage_miss": 149,
+    "proxy_ranker_miss_exact_in_top10": 5,
+    "proxy_top1_exact": 22
+  },
+  "diagnostic_proxy": "title_exact only; not human alignment truth",
+  "experiment": "phase3_failure_localization_v1",
+  "formal_alignment": "not_started",
+  "identity_status_counts": {
+    "ambiguous|exact_name_has_multiple_outline_variants": 14,
+    "ambiguous|strong_machine_alias_requires_review": 6,
+    "exact|unique_exact_normalized_subject": 13,
+    "weak|no_unique_exact_or_strong_alias": 143
+  },
+  "promotion_status": "blocked",
+  "qdrant_ingest": false,
+  "records": 176,
+  "samples": {
+    "proxy_identity_or_catalog_coverage_miss": [
+      {
+        "category": "proxy_identity_or_catalog_coverage_miss",
+        "course_title": "網路安全",
+        "exact_candidates": [],
+        "exact_candidates_in_expanded_top10": 0,
+        "exact_title_match_count": 0,
+        "identity_reason": "strong_machine_alias_requires_review",
+        "identity_status": "ambiguous",
+        "record_id": "CAND-332a1c35aa4cbd06",
+        "recovered_top10": false,
+        "top1_contamination_chunks": 6,
+        "top1_content_chunks": 33,
+        "top1_hybrid_score": 0.8,
+        "top1_outline_record_id": "OUT-39b200a95881fd151a34",
+        "top1_subject_name": "資通網路（原：電腦網路）、（原：資料通訊）",
+        "top1_title_exact": false,
+        "top1_topic_coverage": 0.137821
+      },
+      {
+        "category": "proxy_identity_or_catalog_coverage_miss",
+        "course_title": "Database Systems",
+        "exact_candidates": [],
+        "exact_candidates_in_expanded_top10": 0,
+        "exact_title_match_count": 0,
+        "identity_reason": "no_unique_exact_or_strong_alias",
+        "identity_status": "weak",
+        "record_id": "YZU-IND-CS561",
+        "recovered_top10": false,
+        "top1_contamination_chunks": 4,
+        "top1_content_chunks": 17,
+        "top1_hybrid_score": 0.8,
+        "top1_outline_record_id": "OUT-da00b3003439b97b06e4",
+        "top1_subject_name": "資料庫應用",
+        "top1_title_exact": false,
+        "top1_topic_coverage": 0.0
+      },
+      {
+        "category": "proxy_identity_or_catalog_coverage_miss",
+        "course_title": "Special Topics on Network Security",
+        "exact_candidates": [],
+        "exact_candidates_in_expanded_top10": 0,
+        "exact_title_match_count": 0,
+        "identity_reason": "no_unique_exact_or_strong_alias",
+        "identity_status": "weak",
+        "record_id": "YZU-IND-CS689",
+        "recovered_top10": false,
+        "top1_contamination_chunks": 9,
+        "top1_content_chunks": 24,
+        "top1_hybrid_score": 0.79994501,
+        "top1_outline_record_id": "OUT-39b200a95881fd151a34",
+        "top1_subject_name": "資通網路（原：電腦網路）、（原：資料通訊）",
+        "top1_title_exact": false,
+        "top1_topic_coverage": 0.155303
+      },
+      {
+        "category": "proxy_identity_or_catalog_coverage_miss",
+        "course_title": "中文閱讀與表達(一)",
+        "exact_candidates": [],
+        "exact_candidates_in_expanded_top10": 0,
+        "exact_title_match_count": 0,
+        "identity_reason": "no_unique_exact_or_strong_alias",
+        "identity_status": "weak",
+        "record_id": "CAND-5fbbb0f78798c8db",
+        "recovered_top10": false,
+        "top1_contamination_chunks": 11,
+        "top1_content_chunks": 34,
+        "top1_hybrid_score": 0.72578964,
+        "top1_outline_record_id": "OUT-80d710c8eac4098fd217",
+        "top1_subject_name": "資料結構",
+        "top1_title_exact": false,
+        "top1_topic_coverage": 0.0
+      },
+      {
+        "category": "proxy_identity_or_catalog_coverage_miss",
+        "course_title": "英語聽講實務(一)(1)",
+        "exact_candidates": [],
+        "exact_candidates_in_expanded_top10": 0,
+        "exact_title_match_count": 0,
+        "identity_reason": "no_unique_exact_or_strong_alias",
+        "identity_status": "weak",
+        "record_id": "CAND-eb8d801c32b179ed",
+        "recovered_top10": false,
+        "top1_contamination_chunks": 9,
+        "top1_content_chunks": 73,
+        "top1_hybrid_score": 0.67992566,
+        "top1_outline_record_id": "OUT-92a205afb4c410583014",
+        "top1_subject_name": "程式語言",
+        "top1_title_exact": false,
+        "top1_topic_coverage": 0.0
+      },
+      {
+        "category": "proxy_identity_or_catalog_coverage_miss",
+        "course_title": "英語聽講實務(一)(2)",
+        "exact_candidates": [],
+        "exact_candidates_in_expanded_top10": 0,
+        "exact_title_match_count": 0,
+        "identity_reason": "no_unique_exact_or_strong_alias",
+        "identity_status": "weak",
+        "record_id": "CAND-2a0f8e044b9f3f1e",
+        "recovered_top10": false,
+        "top1_contamination_chunks": 7,
+        "top1_content_chunks": 72,
+        "top1_hybrid_score": 0.65604179,
+        "top1_outline_record_id": "OUT-80d710c8eac4098fd217",
+        "top1_subject_name": "資料結構",
+        "top1_title_exact": false,
+        "top1_topic_coverage": 0.0
+      },
+      {
+        "category": "proxy_identity_or_catalog_coverage_miss",
+        "course_title": "英語聽講實務(一)(3)",
+        "exact_candidates": [],
+        "exact_candidates_in_expanded_top10": 0,
+        "exact_title_match_count": 0,
+        "identity_reason": "no_unique_exact_or_strong_alias",
+        "identity_status": "weak",
+        "record_id": "CAND-cf4c82ee8819ceea",
+        "recovered_top10": false,
+        "top1_contamination_chunks": 10,
+        "top1_content_chunks": 74,
+        "top1_hybrid_score": 0.68085762,
+        "top1_outline_record_id": "OUT-92a205afb4c410583014",
+        "top1_subject_name": "程式語言",
+        "top1_title_exact": false,
+        "top1_topic_coverage": 0.0
+      },
+      {
+        "category": "proxy_identity_or_catalog_coverage_miss",
+        "course_title": "體育生活(一)",
+        "exact_candidates": [],
+        "exact_candidates_in_expanded_top10": 0,
+        "exact_title_match_count": 0,
+        "identity_reason": "no_unique_exact_or_strong_alias",
+        "identity_status": "weak",
+        "record_id": "CAND-4103a0890a5144a7",
+        "recovered_top10": false,
+        "top1_contamination_chunks": 11,
+        "top1_content_chunks": 110,
+        "top1_hybrid_score": 0.74551139,
+        "top1_outline_record_id": "OUT-19231f4ffc5a8d49c4d7",
+        "top1_subject_name": "流體力學",
+        "top1_title_exact": false,
+        "top1_topic_coverage": 0.0
+      },
+      {
+        "category": "proxy_identity_or_catalog_coverage_miss",
+        "course_title": "微積分(一)",
+        "exact_candidates": [],
+        "exact_candidates_in_expanded_top10": 0,
+        "exact_title_match_count": 0,
+        "identity_reason": "no_unique_exact_or_strong_alias",
+        "identity_status": "weak",
+        "record_id": "CAND-387fdca42d105252",
+        "recovered_top10": false,
+        "top1_contamination_chunks": 0,
+        "top1_content_chunks": 6,
+        "top1_hybrid_score": 0.75765685,
+        "top1_outline_record_id": "OUT-c993533968db95b75196",
+        "top1_subject_name": "應用數學（包括微積分、微分方程與向量分析）同：應用數學（包括微積分、微分方程、向量分析）",
+        "top1_title_exact": false,
+        "top1_topic_coverage": 0.0
+      },
+      {
+        "category": "proxy_identity_or_catalog_coverage_miss",
+        "course_title": "計算機程式",
+        "exact_candidates": [],
+        "exact_candidates_in_expanded_top10": 0,
+        "exact_title_match_count": 0,
+        "identity_reason": "no_unique_exact_or_strong_alias",
+        "identity_status": "weak",
+        "record_id": "CAND-601fc0d48157868c",
+        "recovered_top10": false,
+        "top1_contamination_chunks": 7,
+        "top1_content_chunks": 46,
+        "top1_hybrid_score": 0.8,
+        "top1_outline_record_id": "OUT-92a205afb4c410583014",
+        "top1_subject_name": "程式語言",
+        "top1_title_exact": false,
+        "top1_topic_coverage": 0.134434
+      }
+    ],
+    "proxy_ranker_miss_exact_in_top10": [
+      {
+        "category": "proxy_ranker_miss_exact_in_top10",
+        "course_title": "計算機概論",
+        "exact_candidates": [
+          {
+            "outline_record_id": "OUT-62b98cd63f9cf230f308",
+            "rank": 6,
+            "subject_name": "計算機概論"
+          }
+        ],
+        "exact_candidates_in_expanded_top10": 1,
+        "exact_title_match_count": 1,
+        "identity_reason": "unique_exact_normalized_subject",
+        "identity_status": "exact",
+        "record_id": "CAND-5eb256c08ce5ed50",
+        "recovered_top10": true,
+        "top1_contamination_chunks": 4,
+        "top1_content_chunks": 90,
+        "top1_hybrid_score": 0.76622907,
+        "top1_outline_record_id": "OUT-80d710c8eac4098fd217",
+        "top1_subject_name": "資料結構",
+        "top1_title_exact": false,
+        "top1_topic_coverage": 0.505319
+      },
+      {
+        "category": "proxy_ranker_miss_exact_in_top10",
+        "course_title": "計算機概論",
+        "exact_candidates": [
+          {
+            "outline_record_id": "OUT-62b98cd63f9cf230f308",
+            "rank": 6,
+            "subject_name": "計算機概論"
+          }
+        ],
+        "exact_candidates_in_expanded_top10": 1,
+        "exact_title_match_count": 1,
+        "identity_reason": "unique_exact_normalized_subject",
+        "identity_status": "exact",
+        "record_id": "formal-125",
+        "recovered_top10": true,
+        "top1_contamination_chunks": 0,
+        "top1_content_chunks": 0,
+        "top1_hybrid_score": 0.79541927,
+        "top1_outline_record_id": "OUT-92a205afb4c410583014",
+        "top1_subject_name": "程式語言",
+        "top1_title_exact": false,
+        "top1_topic_coverage": 0.0
+      },
+      {
+        "category": "proxy_ranker_miss_exact_in_top10",
+        "course_title": "計算機概論",
+        "exact_candidates": [
+          {
+            "outline_record_id": "OUT-62b98cd63f9cf230f308",
+            "rank": 6,
+            "subject_name": "計算機概論"
+          }
+        ],
+        "exact_candidates_in_expanded_top10": 1,
+        "exact_title_match_count": 1,
+        "identity_reason": "unique_exact_normalized_subject",
+        "identity_status": "exact",
+        "record_id": "formal-143",
+        "recovered_top10": true,
+        "top1_contamination_chunks": 0,
+        "top1_content_chunks": 0,
+        "top1_hybrid_score": 0.79541927,
+        "top1_outline_record_id": "OUT-92a205afb4c410583014",
+        "top1_subject_name": "程式語言",
+        "top1_title_exact": false,
+        "top1_topic_coverage": 0.0
+      },
+      {
+        "category": "proxy_ranker_miss_exact_in_top10",
+        "course_title": "計算機概論",
+        "exact_candidates": [
+          {
+            "outline_record_id": "OUT-62b98cd63f9cf230f308",
+            "rank": 5,
+            "subject_name": "計算機概論"
+          }
+        ],
+        "exact_candidates_in_expanded_top10": 1,
+        "exact_title_match_count": 1,
+        "identity_reason": "unique_exact_normalized_subject",
+        "identity_status": "exact",
+        "record_id": "formal-163",
+        "recovered_top10": false,
+        "top1_contamination_chunks": 0,
+        "top1_content_chunks": 0,
+        "top1_hybrid_score": 0.74362645,
+        "top1_outline_record_id": "OUT-39b200a95881fd151a34",
+        "top1_subject_name": "資通網路（原：電腦網路）、（原：資料通訊）",
+        "top1_title_exact": false,
+        "top1_topic_coverage": 0.0
+      },
+      {
+        "category": "proxy_ranker_miss_exact_in_top10",
+        "course_title": "計算機概論",
+        "exact_candidates": [
+          {
+            "outline_record_id": "OUT-62b98cd63f9cf230f308",
+            "rank": 6,
+            "subject_name": "計算機概論"
+          }
+        ],
+        "exact_candidates_in_expanded_top10": 1,
+        "exact_title_match_count": 1,
+        "identity_reason": "unique_exact_normalized_subject",
+        "identity_status": "exact",
+        "record_id": "formal-164",
+        "recovered_top10": false,
+        "top1_contamination_chunks": 0,
+        "top1_content_chunks": 0,
+        "top1_hybrid_score": 0.78467971,
+        "top1_outline_record_id": "OUT-80d710c8eac4098fd217",
+        "top1_subject_name": "資料結構",
+        "top1_title_exact": false,
+        "top1_topic_coverage": 0.0
+      }
+    ],
+    "proxy_top1_exact": [
+      {
+        "category": "proxy_top1_exact",
+        "course_title": "資料結構",
+        "exact_candidates": [
+          {
+            "outline_record_id": "OUT-80d710c8eac4098fd217",
+            "rank": 1,
+            "subject_name": "資料結構"
+          },
+          {
+            "outline_record_id": "OUT-2a1ac02432ff3717e609",
+            "rank": 2,
+            "subject_name": "資料結構"
+          }
+        ],
+        "exact_candidates_in_expanded_top10": 2,
+        "exact_title_match_count": 2,
+        "identity_reason": "exact_name_has_multiple_outline_variants",
+        "identity_status": "ambiguous",
+        "record_id": "CAND-55d1d948463e0d6a",
+        "recovered_top10": false,
+        "top1_contamination_chunks": 2,
+        "top1_content_chunks": 12,
+        "top1_hybrid_score": 0.94386215,
+        "top1_outline_record_id": "OUT-2a1ac02432ff3717e609",
+        "top1_subject_name": "資料結構",
+        "top1_title_exact": true,
+        "top1_topic_coverage": 0.446429
+      },
+      {
+        "category": "proxy_top1_exact",
+        "course_title": "計算機概論",
+        "exact_candidates": [
+          {
+            "outline_record_id": "OUT-62b98cd63f9cf230f308",
+            "rank": 1,
+            "subject_name": "計算機概論"
+          }
+        ],
+        "exact_candidates_in_expanded_top10": 1,
+        "exact_title_match_count": 1,
+        "identity_reason": "unique_exact_normalized_subject",
+        "identity_status": "exact",
+        "record_id": "CAND-c154d50f6fe9683e",
+        "recovered_top10": false,
+        "top1_contamination_chunks": 7,
+        "top1_content_chunks": 36,
+        "top1_hybrid_score": 0.82197234,
+        "top1_outline_record_id": "OUT-62b98cd63f9cf230f308",
+        "top1_subject_name": "計算機概論",
+        "top1_title_exact": true,
+        "top1_topic_coverage": 0.189922
+      },
+      {
+        "category": "proxy_top1_exact",
+        "course_title": "資料結構",
+        "exact_candidates": [
+          {
+            "outline_record_id": "OUT-80d710c8eac4098fd217",
+            "rank": 1,
+            "subject_name": "資料結構"
+          },
+          {
+            "outline_record_id": "OUT-2a1ac02432ff3717e609",
+            "rank": 2,
+            "subject_name": "資料結構"
+          }
+        ],
+        "exact_candidates_in_expanded_top10": 2,
+        "exact_title_match_count": 2,
+        "identity_reason": "exact_name_has_multiple_outline_variants",
+        "identity_status": "ambiguous",
+        "record_id": "CAND-86ed92fbdd307798",
+        "recovered_top10": false,
+        "top1_contamination_chunks": 4,
+        "top1_content_chunks": 23,
+        "top1_hybrid_score": 0.96623762,
+        "top1_outline_record_id": "OUT-2a1ac02432ff3717e609",
+        "top1_subject_name": "資料結構",
+        "top1_title_exact": true,
+        "top1_topic_coverage": 0.555555
+      },
+      {
+        "category": "proxy_top1_exact",
+        "course_title": "資料結構",
+        "exact_candidates": [
+          {
+            "outline_record_id": "OUT-80d710c8eac4098fd217",
+            "rank": 1,
+            "subject_name": "資料結構"
+          },
+          {
+            "outline_record_id": "OUT-2a1ac02432ff3717e609",
+            "rank": 2,
+            "subject_name": "資料結構"
+          }
+        ],
+        "exact_candidates_in_expanded_top10": 2,
+        "exact_title_match_count": 2,
+        "identity_reason": "exact_name_has_multiple_outline_variants",
+        "identity_status": "ambiguous",
+        "record_id": "CAND-7258a70578844b1f",
+        "recovered_top10": false,
+        "top1_contamination_chunks": 9,
+        "top1_content_chunks": 25,
+        "top1_hybrid_score": 0.96621233,
+        "top1_outline_record_id": "OUT-2a1ac02432ff3717e609",
+        "top1_subject_name": "資料結構",
+        "top1_title_exact": true,
+        "top1_topic_coverage": 0.544118
+      },
+      {
+        "category": "proxy_top1_exact",
+        "course_title": "工程數學",
+        "exact_candidates": [
+          {
+            "outline_record_id": "OUT-b9f6c38cd7308442eb58",
+            "rank": 1,
+            "subject_name": "工程數學"
+          }
+        ],
+        "exact_candidates_in_expanded_top10": 1,
+        "exact_title_match_count": 1,
+        "identity_reason": "unique_exact_normalized_subject",
+        "identity_status": "exact",
+        "record_id": "CAND-4f0eb64c1926a9de",
+        "recovered_top10": false,
+        "top1_contamination_chunks": 6,
+        "top1_content_chunks": 28,
+        "top1_hybrid_score": 0.82932191,
+        "top1_outline_record_id": "OUT-b9f6c38cd7308442eb58",
+        "top1_subject_name": "工程數學",
+        "top1_title_exact": true,
+        "top1_topic_coverage": 0.392157
+      },
+      {
+        "category": "proxy_top1_exact",
+        "course_title": "程式語言",
+        "exact_candidates": [
+          {
+            "outline_record_id": "OUT-92a205afb4c410583014",
+            "rank": 1,
+            "subject_name": "程式語言"
+          }
+        ],
+        "exact_candidates_in_expanded_top10": 1,
+        "exact_title_match_count": 1,
+        "identity_reason": "unique_exact_normalized_subject",
+        "identity_status": "exact",
+        "record_id": "CAND-2423ae3204c0b4f1",
+        "recovered_top10": false,
+        "top1_contamination_chunks": 2,
+        "top1_content_chunks": 10,
+        "top1_hybrid_score": 1.0,
+        "top1_outline_record_id": "OUT-92a205afb4c410583014",
+        "top1_subject_name": "程式語言",
+        "top1_title_exact": true,
+        "top1_topic_coverage": 0.458334
+      },
+      {
+        "category": "proxy_top1_exact",
+        "course_title": "程式語言",
+        "exact_candidates": [
+          {
+            "outline_record_id": "OUT-92a205afb4c410583014",
+            "rank": 1,
+            "subject_name": "程式語言"
+          }
+        ],
+        "exact_candidates_in_expanded_top10": 1,
+        "exact_title_match_count": 1,
+        "identity_reason": "unique_exact_normalized_subject",
+        "identity_status": "exact",
+        "record_id": "CAND-e42978c248c6d8c6",
+        "recovered_top10": false,
+        "top1_contamination_chunks": 4,
+        "top1_content_chunks": 30,
+        "top1_hybrid_score": 1.0,
+        "top1_outline_record_id": "OUT-92a205afb4c410583014",
+        "top1_subject_name": "程式語言",
+        "top1_title_exact": true,
+        "top1_topic_coverage": 0.404412
+      },
+      {
+        "category": "proxy_top1_exact",
+        "course_title": "程式語言",
+        "exact_candidates": [
+          {
+            "outline_record_id": "OUT-92a205afb4c410583014",
+            "rank": 1,
+            "subject_name": "程式語言"
+          }
+        ],
+        "exact_candidates_in_expanded_top10": 1,
+        "exact_title_match_count": 1,
+        "identity_reason": "unique_exact_normalized_subject",
+        "identity_status": "exact",
+        "record_id": "CAND-076acedcda85e12a",
+        "recovered_top10": false,
+        "top1_contamination_chunks": 9,
+        "top1_content_chunks": 31,
+        "top1_hybrid_score": 1.0,
+        "top1_outline_record_id": "OUT-92a205afb4c410583014",
+        "top1_subject_name": "程式語言",
+        "top1_title_exact": true,
+        "top1_topic_coverage": 0.4125
+      },
+      {
+        "category": "proxy_top1_exact",
+        "course_title": "資料結構",
+        "exact_candidates": [
+          {
+            "outline_record_id": "OUT-80d710c8eac4098fd217",
+            "rank": 1,
+            "subject_name": "資料結構"
+          },
+          {
+            "outline_record_id": "OUT-2a1ac02432ff3717e609",
+            "rank": 2,
+            "subject_name": "資料結構"
+          }
+        ],
+        "exact_candidates_in_expanded_top10": 2,
+        "exact_title_match_count": 2,
+        "identity_reason": "exact_name_has_multiple_outline_variants",
+        "identity_status": "ambiguous",
+        "record_id": "CAND-a944e672bc967b55",
+        "recovered_top10": false,
+        "top1_contamination_chunks": 1,
+        "top1_content_chunks": 10,
+        "top1_hybrid_score": 0.97308166,
+        "top1_outline_record_id": "OUT-2a1ac02432ff3717e609",
+        "top1_subject_name": "資料結構",
+        "top1_title_exact": true,
+        "top1_topic_coverage": 0.465909
+      },
+      {
+        "category": "proxy_top1_exact",
+        "course_title": "資料結構",
+        "exact_candidates": [
+          {
+            "outline_record_id": "OUT-80d710c8eac4098fd217",
+            "rank": 1,
+            "subject_name": "資料結構"
+          },
+          {
+            "outline_record_id": "OUT-2a1ac02432ff3717e609",
+            "rank": 2,
+            "subject_name": "資料結構"
+          }
+        ],
+        "exact_candidates_in_expanded_top10": 2,
+        "exact_title_match_count": 2,
+        "identity_reason": "exact_name_has_multiple_outline_variants",
+        "identity_status": "ambiguous",
+        "record_id": "formal-129",
+        "recovered_top10": false,
+        "top1_contamination_chunks": 0,
+        "top1_content_chunks": 0,
+        "top1_hybrid_score": 0.99036654,
+        "top1_outline_record_id": "OUT-80d710c8eac4098fd217",
+        "top1_subject_name": "資料結構",
+        "top1_title_exact": true,
+        "top1_topic_coverage": 0.0
+      }
+    ]
+  }
+}
