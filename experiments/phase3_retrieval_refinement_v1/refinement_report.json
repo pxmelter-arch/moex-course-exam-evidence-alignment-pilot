@@ -1,0 +1,19 @@
+{
+  "experiment": "phase3_retrieval_refinement_topic_extraction_v1",
+  "formal_records": 176,
+  "human_truth": false,
+  "machine_inference_only": true,
+  "outline_atomic_items": 2573,
+  "outline_records": 542,
+  "outline_status": {
+    "fields_present": 1084
+  },
+  "promotion_status": "blocked",
+  "raw_preserved": true,
+  "syllabus_atomic_topic_chunks": 4750,
+  "syllabus_parser_status": {
+    "extracted": 317,
+    "present_but_no_atomic_split": 6
+  },
+  "syllabus_sections": 176
+}

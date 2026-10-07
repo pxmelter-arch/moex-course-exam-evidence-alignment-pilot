@@ -403,6 +403,27 @@ def test_phase3_independent_evidence_audit() -> None:
     assert report["qdrant_ingest"] is False
 
 
+def test_phase3_topic_refinement_extraction() -> None:
+    """Validate topic extraction pilot / 驗證 topic extraction pilot。"""
+    artifact_dir = ROOT / "experiments/phase3_retrieval_refinement_v1"
+    report = json.loads((artifact_dir / "refinement_report.json").read_text(encoding="utf-8"))
+    syllabus = (artifact_dir / "syllabus_section_parse.jsonl").read_text(encoding="utf-8").splitlines()
+    chunks = (artifact_dir / "syllabus_atomic_topic_chunks.jsonl").read_text(encoding="utf-8").splitlines()
+    outline_items = (artifact_dir / "outline_atomic_items.jsonl").read_text(encoding="utf-8").splitlines()
+
+    assert report["formal_records"] == 176
+    assert report["outline_records"] == 542
+    assert report["syllabus_sections"] == 176
+    assert report["syllabus_atomic_topic_chunks"] == 4750
+    assert report["outline_atomic_items"] == 2573
+    assert report["raw_preserved"] is True
+    assert report["machine_inference_only"] is True
+    assert len(syllabus) == 176
+    assert len(chunks) == 4750
+    assert len(outline_items) == 2573
+    assert report["promotion_status"] == "blocked"
+
+
 def test_phase2_3a_primary_content_retrieval() -> None:
     """Validate primary content retrieval / 驗證 primary content retrieval。"""
     artifact_dir = ROOT / "experiments/phase2_3a_primary_content_retrieval_v1"
